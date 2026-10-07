@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "description": "Synthetic (invented) CLP classification tests. NOT taken from any ICSI question paper.",
+    "taxonomy_version": "0.2",
+    "created": "2026-10-07",
+    "attempt_to_syllabus_version": {"2023-12": "2022-original", "2024-06": "2022-original", "2024-12": "2022-original", "2025-06": "2022-original", "2025-12": "2022-mod-dec2025", "2026-06": "2022-mod-dec2025"},
+    "expected_outcome_values": {
+      "CLEAN": "One defensible primary node; no rule needed beyond the taxonomy itself",
+      "CLEAN_WITH_RULE": "One defensible primary node, relying on a documented decision rule (DD-xx / v0.2 decision)",
+      "REVIEW": "Classifiable, but methodology requires human review (control node, deleted content in a current attempt, or MEDIUM placement confidence)"
+    }
+  },
+  "tests": [
+    {"id": "H-01", "prompt": "List the grounds on which a person is disqualified from being appointed a director", "attempt": "2026-06", "expected_primary": "CLP.L14.T03.S04", "expected_secondary": [], "expected_outcome": "CLEAN", "rule": null},
+    {"id": "H-02", "prompt": "Can the Board fill a casual vacancy or appoint an additional director, and for how long?", "attempt": "2026-06", "expected_primary": "CLP.L14.T03.S01", "expected_secondary": [], "expected_outcome": "CLEAN", "rule": null},
+    {"id": "H-03", "prompt": "Board wants to borrow beyond paid-up capital plus free reserves; what approval is needed?", "attempt": "2026-06", "expected_primary": "CLP.L15.T03.S01", "expected_secondary": ["CLP.L06.T01"], "expected_outcome": "CLEAN_WITH_RULE", "rule": "DD-08"},
+    {"id": "H-04", "prompt": "Validity of a Board meeting where some directors joined by video conference and quorum was in doubt", "attempt": "2026-06", "expected_primary": "CLP.L16.T03.S01", "expected_secondary": ["CLP.L16.T07"], "expected_outcome": "CLEAN_WITH_RULE", "rule": "Methodology 6.2 multi-topic"},
+    {"id": "H-05", "prompt": "Can an AGM be called at shorter notice, and with whose consent?", "attempt": "2026-06", "expected_primary": "CLP.L13.T05.S01", "expected_secondary": [], "expected_outcome": "CLEAN", "rule": null},
+    {"id": "H-06", "prompt": "Who may demand a poll at a general meeting?", "attempt": "2026-06", "expected_primary": "CLP.L13.T08.S02", "expected_secondary": [], "expected_outcome": "CLEAN_WITH_RULE", "rule": "DD-09"},
+    {"id": "H-07", "prompt": "Conditions a company must satisfy before buying back its shares", "attempt": "2026-06", "expected_primary": "CLP.L04.T10", "expected_secondary": [], "expected_outcome": "CLEAN", "rule": null},
+    {"id": "H-08", "prompt": "Effect of not registering a charge within the prescribed time", "attempt": "2026-06", "expected_primary": "CLP.L07.T02.S01", "expected_secondary": [], "expected_outcome": "CLEAN", "rule": null},
+    {"id": "H-09", "prompt": "Rotation of auditors in a listed company", "attempt": "2026-06", "expected_primary": "CLP.L09.T04.S01", "expected_secondary": [], "expected_outcome": "CLEAN", "rule": null},
+    {"id": "H-10", "prompt": "Composition of the CSR committee (asked in a June 2024 paper)", "attempt": "2024-06", "expected_primary": "CLP.L18.T05", "expected_secondary": [], "expected_outcome": "CLEAN_WITH_RULE", "rule": "DD-05", "expected_historical_lesson": "CLP.L17", "expected_historical_node": "CLP.L17.T01"},
+    {"id": "H-11", "prompt": "Treatment of unspent CSR amount (asked in a December 2024 paper)", "attempt": "2024-12", "expected_primary": "CLP.L17.T03", "expected_secondary": [], "expected_outcome": "CLEAN", "rule": null, "expected_historical_lesson": "CLP.L17"},
+    {"id": "H-12", "prompt": "Matters to be included in the Board's report", "attempt": "2026-06", "expected_primary": "CLP.L18.T01.S01", "expected_secondary": [], "expected_outcome": "CLEAN", "rule": null},
+    {"id": "H-13", "prompt": "Procedure for a fast-track merger of two small companies", "attempt": "2026-06", "expected_primary": "CLP.L10.T01.S03", "expected_secondary": [], "expected_outcome": "CLEAN", "rule": null},
+    {"id": "H-14", "prompt": "Who may apply to the Tribunal for relief against oppression? (asked in a June 2024 paper)", "attempt": "2024-06", "expected_primary": "CLP.L10.T02", "expected_secondary": [], "expected_outcome": "CLEAN", "rule": null},
+    {"id": "H-15", "prompt": "Powers of SFIO during an investigation (asked in a June 2024 paper)", "attempt": "2024-06", "expected_primary": "CLP.L12.T13", "expected_secondary": [], "expected_outcome": "CLEAN", "rule": null},
+    {"id": "H-16", "prompt": "Managerial remuneration above 11% of net profits: approvals and consequences", "attempt": "2026-06", "expected_primary": "CLP.L19.T07.S01", "expected_secondary": ["CLP.L19.T07.S02"], "expected_outcome": "CLEAN", "rule": null},
+    {"id": "H-17", "prompt": "Is a given company a 'small company' under the revised thresholds?", "attempt": "2026-06", "expected_primary": "CLP.L02.T08", "expected_secondary": [], "expected_outcome": "CLEAN_WITH_RULE", "rule": "DD-13"},
+    {"id": "H-18", "prompt": "Who can incorporate a One Person Company, and what restrictions apply?", "attempt": "2026-06", "expected_primary": "CLP.L02.T06.S02", "expected_secondary": [], "expected_outcome": "CLEAN_WITH_RULE", "rule": "Statutory-basis subtopic; DD-18"},
+    {"id": "H-19", "prompt": "Licence and restrictions for a Section 8 company", "attempt": "2026-06", "expected_primary": "CLP.UNMAPPED", "expected_secondary": [], "expected_outcome": "REVIEW", "rule": "v0.2 decision CF-1 (Section 8 concept-level -> holding node)"},
+    {"id": "H-20", "prompt": "Draft minutes of a Board meeting approving an allotment", "attempt": "2026-06", "expected_primary": "CLP.L16.T10", "expected_secondary": ["CLP.L04.T02.S03"], "expected_outcome": "CLEAN_WITH_RULE", "rule": "DD-12"},
+    {"id": "H-21", "prompt": "Approval route for a material related-party transaction in a listed company", "attempt": "2026-06", "expected_primary": "CLP.L15.T06", "expected_secondary": ["CLP.L15.T04.S01"], "expected_outcome": "CLEAN_WITH_RULE", "rule": "Methodology 6.2 multi-topic"},
+    {"id": "H-22", "prompt": "Procedure on transmission of shares after a member's death", "attempt": "2026-06", "expected_primary": "CLP.L04.T09.S02", "expected_secondary": [], "expected_outcome": "CLEAN", "rule": null},
+    {"id": "H-23", "prompt": "Alteration of share capital by consolidation or sub-division", "attempt": "2026-06", "expected_primary": "CLP.L03.T03.S05", "expected_secondary": [], "expected_outcome": "CLEAN_WITH_RULE", "rule": "DD-07"},
+    {"id": "H-24", "prompt": "Requirements for declaring interim dividend out of current-year profits", "attempt": "2026-06", "expected_primary": "CLP.L08.T02.S01", "expected_secondary": ["CLP.L08.T02.S02"], "expected_outcome": "CLEAN", "rule": null},
+
+    {"id": "N-01", "prompt": "What are the conditions for obtaining a licence under section 8, and what are the features of such a company?", "attempt": "2026-06", "expected_primary": "CLP.UNMAPPED", "expected_secondary": [], "expected_outcome": "REVIEW", "rule": "CF-1"},
+    {"id": "N-02", "prompt": "Can a member of a section 8 company appoint a non-member as proxy?", "attempt": "2026-06", "expected_primary": "CLP.L13.T05.S05", "expected_secondary": [], "expected_outcome": "CLEAN_WITH_RULE", "rule": "Functional-rule routing (UNMAPPED node notes); M2 p.550"},
+    {"id": "N-03", "prompt": "Does the Companies Act, 2013 apply to a corporation constituted by a special Act of Parliament?", "attempt": "2026-06", "expected_primary": "CLP.L01.T06", "expected_secondary": [], "expected_outcome": "CLEAN_WITH_RULE", "rule": "CF-2 (statutory companies -> Applicability of the Companies Act)"},
+    {"id": "N-04", "prompt": "Explain the liability of members of an unlimited company", "attempt": "2026-06", "expected_primary": "CLP.L02.T01.S01", "expected_secondary": [], "expected_outcome": "REVIEW", "rule": "CF-3; placement confidence MEDIUM -> mandatory review (methodology 10.4)"},
+    {"id": "N-05", "prompt": "Who may become a member of a producer company, and what are its objects?", "attempt": "2026-06", "expected_primary": "CLP.UNMAPPED", "expected_secondary": [], "expected_outcome": "REVIEW", "rule": "CF-4"},
+    {"id": "N-06", "prompt": "What is the minimum and maximum number of directors of a producer company?", "attempt": "2026-06", "expected_primary": "CLP.L15.T01", "expected_secondary": [], "expected_outcome": "CLEAN_WITH_RULE", "rule": "Functional-rule routing; M2 p.643 (Board Composition)"},
+    {"id": "N-07", "prompt": "What is a Nidhi company?", "attempt": "2026-06", "expected_primary": "CLP.L01.T07", "expected_secondary": [], "expected_outcome": "CLEAN_WITH_RULE", "rule": "CF-5 (Nidhi definition, M2 p.24)"},
+    {"id": "N-08", "prompt": "Grounds on which members may petition the Tribunal for oppression and mismanagement (asked in a December 2024 paper)", "attempt": "2024-12", "expected_primary": "CLP.L10.T02", "expected_secondary": [], "expected_outcome": "CLEAN", "rule": null},
+    {"id": "N-09", "prompt": "Grounds on which members may petition the Tribunal for oppression and mismanagement (asked in a June 2026 paper)", "attempt": "2026-06", "expected_primary": "CLP.L10.T02", "expected_secondary": [], "expected_outcome": "REVIEW", "rule": "Deleted content in current attempt -> SYLLABUS_TRANSITION"},
+    {"id": "N-10", "prompt": "What must a company's CSR policy contain? (asked in a June 2025 paper)", "attempt": "2025-06", "expected_primary": "CLP.L18.T06", "expected_secondary": [], "expected_outcome": "CLEAN_WITH_RULE", "rule": "DD-05", "expected_historical_lesson": "CLP.L17", "expected_historical_node": "CLP.L17.T02"},
+    {"id": "N-11", "prompt": "What must a company's CSR policy contain? (asked in a December 2025 paper)", "attempt": "2025-12", "expected_primary": "CLP.L18.T06", "expected_secondary": [], "expected_outcome": "CLEAN", "rule": null, "expected_historical_lesson": "CLP.L18"},
+    {"id": "N-12", "prompt": "How is an ongoing CSR project's unspent amount treated? (asked in a December 2025 paper)", "attempt": "2025-12", "expected_primary": "CLP.L17.T05", "expected_secondary": [], "expected_outcome": "REVIEW", "rule": "Deleted content in current attempt -> SYLLABUS_TRANSITION"},
+    {"id": "N-13", "prompt": "How often must independent directors meet without non-independent directors, and what do they review?", "attempt": "2026-06", "expected_primary": "CLP.L14.T02.S04", "expected_secondary": [], "expected_outcome": "CLEAN", "rule": null},
+    {"id": "N-14", "prompt": "What is e-Form ACTIVE and what happens if a company does not file it?", "attempt": "2026-06", "expected_primary": "CLP.UNMAPPED", "expected_secondary": [], "expected_outcome": "REVIEW", "rule": "Judgement-call decision JC-6"},
+    {"id": "N-15", "prompt": "What is a Social Stock Exchange?", "attempt": "2026-06", "expected_primary": "CLP.UNMAPPED", "expected_secondary": [], "expected_outcome": "REVIEW", "rule": "Judgement-call decision JC-5 (SSE split out)"},
+    {"id": "N-16", "prompt": "Which listed companies must include a business responsibility report in the annual report?", "attempt": "2026-06", "expected_primary": "CLP.L18.T03.S01", "expected_secondary": [], "expected_outcome": "CLEAN", "rule": null},
+    {"id": "N-17", "prompt": "Conditions for issuing equity shares with differential voting rights", "attempt": "2026-06", "expected_primary": "CLP.L04.T01.S01", "expected_secondary": [], "expected_outcome": "CLEAN_WITH_RULE", "rule": "JC-3 (DVR not split across topics)"},
+    {"id": "N-18", "prompt": "Explain the doctrine of alter ego", "attempt": "2026-06", "expected_primary": "CLP.L01.T05.S02", "expected_secondary": [], "expected_outcome": "CLEAN", "rule": null},
+    {"id": "N-19", "prompt": "Explain the principle of limited liability and its exceptions", "attempt": "2026-06", "expected_primary": "CLP.L02.T01.S01", "expected_secondary": [], "expected_outcome": "REVIEW", "rule": "JC-2; placement confidence MEDIUM -> mandatory review (methodology 10.4)"}
+  ],
+  "negative_controls": [
+    {"id": "X-01", "description": "Classifying to an alias node must be rejected", "attempted_node": "CLP.L17.T02", "must_fail_because": "ALIAS_ONLY"},
+    {"id": "X-02", "description": "Classifying to a deprecated node must be rejected", "attempted_node": "CLP.L16.T01.S01", "must_fail_because": "DEPRECATED"},
+    {"id": "X-03", "description": "Classifying to a structural chapter node must be rejected (records go to topic/subtopic)", "attempted_node": "CLP.L14", "must_fail_because": "STRUCTURAL"},
+    {"id": "X-04", "description": "The holding node must never count in analytics", "attempted_node": "CLP.UNMAPPED", "must_fail_because": "NOT_ANALYTICS_ELIGIBLE"}
+  ]
+}

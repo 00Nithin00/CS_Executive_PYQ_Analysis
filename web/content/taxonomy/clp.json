@@ -1,0 +1,3773 @@
+{
+ "meta": {
+  "subject": "clp",
+  "taxonomyVersion": "0.2",
+  "methodologyVersionAtBuild": "0.3",
+  "status": "FROZEN_FOR_PAPER_ANALYSIS",
+  "exportedFrom": "taxonomy/clp_taxonomy_v0.2.json"
+ },
+ "chapters": [
+  {
+   "id": "CLP.L01",
+   "name": "Introduction to Company Law",
+   "status": "CURRENT",
+   "classificationUse": "STRUCTURAL",
+   "currentPriorityEligible": true,
+   "historicalAnalyticsEligible": true,
+   "lessonBySyllabusVersion": {
+    "2022-original": "CLP.L01",
+    "2022-mod-dec2025": "CLP.L01"
+   },
+   "number": 1,
+   "part": "I",
+   "studyMaterialLesson": 1,
+   "topics": [
+    {
+     "id": "CLP.L01.T01",
+     "name": "Jurisprudence of Company Law",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L01",
+      "2022-mod-dec2025": "CLP.L01"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L01.T02",
+     "name": "Doctrine of Ultra-vires",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L01",
+      "2022-mod-dec2025": "CLP.L01"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L01.T02.S01",
+       "name": "Effects of and exceptions to the doctrine of ultra vires",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L01",
+        "2022-mod-dec2025": "CLP.L01"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L01.T03",
+     "name": "Doctrine of Indoor Management",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L01",
+      "2022-mod-dec2025": "CLP.L01"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L01.T03.S01",
+       "name": "Exceptions to the doctrine of indoor management",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L01",
+        "2022-mod-dec2025": "CLP.L01"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L01.T04",
+     "name": "Doctrine of Constructive Notice",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L01",
+      "2022-mod-dec2025": "CLP.L01"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L01.T05",
+     "name": "Concept of Corporate Veil",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L01",
+      "2022-mod-dec2025": "CLP.L01"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L01.T05.S01",
+       "name": "Lifting / piercing of the corporate veil",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L01",
+        "2022-mod-dec2025": "CLP.L01"
+       }
+      },
+      {
+       "id": "CLP.L01.T05.S02",
+       "name": "Doctrine of alter ego",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L01",
+        "2022-mod-dec2025": "CLP.L01"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L01.T06",
+     "name": "Applicability of the Companies Act",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L01",
+      "2022-mod-dec2025": "CLP.L01"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L01.T07",
+     "name": "Definitions and Key Concepts",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L01",
+      "2022-mod-dec2025": "CLP.L01"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L01.T08",
+     "name": "MCA 21",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L01",
+      "2022-mod-dec2025": "CLP.L01"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L01.T08.S01",
+       "name": "Agencies under MCA / ROC office organisation",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L01",
+        "2022-mod-dec2025": "CLP.L01"
+       }
+      },
+      {
+       "id": "CLP.L01.T08.S02",
+       "name": "E-filing on MCA-21 (e-forms, pre-certification, payment)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L01",
+        "2022-mod-dec2025": "CLP.L01"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CLP.L02",
+   "name": "Legal Status and Types of Registered Companies",
+   "status": "CURRENT",
+   "classificationUse": "STRUCTURAL",
+   "currentPriorityEligible": true,
+   "historicalAnalyticsEligible": true,
+   "lessonBySyllabusVersion": {
+    "2022-original": "CLP.L02",
+    "2022-mod-dec2025": "CLP.L02"
+   },
+   "number": 2,
+   "part": "I",
+   "studyMaterialLesson": 2,
+   "topics": [
+    {
+     "id": "CLP.L02.T01",
+     "name": "Corporate Personality",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L02",
+      "2022-mod-dec2025": "CLP.L02"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L02.T01.S01",
+       "name": "Limited liability and its exceptions (incl. unlimited companies)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L02",
+        "2022-mod-dec2025": "CLP.L02"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L02.T02",
+     "name": "Perpetual succession",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L02",
+      "2022-mod-dec2025": "CLP.L02"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L02.T03",
+     "name": "Separate property",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L02",
+      "2022-mod-dec2025": "CLP.L02"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L02.T04",
+     "name": "Transferability of shares",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L02",
+      "2022-mod-dec2025": "CLP.L02"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L02.T05",
+     "name": "Capacity to sue or be sued",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L02",
+      "2022-mod-dec2025": "CLP.L02"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L02.T06",
+     "name": "Private Company",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L02",
+      "2022-mod-dec2025": "CLP.L02"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L02.T06.S01",
+       "name": "Privileges and exemptions of a private company",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L02",
+        "2022-mod-dec2025": "CLP.L02"
+       }
+      },
+      {
+       "id": "CLP.L02.T06.S02",
+       "name": "One Person Company (OPC)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L02",
+        "2022-mod-dec2025": "CLP.L02"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L02.T07",
+     "name": "Public Company",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L02",
+      "2022-mod-dec2025": "CLP.L02"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L02.T07.S01",
+       "name": "Distinction between private and public company",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L02",
+        "2022-mod-dec2025": "CLP.L02"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L02.T08",
+     "name": "Small Company",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L02",
+      "2022-mod-dec2025": "CLP.L02"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L02.T09",
+     "name": "Holding Company",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L02",
+      "2022-mod-dec2025": "CLP.L02"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L02.T10",
+     "name": "Subsidiary Company",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L02",
+      "2022-mod-dec2025": "CLP.L02"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L02.T11",
+     "name": "Associate Company",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L02",
+      "2022-mod-dec2025": "CLP.L02"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L02.T12",
+     "name": "Dormant Company",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L02",
+      "2022-mod-dec2025": "CLP.L02"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L02.T13",
+     "name": "Government Company",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L02",
+      "2022-mod-dec2025": "CLP.L02"
+     },
+     "subtopics": []
+    }
+   ]
+  },
+  {
+   "id": "CLP.L03",
+   "name": "Memorandum and Articles of Association and its Alteration",
+   "status": "CURRENT",
+   "classificationUse": "STRUCTURAL",
+   "currentPriorityEligible": true,
+   "historicalAnalyticsEligible": true,
+   "lessonBySyllabusVersion": {
+    "2022-original": "CLP.L03",
+    "2022-mod-dec2025": "CLP.L03"
+   },
+   "number": 3,
+   "part": "I",
+   "studyMaterialLesson": 3,
+   "topics": [
+    {
+     "id": "CLP.L03.T01",
+     "name": "Memorandum of Association and Articles of Association",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L03",
+      "2022-mod-dec2025": "CLP.L03"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L03.T01.S01",
+       "name": "Contents of Memorandum",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L03",
+        "2022-mod-dec2025": "CLP.L03"
+       }
+      },
+      {
+       "id": "CLP.L03.T01.S02",
+       "name": "Entrenchment provisions",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L03",
+        "2022-mod-dec2025": "CLP.L03"
+       }
+      },
+      {
+       "id": "CLP.L03.T01.S03",
+       "name": "Distinction between MoA and AoA; legal effect",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L03",
+        "2022-mod-dec2025": "CLP.L03"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L03.T02",
+     "name": "Incorporation Contracts",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L03",
+      "2022-mod-dec2025": "CLP.L03"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L03.T02.S01",
+       "name": "Pre-incorporation contracts",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L03",
+        "2022-mod-dec2025": "CLP.L03"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L03.T03",
+     "name": "Alteration in MOA & AOA",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L03",
+      "2022-mod-dec2025": "CLP.L03"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L03.T03.S01",
+       "name": "Alteration of name clause",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L03",
+        "2022-mod-dec2025": "CLP.L03"
+       }
+      },
+      {
+       "id": "CLP.L03.T03.S02",
+       "name": "Alteration of registered office clause / shifting of registered office",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L03",
+        "2022-mod-dec2025": "CLP.L03"
+       }
+      },
+      {
+       "id": "CLP.L03.T03.S03",
+       "name": "Alteration of object clause",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L03",
+        "2022-mod-dec2025": "CLP.L03"
+       }
+      },
+      {
+       "id": "CLP.L03.T03.S04",
+       "name": "Alteration of liability clause",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L03",
+        "2022-mod-dec2025": "CLP.L03"
+       }
+      },
+      {
+       "id": "CLP.L03.T03.S05",
+       "name": "Alteration of capital clause (incl. s.61 alteration of share capital)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L03",
+        "2022-mod-dec2025": "CLP.L03"
+       }
+      },
+      {
+       "id": "CLP.L03.T03.S06",
+       "name": "Alteration of Articles of Association",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L03",
+        "2022-mod-dec2025": "CLP.L03"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CLP.L04",
+   "name": "Shares and Share Capital-Concepts",
+   "status": "CURRENT",
+   "classificationUse": "STRUCTURAL",
+   "currentPriorityEligible": true,
+   "historicalAnalyticsEligible": true,
+   "lessonBySyllabusVersion": {
+    "2022-original": "CLP.L04",
+    "2022-mod-dec2025": "CLP.L04"
+   },
+   "number": 4,
+   "part": "I",
+   "studyMaterialLesson": 4,
+   "topics": [
+    {
+     "id": "CLP.L04.T01",
+     "name": "Meaning and Types of Capital",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L04",
+      "2022-mod-dec2025": "CLP.L04"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L04.T01.S01",
+       "name": "Equity shares with differential voting rights",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L04",
+        "2022-mod-dec2025": "CLP.L04"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L04.T02",
+     "name": "Issue and Allotment",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L04",
+      "2022-mod-dec2025": "CLP.L04"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L04.T02.S01",
+       "name": "Prospectus (basic terms)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L04",
+        "2022-mod-dec2025": "CLP.L04"
+       }
+      },
+      {
+       "id": "CLP.L04.T02.S02",
+       "name": "Securities premium and its utilisation",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L04",
+        "2022-mod-dec2025": "CLP.L04"
+       }
+      },
+      {
+       "id": "CLP.L04.T02.S03",
+       "name": "Allotment of securities",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L04",
+        "2022-mod-dec2025": "CLP.L04"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L04.T03",
+     "name": "Issue of Share Certificates",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L04",
+      "2022-mod-dec2025": "CLP.L04"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L04.T04",
+     "name": "Further Issue of Share Capital",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L04",
+      "2022-mod-dec2025": "CLP.L04"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L04.T05",
+     "name": "Issue of shares on Private and Preferential basis",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L04",
+      "2022-mod-dec2025": "CLP.L04"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L04.T05.S01",
+       "name": "Private placement",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L04",
+        "2022-mod-dec2025": "CLP.L04"
+       }
+      },
+      {
+       "id": "CLP.L04.T05.S02",
+       "name": "Preferential allotment",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L04",
+        "2022-mod-dec2025": "CLP.L04"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L04.T06",
+     "name": "Rights issue and Bonus Shares",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L04",
+      "2022-mod-dec2025": "CLP.L04"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L04.T06.S01",
+       "name": "Rights issue",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L04",
+        "2022-mod-dec2025": "CLP.L04"
+       }
+      },
+      {
+       "id": "CLP.L04.T06.S02",
+       "name": "Bonus shares",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L04",
+        "2022-mod-dec2025": "CLP.L04"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L04.T07",
+     "name": "Sweat Equity Shares and ESOPs",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L04",
+      "2022-mod-dec2025": "CLP.L04"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L04.T07.S01",
+       "name": "Employee stock option scheme",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L04",
+        "2022-mod-dec2025": "CLP.L04"
+       }
+      },
+      {
+       "id": "CLP.L04.T07.S02",
+       "name": "Sweat equity shares",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L04",
+        "2022-mod-dec2025": "CLP.L04"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L04.T08",
+     "name": "Issue and Redemption of Preference Shares",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L04",
+      "2022-mod-dec2025": "CLP.L04"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L04.T09",
+     "name": "Transfer and Transmission of Securities",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L04",
+      "2022-mod-dec2025": "CLP.L04"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L04.T09.S01",
+       "name": "Transfer of securities (procedure, lost/forged transfers, transfer to minor)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L04",
+        "2022-mod-dec2025": "CLP.L04"
+       }
+      },
+      {
+       "id": "CLP.L04.T09.S02",
+       "name": "Transmission of securities",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L04",
+        "2022-mod-dec2025": "CLP.L04"
+       }
+      },
+      {
+       "id": "CLP.L04.T09.S03",
+       "name": "Depository system; dematerialisation and rematerialisation",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L04",
+        "2022-mod-dec2025": "CLP.L04"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L04.T10",
+     "name": "Buyback of Securities",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L04",
+      "2022-mod-dec2025": "CLP.L04"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L04.T11",
+     "name": "Reduction of Share Capital",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L04",
+      "2022-mod-dec2025": "CLP.L04"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L04.T11.S01",
+       "name": "Reduction without sanction of the Tribunal",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L04",
+        "2022-mod-dec2025": "CLP.L04"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L04.T12",
+     "name": "Payment of Stamp Duty",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L04",
+      "2022-mod-dec2025": "CLP.L04"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L04.T13",
+     "name": "Registers and Records",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L04",
+      "2022-mod-dec2025": "CLP.L04"
+     },
+     "subtopics": []
+    }
+   ]
+  },
+  {
+   "id": "CLP.L05",
+   "name": "Members and Shareholders",
+   "status": "CURRENT",
+   "classificationUse": "STRUCTURAL",
+   "currentPriorityEligible": true,
+   "historicalAnalyticsEligible": true,
+   "lessonBySyllabusVersion": {
+    "2022-original": "CLP.L05",
+    "2022-mod-dec2025": "CLP.L05"
+   },
+   "number": 5,
+   "part": "I",
+   "studyMaterialLesson": 5,
+   "topics": [
+    {
+     "id": "CLP.L05.T01",
+     "name": "How to become a Member",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L05",
+      "2022-mod-dec2025": "CLP.L05"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L05.T01.S01",
+       "name": "Cessation of membership",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L05",
+        "2022-mod-dec2025": "CLP.L05"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L05.T02",
+     "name": "Register of Members",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L05",
+      "2022-mod-dec2025": "CLP.L05"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L05.T02.S01",
+       "name": "Foreign register; closing of register",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L05",
+        "2022-mod-dec2025": "CLP.L05"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L05.T03",
+     "name": "Declaration of Beneficial Interest",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L05",
+      "2022-mod-dec2025": "CLP.L05"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L05.T04",
+     "name": "Significant Beneficial Owner",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L05",
+      "2022-mod-dec2025": "CLP.L05"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L05.T05",
+     "name": "Rectification of Register of Members",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L05",
+      "2022-mod-dec2025": "CLP.L05"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L05.T06",
+     "name": "Rights of Members",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L05",
+      "2022-mod-dec2025": "CLP.L05"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L05.T06.S01",
+       "name": "Voting rights and rights of dissenting shareholders",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L05",
+        "2022-mod-dec2025": "CLP.L05"
+       }
+      },
+      {
+       "id": "CLP.L05.T06.S02",
+       "name": "Shareholders' agreement and veto rights",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L05",
+        "2022-mod-dec2025": "CLP.L05"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L05.T07",
+     "name": "Variation of Shareholders' Rights",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L05",
+      "2022-mod-dec2025": "CLP.L05"
+     },
+     "subtopics": []
+    }
+   ]
+  },
+  {
+   "id": "CLP.L06",
+   "name": "Debt Instruments-Concepts",
+   "status": "CURRENT",
+   "classificationUse": "STRUCTURAL",
+   "currentPriorityEligible": true,
+   "historicalAnalyticsEligible": true,
+   "lessonBySyllabusVersion": {
+    "2022-original": "CLP.L06",
+    "2022-mod-dec2025": "CLP.L06"
+   },
+   "number": 6,
+   "part": "I",
+   "studyMaterialLesson": 6,
+   "topics": [
+    {
+     "id": "CLP.L06.T01",
+     "name": "Issue and Redemption of Debentures and Bonds",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L06",
+      "2022-mod-dec2025": "CLP.L06"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L06.T01.S01",
+       "name": "Kinds of debentures; bonds vs debentures",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L06",
+        "2022-mod-dec2025": "CLP.L06"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L06.T02",
+     "name": "Creation of Security",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L06",
+      "2022-mod-dec2025": "CLP.L06"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L06.T03",
+     "name": "Debenture Redemption Reserve",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L06",
+      "2022-mod-dec2025": "CLP.L06"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L06.T04",
+     "name": "Debenture Trust Deed",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L06",
+      "2022-mod-dec2025": "CLP.L06"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L06.T04.S01",
+       "name": "Debenture trustees",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L06",
+        "2022-mod-dec2025": "CLP.L06"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L06.T05",
+     "name": "Conversion of Debentures into Shares",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L06",
+      "2022-mod-dec2025": "CLP.L06"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L06.T06",
+     "name": "Overview of Company Deposits",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L06",
+      "2022-mod-dec2025": "CLP.L06"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L06.T06.S01",
+       "name": "Acceptance of deposits from members (terms, limits, time period)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L06",
+        "2022-mod-dec2025": "CLP.L06"
+       }
+      },
+      {
+       "id": "CLP.L06.T06.S02",
+       "name": "Eligible company and deposits from the public",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L06",
+        "2022-mod-dec2025": "CLP.L06"
+       }
+      },
+      {
+       "id": "CLP.L06.T06.S03",
+       "name": "Repayment of deposits; deposit repayment reserve; liquid assets",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L06",
+        "2022-mod-dec2025": "CLP.L06"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CLP.L07",
+   "name": "Charges",
+   "status": "CURRENT",
+   "classificationUse": "STRUCTURAL",
+   "currentPriorityEligible": true,
+   "historicalAnalyticsEligible": true,
+   "lessonBySyllabusVersion": {
+    "2022-original": "CLP.L07",
+    "2022-mod-dec2025": "CLP.L07"
+   },
+   "number": 7,
+   "part": "I",
+   "studyMaterialLesson": 7,
+   "topics": [
+    {
+     "id": "CLP.L07.T01",
+     "name": "Creation of Charges",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L07",
+      "2022-mod-dec2025": "CLP.L07"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L07.T01.S01",
+       "name": "Types of charges: fixed vs floating; crystallisation",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L07",
+        "2022-mod-dec2025": "CLP.L07"
+       }
+      },
+      {
+       "id": "CLP.L07.T01.S02",
+       "name": "Charge vs mortgage vs pledge",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L07",
+        "2022-mod-dec2025": "CLP.L07"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L07.T02",
+     "name": "Registration, Modification and Satisfaction of Charges",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L07",
+      "2022-mod-dec2025": "CLP.L07"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L07.T02.S01",
+       "name": "Registrable charges and consequences of non-registration",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L07",
+        "2022-mod-dec2025": "CLP.L07"
+       }
+      },
+      {
+       "id": "CLP.L07.T02.S02",
+       "name": "Satisfaction of charges",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L07",
+        "2022-mod-dec2025": "CLP.L07"
+       }
+      },
+      {
+       "id": "CLP.L07.T02.S03",
+       "name": "Intimation of appointment of receiver or manager",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L07",
+        "2022-mod-dec2025": "CLP.L07"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L07.T03",
+     "name": "Register of Charges",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L07",
+      "2022-mod-dec2025": "CLP.L07"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L07.T04",
+     "name": "Inspection of Charges",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L07",
+      "2022-mod-dec2025": "CLP.L07"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L07.T05",
+     "name": "Punishment for Contravention",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L07",
+      "2022-mod-dec2025": "CLP.L07"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L07.T06",
+     "name": "Rectification by Central Government in Register of Charges",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L07",
+      "2022-mod-dec2025": "CLP.L07"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L07.T07",
+     "name": "Purpose, Objective, Drafting and Issuing of Search Report",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L07",
+      "2022-mod-dec2025": "CLP.L07"
+     },
+     "subtopics": []
+    }
+   ]
+  },
+  {
+   "id": "CLP.L08",
+   "name": "Distribution of Profits",
+   "status": "CURRENT",
+   "classificationUse": "STRUCTURAL",
+   "currentPriorityEligible": true,
+   "historicalAnalyticsEligible": true,
+   "lessonBySyllabusVersion": {
+    "2022-original": "CLP.L08",
+    "2022-mod-dec2025": "CLP.L08"
+   },
+   "number": 8,
+   "part": "I",
+   "studyMaterialLesson": 8,
+   "topics": [
+    {
+     "id": "CLP.L08.T01",
+     "name": "Profit and Ascertainment of Divisible Profits",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L08",
+      "2022-mod-dec2025": "CLP.L08"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L08.T02",
+     "name": "Declaration and Payment of Dividend",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L08",
+      "2022-mod-dec2025": "CLP.L08"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L08.T02.S01",
+       "name": "Types of dividend; power to declare (interim/final)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L08",
+        "2022-mod-dec2025": "CLP.L08"
+       }
+      },
+      {
+       "id": "CLP.L08.T02.S02",
+       "name": "Source of dividend and transfer to reserves",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L08",
+        "2022-mod-dec2025": "CLP.L08"
+       }
+      },
+      {
+       "id": "CLP.L08.T02.S03",
+       "name": "Payment of dividend and liability for non-payment",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L08",
+        "2022-mod-dec2025": "CLP.L08"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L08.T03",
+     "name": "Unpaid Dividend Account",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L08",
+      "2022-mod-dec2025": "CLP.L08"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L08.T04",
+     "name": "Investor Education and Protection Fund",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L08",
+      "2022-mod-dec2025": "CLP.L08"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L08.T04.S01",
+       "name": "Refund to claimant from IEPF",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L08",
+        "2022-mod-dec2025": "CLP.L08"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L08.T05",
+     "name": "Right to Dividend",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L08",
+      "2022-mod-dec2025": "CLP.L08"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L08.T06",
+     "name": "Rights Shares and Bonus shares to be held in abeyance",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L08",
+      "2022-mod-dec2025": "CLP.L08"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L08.T07",
+     "name": "Secretarial Standards on Dividend",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L08",
+      "2022-mod-dec2025": "CLP.L08"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L08.T08",
+     "name": "Dividend Distribution Policy",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L08",
+      "2022-mod-dec2025": "CLP.L08"
+     },
+     "subtopics": []
+    }
+   ]
+  },
+  {
+   "id": "CLP.L09",
+   "name": "Accounts and Auditors",
+   "status": "CURRENT",
+   "classificationUse": "STRUCTURAL",
+   "currentPriorityEligible": true,
+   "historicalAnalyticsEligible": true,
+   "lessonBySyllabusVersion": {
+    "2022-original": "CLP.L09",
+    "2022-mod-dec2025": "CLP.L09"
+   },
+   "number": 9,
+   "part": "I",
+   "studyMaterialLesson": 9,
+   "topics": [
+    {
+     "id": "CLP.L09.T01",
+     "name": "Books of Accounts",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L09",
+      "2022-mod-dec2025": "CLP.L09"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L09.T02",
+     "name": "Financial Statements",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L09",
+      "2022-mod-dec2025": "CLP.L09"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L09.T02.S01",
+       "name": "Consolidated financial statements",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L09",
+        "2022-mod-dec2025": "CLP.L09"
+       }
+      },
+      {
+       "id": "CLP.L09.T02.S02",
+       "name": "Re-opening and voluntary revision of financial statements",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L09",
+        "2022-mod-dec2025": "CLP.L09"
+       }
+      },
+      {
+       "id": "CLP.L09.T02.S03",
+       "name": "Signing and filing of financial statements",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L09",
+        "2022-mod-dec2025": "CLP.L09"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L09.T03",
+     "name": "National Financial Reporting Authority",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L09",
+      "2022-mod-dec2025": "CLP.L09"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L09.T04",
+     "name": "Auditors- Appointment, Resignation and Procedure relating to Removal, Qualification and Disqualification",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L09",
+      "2022-mod-dec2025": "CLP.L09"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L09.T04.S01",
+       "name": "Appointment and rotation of auditors",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L09",
+        "2022-mod-dec2025": "CLP.L09"
+       }
+      },
+      {
+       "id": "CLP.L09.T04.S02",
+       "name": "Casual vacancy in the office of auditor",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L09",
+        "2022-mod-dec2025": "CLP.L09"
+       }
+      },
+      {
+       "id": "CLP.L09.T04.S03",
+       "name": "Removal and resignation of auditor",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L09",
+        "2022-mod-dec2025": "CLP.L09"
+       }
+      },
+      {
+       "id": "CLP.L09.T04.S04",
+       "name": "Eligibility, qualifications and disqualifications of auditor",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L09",
+        "2022-mod-dec2025": "CLP.L09"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L09.T05",
+     "name": "Rights, Duties and Liabilities",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L09",
+      "2022-mod-dec2025": "CLP.L09"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L09.T06",
+     "name": "Audit and Auditor's Report",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L09",
+      "2022-mod-dec2025": "CLP.L09"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L09.T06.S01",
+       "name": "Companies (Auditor's Report) Order, 2020",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L09",
+        "2022-mod-dec2025": "CLP.L09"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L09.T07",
+     "name": "Cost Audit",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L09",
+      "2022-mod-dec2025": "CLP.L09"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L09.T08",
+     "name": "Secretarial Audit",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L09",
+      "2022-mod-dec2025": "CLP.L09"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L09.T09",
+     "name": "Internal Audit",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L09",
+      "2022-mod-dec2025": "CLP.L09"
+     },
+     "subtopics": []
+    }
+   ]
+  },
+  {
+   "id": "CLP.L10",
+   "name": "Compromise, Arrangement and Amalgamations-Concepts",
+   "status": "PARTIALLY_DELETED",
+   "classificationUse": "STRUCTURAL",
+   "currentPriorityEligible": true,
+   "historicalAnalyticsEligible": true,
+   "lessonBySyllabusVersion": {
+    "2022-original": "CLP.L10",
+    "2022-mod-dec2025": "CLP.L10"
+   },
+   "number": 10,
+   "part": "I",
+   "studyMaterialLesson": 10,
+   "topics": [
+    {
+     "id": "CLP.L10.T01",
+     "name": "Introduction of Compromises, Arrangement and Amalgamation",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L10",
+      "2022-mod-dec2025": "CLP.L10"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L10.T01.S01",
+       "name": "Compromise or arrangement with members/creditors (s.230)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L10",
+        "2022-mod-dec2025": "CLP.L10"
+       }
+      },
+      {
+       "id": "CLP.L10.T01.S02",
+       "name": "Merger and amalgamation through the Tribunal (s.232)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L10",
+        "2022-mod-dec2025": "CLP.L10"
+       }
+      },
+      {
+       "id": "CLP.L10.T01.S03",
+       "name": "Fast-track merger of small / holding-subsidiary companies (s.233)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L10",
+        "2022-mod-dec2025": "CLP.L10"
+       }
+      },
+      {
+       "id": "CLP.L10.T01.S04",
+       "name": "Cross-border merger with a foreign company (s.234)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L10",
+        "2022-mod-dec2025": "CLP.L10"
+       }
+      },
+      {
+       "id": "CLP.L10.T01.S05",
+       "name": "Acquisition of dissenting / minority shareholding (ss.235-236)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L10",
+        "2022-mod-dec2025": "CLP.L10"
+       }
+      },
+      {
+       "id": "CLP.L10.T01.S06",
+       "name": "Amalgamation by Central Government in public interest (s.237)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L10",
+        "2022-mod-dec2025": "CLP.L10"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L10.T02",
+     "name": "Oppression and Mismanagement",
+     "status": "DELETED_FROM_DEC2025",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": false,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L10"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L10.T02.S01",
+       "name": "Majority rule and minority rights (Foss v. Harbottle; Chapter XVI)",
+       "status": "DELETED_FROM_DEC2025",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": false,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L10"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L10.T03",
+     "name": "Class Actions Suits",
+     "status": "DELETED_FROM_DEC2025",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": false,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L10"
+     },
+     "subtopics": []
+    }
+   ]
+  },
+  {
+   "id": "CLP.L11",
+   "name": "Dormant Company",
+   "status": "CURRENT",
+   "classificationUse": "STRUCTURAL",
+   "currentPriorityEligible": true,
+   "historicalAnalyticsEligible": true,
+   "lessonBySyllabusVersion": {
+    "2022-original": "CLP.L11",
+    "2022-mod-dec2025": "CLP.L11"
+   },
+   "number": 11,
+   "part": "I",
+   "studyMaterialLesson": 11,
+   "topics": [
+    {
+     "id": "CLP.L11.T01",
+     "name": "Legal framework for Dormant Companies",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L11",
+      "2022-mod-dec2025": "CLP.L11"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L11.T02",
+     "name": "Procedure to obtain the status of a Dormant Company",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L11",
+      "2022-mod-dec2025": "CLP.L11"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L11.T03",
+     "name": "Prerequisite for obtaining the status of Dormant Company",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L11",
+      "2022-mod-dec2025": "CLP.L11"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L11.T04",
+     "name": "Benefits / exemptions provided to a Dormant Company",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L11",
+      "2022-mod-dec2025": "CLP.L11"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L11.T05",
+     "name": "Compliance requirements by Dormant Company",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L11",
+      "2022-mod-dec2025": "CLP.L11"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L11.T06",
+     "name": "Procedure to obtain the status of an Active Company from Dormant Company",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L11",
+      "2022-mod-dec2025": "CLP.L11"
+     },
+     "subtopics": []
+    }
+   ]
+  },
+  {
+   "id": "CLP.L12",
+   "name": "Inspection, Inquiry and Investigation",
+   "status": "DELETED_FROM_DEC2025",
+   "classificationUse": "STRUCTURAL",
+   "currentPriorityEligible": false,
+   "historicalAnalyticsEligible": true,
+   "lessonBySyllabusVersion": {
+    "2022-original": "CLP.L12"
+   },
+   "number": 12,
+   "part": "I",
+   "studyMaterialLesson": null,
+   "topics": [
+    {
+     "id": "CLP.L12.T01",
+     "name": "Powers for inspection",
+     "status": "DELETED_FROM_DEC2025",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": false,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L12"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L12.T02",
+     "name": "Purpose of conducting Inspection",
+     "status": "DELETED_FROM_DEC2025",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": false,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L12"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L12.T03",
+     "name": "Kinds of Investigation",
+     "status": "DELETED_FROM_DEC2025",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": false,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L12"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L12.T04",
+     "name": "Power of Inspector to Conduct Investigation into Affairs of Related Companies",
+     "status": "DELETED_FROM_DEC2025",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": false,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L12"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L12.T05",
+     "name": "Protection of employees during Investigation",
+     "status": "DELETED_FROM_DEC2025",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": false,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L12"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L12.T06",
+     "name": "Seizure of Documents by Inspector",
+     "status": "DELETED_FROM_DEC2025",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": false,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L12"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L12.T07",
+     "name": "Freezing of Assets of Company on Inquiry And Investigation",
+     "status": "DELETED_FROM_DEC2025",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": false,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L12"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L12.T08",
+     "name": "Imposition of Restrictions upon Securities",
+     "status": "DELETED_FROM_DEC2025",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": false,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L12"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L12.T09",
+     "name": "Inspector's Report",
+     "status": "DELETED_FROM_DEC2025",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": false,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L12"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L12.T10",
+     "name": "Expenses of Investigation",
+     "status": "DELETED_FROM_DEC2025",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": false,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L12"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L12.T11",
+     "name": "Preparation by a Company Secretary to face Investigation",
+     "status": "DELETED_FROM_DEC2025",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": false,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L12"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L12.T12",
+     "name": "Establishment of Serious Fraud Investigation Office",
+     "status": "DELETED_FROM_DEC2025",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": false,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L12"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L12.T13",
+     "name": "Process of Investigation by Serious Fraud Investigation Office",
+     "status": "DELETED_FROM_DEC2025",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": false,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L12"
+     },
+     "subtopics": []
+    }
+   ]
+  },
+  {
+   "id": "CLP.L13",
+   "name": "General Meetings",
+   "status": "CURRENT",
+   "classificationUse": "STRUCTURAL",
+   "currentPriorityEligible": true,
+   "historicalAnalyticsEligible": true,
+   "lessonBySyllabusVersion": {
+    "2022-original": "CLP.L13",
+    "2022-mod-dec2025": "CLP.L13"
+   },
+   "number": 13,
+   "part": "II",
+   "studyMaterialLesson": 12,
+   "topics": [
+    {
+     "id": "CLP.L13.T01",
+     "name": "Annual General Meeting",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L13",
+      "2022-mod-dec2025": "CLP.L13"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L13.T01.S01",
+       "name": "Extension of AGM; day, time and place",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L13",
+        "2022-mod-dec2025": "CLP.L13"
+       }
+      },
+      {
+       "id": "CLP.L13.T01.S02",
+       "name": "Business to be transacted at AGM (ordinary vs special business)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L13",
+        "2022-mod-dec2025": "CLP.L13"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L13.T02",
+     "name": "Extraordinary General Meetings",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L13",
+      "2022-mod-dec2025": "CLP.L13"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L13.T03",
+     "name": "Other General Meetings",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L13",
+      "2022-mod-dec2025": "CLP.L13"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L13.T03.S01",
+       "name": "Class meetings; meetings of debenture holders/creditors",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L13",
+        "2022-mod-dec2025": "CLP.L13"
+       }
+      },
+      {
+       "id": "CLP.L13.T03.S02",
+       "name": "Adjourned meetings",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L13",
+        "2022-mod-dec2025": "CLP.L13"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L13.T04",
+     "name": "Types of Resolutions",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L13",
+      "2022-mod-dec2025": "CLP.L13"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L13.T04.S01",
+       "name": "Ordinary and special resolutions",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L13",
+        "2022-mod-dec2025": "CLP.L13"
+       }
+      },
+      {
+       "id": "CLP.L13.T04.S02",
+       "name": "Resolutions requiring special notice",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L13",
+        "2022-mod-dec2025": "CLP.L13"
+       }
+      },
+      {
+       "id": "CLP.L13.T04.S03",
+       "name": "Resolutions and agreements to be filed with the Registrar",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L13",
+        "2022-mod-dec2025": "CLP.L13"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L13.T05",
+     "name": "Notice, Quorum, Poll, Chairman, Proxy",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L13",
+      "2022-mod-dec2025": "CLP.L13"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L13.T05.S01",
+       "name": "Notice of meeting: length, shorter notice, contents, persons entitled",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L13",
+        "2022-mod-dec2025": "CLP.L13"
+       }
+      },
+      {
+       "id": "CLP.L13.T05.S02",
+       "name": "Explanatory statement (s.102)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L13",
+        "2022-mod-dec2025": "CLP.L13"
+       }
+      },
+      {
+       "id": "CLP.L13.T05.S03",
+       "name": "Quorum for general meetings",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L13",
+        "2022-mod-dec2025": "CLP.L13"
+       }
+      },
+      {
+       "id": "CLP.L13.T05.S04",
+       "name": "Chairman of meetings",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L13",
+        "2022-mod-dec2025": "CLP.L13"
+       }
+      },
+      {
+       "id": "CLP.L13.T05.S05",
+       "name": "Proxies",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L13",
+        "2022-mod-dec2025": "CLP.L13"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L13.T06",
+     "name": "Meeting and Agenda",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L13",
+      "2022-mod-dec2025": "CLP.L13"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L13.T07",
+     "name": "Process of conducting meeting",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L13",
+      "2022-mod-dec2025": "CLP.L13"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L13.T08",
+     "name": "Voting and its types-vote on show of hands, Poll, E-Voting, Postal ballot",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L13",
+      "2022-mod-dec2025": "CLP.L13"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L13.T08.S01",
+       "name": "E-voting",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L13",
+        "2022-mod-dec2025": "CLP.L13"
+       }
+      },
+      {
+       "id": "CLP.L13.T08.S02",
+       "name": "Demand for poll",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L13",
+        "2022-mod-dec2025": "CLP.L13"
+       }
+      },
+      {
+       "id": "CLP.L13.T08.S03",
+       "name": "Postal ballot",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L13",
+        "2022-mod-dec2025": "CLP.L13"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L13.T09",
+     "name": "Circulation of Members' Resolutions",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L13",
+      "2022-mod-dec2025": "CLP.L13"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L13.T10",
+     "name": "Signing and Inspection of Minutes",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L13",
+      "2022-mod-dec2025": "CLP.L13"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L13.T11",
+     "name": "Secretarial Standard – 2",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L13",
+      "2022-mod-dec2025": "CLP.L13"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L13.T12",
+     "name": "Duties of Company Secretaries before, during and after General Meeting",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L13",
+      "2022-mod-dec2025": "CLP.L13"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L13.T13",
+     "name": "Virtual Meetings : Technological Advancement in conduct of General Meetings",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L13",
+      "2022-mod-dec2025": "CLP.L13"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L13.T14",
+     "name": "Drafting of Notice and Minutes of Annual General Meeting and Extra-Ordinary General Meeting",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L13",
+      "2022-mod-dec2025": "CLP.L13"
+     },
+     "subtopics": []
+    }
+   ]
+  },
+  {
+   "id": "CLP.L14",
+   "name": "Directors",
+   "status": "CURRENT",
+   "classificationUse": "STRUCTURAL",
+   "currentPriorityEligible": true,
+   "historicalAnalyticsEligible": true,
+   "lessonBySyllabusVersion": {
+    "2022-original": "CLP.L14",
+    "2022-mod-dec2025": "CLP.L14"
+   },
+   "number": 14,
+   "part": "II",
+   "studyMaterialLesson": 13,
+   "topics": [
+    {
+     "id": "CLP.L14.T01",
+     "name": "DIN requirement",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L14",
+      "2022-mod-dec2025": "CLP.L14"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L14.T01.S01",
+       "name": "DIR-3 KYC; cancellation / surrender / deactivation of DIN",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L14",
+        "2022-mod-dec2025": "CLP.L14"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L14.T02",
+     "name": "Types of Directors",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L14",
+      "2022-mod-dec2025": "CLP.L14"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L14.T02.S01",
+       "name": "Independent directors: criteria, term, remuneration",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L14",
+        "2022-mod-dec2025": "CLP.L14"
+       }
+      },
+      {
+       "id": "CLP.L14.T02.S02",
+       "name": "Small shareholders' director",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L14",
+        "2022-mod-dec2025": "CLP.L14"
+       }
+      },
+      {
+       "id": "CLP.L14.T02.S03",
+       "name": "Other types: resident, woman, additional, alternate, nominee directors (concept)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L14",
+        "2022-mod-dec2025": "CLP.L14"
+       }
+      },
+      {
+       "id": "CLP.L14.T02.S04",
+       "name": "Separate meeting of independent directors (Schedule IV, clause VII)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L14",
+        "2022-mod-dec2025": "CLP.L14"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L14.T03",
+     "name": "Appointment / Reappointment, Disqualifications, Vacation of Office, Retirement, Resignation and Removal",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L14",
+      "2022-mod-dec2025": "CLP.L14"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L14.T03.S01",
+       "name": "Modes of appointment (first, by Board, by Tribunal, nominee, at general meeting)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L14",
+        "2022-mod-dec2025": "CLP.L14"
+       }
+      },
+      {
+       "id": "CLP.L14.T03.S02",
+       "name": "Retirement by rotation and re-appointment",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L14",
+        "2022-mod-dec2025": "CLP.L14"
+       }
+      },
+      {
+       "id": "CLP.L14.T03.S03",
+       "name": "Appointment of independent directors",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L14",
+        "2022-mod-dec2025": "CLP.L14"
+       }
+      },
+      {
+       "id": "CLP.L14.T03.S04",
+       "name": "Disqualifications for appointment of director (s.164)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L14",
+        "2022-mod-dec2025": "CLP.L14"
+       }
+      },
+      {
+       "id": "CLP.L14.T03.S05",
+       "name": "Vacation of office (s.167)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L14",
+        "2022-mod-dec2025": "CLP.L14"
+       }
+      },
+      {
+       "id": "CLP.L14.T03.S06",
+       "name": "Resignation of directors (s.168)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L14",
+        "2022-mod-dec2025": "CLP.L14"
+       }
+      },
+      {
+       "id": "CLP.L14.T03.S07",
+       "name": "Removal of directors (s.169 / Tribunal)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L14",
+        "2022-mod-dec2025": "CLP.L14"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L14.T04",
+     "name": "Loans to Directors",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L14",
+      "2022-mod-dec2025": "CLP.L14"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L14.T05",
+     "name": "Disclosure of Interest",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L14",
+      "2022-mod-dec2025": "CLP.L14"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L14.T06",
+     "name": "Duties of Directors",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L14",
+      "2022-mod-dec2025": "CLP.L14"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L14.T07",
+     "name": "Rights of Directors",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L14",
+      "2022-mod-dec2025": "CLP.L14"
+     },
+     "subtopics": []
+    }
+   ]
+  },
+  {
+   "id": "CLP.L15",
+   "name": "Board Composition and Powers of the Board",
+   "status": "CURRENT",
+   "classificationUse": "STRUCTURAL",
+   "currentPriorityEligible": true,
+   "historicalAnalyticsEligible": true,
+   "lessonBySyllabusVersion": {
+    "2022-original": "CLP.L15",
+    "2022-mod-dec2025": "CLP.L15"
+   },
+   "number": 15,
+   "part": "II",
+   "studyMaterialLesson": 14,
+   "topics": [
+    {
+     "id": "CLP.L15.T01",
+     "name": "Board composition",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L15",
+      "2022-mod-dec2025": "CLP.L15"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L15.T01.S01",
+       "name": "Board composition of listed entities",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L15",
+        "2022-mod-dec2025": "CLP.L15"
+       }
+      },
+      {
+       "id": "CLP.L15.T01.S02",
+       "name": "Number of directorships",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L15",
+        "2022-mod-dec2025": "CLP.L15"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L15.T02",
+     "name": "Powers of Board",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L15",
+      "2022-mod-dec2025": "CLP.L15"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L15.T03",
+     "name": "Restrictions on Powers of Board",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L15",
+      "2022-mod-dec2025": "CLP.L15"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L15.T03.S01",
+       "name": "Restrictions requiring members' approval (s.180)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L15",
+        "2022-mod-dec2025": "CLP.L15"
+       }
+      },
+      {
+       "id": "CLP.L15.T03.S02",
+       "name": "Political contributions (s.182)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L15",
+        "2022-mod-dec2025": "CLP.L15"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L15.T04",
+     "name": "Board Committees",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L15",
+      "2022-mod-dec2025": "CLP.L15"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L15.T04.S01",
+       "name": "Audit committee and vigil mechanism",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L15",
+        "2022-mod-dec2025": "CLP.L15"
+       }
+      },
+      {
+       "id": "CLP.L15.T04.S02",
+       "name": "Nomination and remuneration committee",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L15",
+        "2022-mod-dec2025": "CLP.L15"
+       }
+      },
+      {
+       "id": "CLP.L15.T04.S03",
+       "name": "Stakeholders relationship committee",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L15",
+        "2022-mod-dec2025": "CLP.L15"
+       }
+      },
+      {
+       "id": "CLP.L15.T04.S04",
+       "name": "Risk management committee",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L15",
+        "2022-mod-dec2025": "CLP.L15"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L15.T05",
+     "name": "Overview of Inter-Corporate Loans, Investments, Guarantees and Security",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L15",
+      "2022-mod-dec2025": "CLP.L15"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L15.T05.S01",
+       "name": "Limits and approvals for loans/investments/guarantees (s.186)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L15",
+        "2022-mod-dec2025": "CLP.L15"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L15.T06",
+     "name": "Related Party Transactions",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L15",
+      "2022-mod-dec2025": "CLP.L15"
+     },
+     "subtopics": []
+    }
+   ]
+  },
+  {
+   "id": "CLP.L16",
+   "name": "Meetings of Board and its Committees",
+   "status": "CURRENT",
+   "classificationUse": "STRUCTURAL",
+   "currentPriorityEligible": true,
+   "historicalAnalyticsEligible": true,
+   "lessonBySyllabusVersion": {
+    "2022-original": "CLP.L16",
+    "2022-mod-dec2025": "CLP.L16"
+   },
+   "number": 16,
+   "part": "II",
+   "studyMaterialLesson": 15,
+   "topics": [
+    {
+     "id": "CLP.L16.T01",
+     "name": "Frequency, Convening and Proceedings of Board and Committee meetings",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L16",
+      "2022-mod-dec2025": "CLP.L16"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L16.T01.S01",
+       "name": "Meeting of independent directors",
+       "status": "CURRENT",
+       "classificationUse": "ALIAS_ONLY",
+       "currentPriorityEligible": false,
+       "historicalAnalyticsEligible": false,
+       "classifyTo": "CLP.L14.T02.S04",
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L16",
+        "2022-mod-dec2025": "CLP.L16"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L16.T02",
+     "name": "Agenda Management",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L16",
+      "2022-mod-dec2025": "CLP.L16"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L16.T03",
+     "name": "Meeting Management",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L16",
+      "2022-mod-dec2025": "CLP.L16"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L16.T03.S01",
+       "name": "Quorum for Board meetings",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L16",
+        "2022-mod-dec2025": "CLP.L16"
+       }
+      },
+      {
+       "id": "CLP.L16.T03.S02",
+       "name": "Minutes of Board/committee meetings",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L16",
+        "2022-mod-dec2025": "CLP.L16"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L16.T04",
+     "name": "Resolution by Circulation",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L16",
+      "2022-mod-dec2025": "CLP.L16"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L16.T05",
+     "name": "Types of Resolutions",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L16",
+      "2022-mod-dec2025": "CLP.L16"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L16.T06",
+     "name": "Duties of Company Secretaries before, during and after Board/ Committee Meeting",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L16",
+      "2022-mod-dec2025": "CLP.L16"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L16.T07",
+     "name": "Virtual Meetings :Technological Advancement in conduct of Board Committee",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L16",
+      "2022-mod-dec2025": "CLP.L16"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L16.T08",
+     "name": "Need and Scope of Secretarial Standards",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L16",
+      "2022-mod-dec2025": "CLP.L16"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L16.T09",
+     "name": "Secretarial Standard – 1",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L16",
+      "2022-mod-dec2025": "CLP.L16"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L16.T10",
+     "name": "Drafting of Notice, Agenda and Minutes of Board and Committee Meetings",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L16",
+      "2022-mod-dec2025": "CLP.L16"
+     },
+     "subtopics": []
+    }
+   ]
+  },
+  {
+   "id": "CLP.L17",
+   "name": "Corporate Social Responsibility-Concepts",
+   "status": "DELETED_FROM_DEC2025",
+   "classificationUse": "STRUCTURAL",
+   "currentPriorityEligible": false,
+   "historicalAnalyticsEligible": true,
+   "lessonBySyllabusVersion": {
+    "2022-original": "CLP.L17"
+   },
+   "number": 17,
+   "part": "II",
+   "studyMaterialLesson": null,
+   "topics": [
+    {
+     "id": "CLP.L17.T01",
+     "name": "CSR Committee",
+     "status": "DELETED_FROM_DEC2025",
+     "classificationUse": "ALIAS_ONLY",
+     "currentPriorityEligible": false,
+     "historicalAnalyticsEligible": false,
+     "classifyTo": "CLP.L18.T05",
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L17"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L17.T02",
+     "name": "Policy",
+     "status": "DELETED_FROM_DEC2025",
+     "classificationUse": "ALIAS_ONLY",
+     "currentPriorityEligible": false,
+     "historicalAnalyticsEligible": false,
+     "classifyTo": "CLP.L18.T06",
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L17"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L17.T03",
+     "name": "CSR Expenditure",
+     "status": "DELETED_FROM_DEC2025",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": false,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L17"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L17.T04",
+     "name": "Activities",
+     "status": "DELETED_FROM_DEC2025",
+     "classificationUse": "ALIAS_ONLY",
+     "currentPriorityEligible": false,
+     "historicalAnalyticsEligible": false,
+     "classifyTo": "CLP.L18.T07",
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L17"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L17.T05",
+     "name": "Ongoing Project",
+     "status": "DELETED_FROM_DEC2025",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": false,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L17"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L17.T06",
+     "name": "Impact Assessment",
+     "status": "DELETED_FROM_DEC2025",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": false,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L17"
+     },
+     "subtopics": []
+    }
+   ]
+  },
+  {
+   "id": "CLP.L18",
+   "name": "Annual Report-Concepts",
+   "status": "CURRENT",
+   "classificationUse": "STRUCTURAL",
+   "currentPriorityEligible": true,
+   "historicalAnalyticsEligible": true,
+   "lessonBySyllabusVersion": {
+    "2022-original": "CLP.L18",
+    "2022-mod-dec2025": "CLP.L18"
+   },
+   "number": 18,
+   "part": "II",
+   "studyMaterialLesson": 16,
+   "topics": [
+    {
+     "id": "CLP.L18.T01",
+     "name": "Board's Report",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L18",
+      "2022-mod-dec2025": "CLP.L18"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L18.T01.S01",
+       "name": "Disclosures in Board's report (s.134(3))",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L18",
+        "2022-mod-dec2025": "CLP.L18"
+       }
+      },
+      {
+       "id": "CLP.L18.T01.S02",
+       "name": "Abridged Board's report for OPC and small company",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L18",
+        "2022-mod-dec2025": "CLP.L18"
+       }
+      },
+      {
+       "id": "CLP.L18.T01.S03",
+       "name": "Approval and signing of Board's report",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L18",
+        "2022-mod-dec2025": "CLP.L18"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L18.T02",
+     "name": "Annual Return",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L18",
+      "2022-mod-dec2025": "CLP.L18"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L18.T02.S01",
+       "name": "Signing and certification of annual return",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L18",
+        "2022-mod-dec2025": "CLP.L18"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L18.T03",
+     "name": "Annual Report",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L18",
+      "2022-mod-dec2025": "CLP.L18"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L18.T03.S01",
+       "name": "Business responsibility reporting (Reg. 34(2)(f) LODR)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L18",
+        "2022-mod-dec2025": "CLP.L18"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L18.T04",
+     "name": "Secretarial Standard on Report of the Board of Directors",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L18",
+      "2022-mod-dec2025": "CLP.L18"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L18.T05",
+     "name": "CSR Committee",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L17",
+      "2022-mod-dec2025": "CLP.L18"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L18.T05.S01",
+       "name": "Functions and meetings of CSR committee",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L17",
+        "2022-mod-dec2025": "CLP.L18"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L18.T06",
+     "name": "CSR Policy",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L17",
+      "2022-mod-dec2025": "CLP.L18"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L18.T07",
+     "name": "CSR Activities",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L17",
+      "2022-mod-dec2025": "CLP.L18"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L18.T07.S01",
+       "name": "CSR implementation (Rule 4) and eligible activities",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L17",
+        "2022-mod-dec2025": "CLP.L18"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "CLP.L19",
+   "name": "Key Managerial Personnel (KMP's) and their Remuneration",
+   "status": "CURRENT",
+   "classificationUse": "STRUCTURAL",
+   "currentPriorityEligible": true,
+   "historicalAnalyticsEligible": true,
+   "lessonBySyllabusVersion": {
+    "2022-original": "CLP.L19",
+    "2022-mod-dec2025": "CLP.L19"
+   },
+   "number": 19,
+   "part": "II",
+   "studyMaterialLesson": 17,
+   "topics": [
+    {
+     "id": "CLP.L19.T01",
+     "name": "Appointment of Key Managerial Personnel",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L19",
+      "2022-mod-dec2025": "CLP.L19"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L19.T02",
+     "name": "Managing and Whole-Time Directors, Manager, Chief Executive Officer and Chief Financial Officer",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L19",
+      "2022-mod-dec2025": "CLP.L19"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L19.T02.S01",
+       "name": "Appointment, disqualification and approval of MD/WTD/Manager (s.196, Schedule V)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L19",
+        "2022-mod-dec2025": "CLP.L19"
+       }
+      },
+      {
+       "id": "CLP.L19.T02.S02",
+       "name": "CEO and CFO",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L19",
+        "2022-mod-dec2025": "CLP.L19"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L19.T03",
+     "name": "Company Secretary – Appointment, Role and Responsibilities",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L19",
+      "2022-mod-dec2025": "CLP.L19"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L19.T03.S01",
+       "name": "Removal / resignation of company secretary",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L19",
+        "2022-mod-dec2025": "CLP.L19"
+       }
+      }
+     ]
+    },
+    {
+     "id": "CLP.L19.T04",
+     "name": "Company Secretary as a Key Managerial Personnel",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L19",
+      "2022-mod-dec2025": "CLP.L19"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L19.T05",
+     "name": "Functions of Company Secretary",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L19",
+      "2022-mod-dec2025": "CLP.L19"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L19.T06",
+     "name": "Officer who is in default",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L19",
+      "2022-mod-dec2025": "CLP.L19"
+     },
+     "subtopics": []
+    },
+    {
+     "id": "CLP.L19.T07",
+     "name": "Remuneration of Managerial Personnel",
+     "status": "CURRENT",
+     "classificationUse": "CLASSIFIABLE",
+     "currentPriorityEligible": true,
+     "historicalAnalyticsEligible": true,
+     "lessonBySyllabusVersion": {
+      "2022-original": "CLP.L19",
+      "2022-mod-dec2025": "CLP.L19"
+     },
+     "subtopics": [
+      {
+       "id": "CLP.L19.T07.S01",
+       "name": "Overall limits and computation of net profit (s.197/s.198)",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L19",
+        "2022-mod-dec2025": "CLP.L19"
+       }
+      },
+      {
+       "id": "CLP.L19.T07.S02",
+       "name": "Remuneration in excess of limits; recovery and waiver",
+       "status": "CURRENT",
+       "classificationUse": "CLASSIFIABLE",
+       "currentPriorityEligible": true,
+       "historicalAnalyticsEligible": true,
+       "lessonBySyllabusVersion": {
+        "2022-original": "CLP.L19",
+        "2022-mod-dec2025": "CLP.L19"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

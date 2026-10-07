@@ -1,0 +1,13 @@
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# ICSI copyrighted documents: kept locally for research only, never committed or re-hosted.
+# The manifest (source URLs + hashes) is tracked instead.
+01_Source_Papers/**/*.pdf

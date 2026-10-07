@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+/*
+  Design tokens — the only place colours, type, radii, shadows and motion curves are defined.
+  Light, editorial, academic. One accent (evergreen) + one secondary (ochre, reserved for Pro).
+  The accent ramp 300–700 is validated as an ordinal chart ramp (dataviz validator, light surfaces).
+  There is intentionally no dark theme.
+*/
+@theme {
+  /* surfaces */
+  --color-canvas: #fafaf7;
+  --color-surface: #ffffff;
+  --color-surface-2: #f4f3ef;
+  --color-surface-3: #eceae4;
+
+  /* text */
+  --color-ink: #202124;
+  --color-ink-2: #3f4248;
+  --color-ink-3: #6b7280; /* secondary text, 4.8:1 on white */
+  --color-ink-4: #9ca3af; /* muted: decorative/meta only, never essential text */
+
+  /* lines */
+  --color-line: #e7e5e0;
+  --color-line-strong: #d6d3cc;
+
+  /* primary accent — evergreen */
+  --color-accent-50: #eef6f2;
+  --color-accent-100: #dcede5;
+  --color-accent-200: #b9dacd;
+  --color-accent-300: #84bba6;
+  --color-accent-400: #5fa58c;
+  --color-accent-500: #3b8d72;
+  --color-accent-600: #2a7259;
+  --color-accent-700: #1d5843;
+  --color-accent-800: #15412f;
+
+  /* brand mark (lib/brand/mark.json is the source; mirrored here for CSS use) */
+  --color-brand: #2a7259;
+  --color-brand-ochre: #b07720;
+
+  /* secondary accent — ochre (Pro) */
+  --color-pro-50: #fbf5e8;
+  --color-pro-100: #f5e6c4;
+  --color-pro-500: #c08a2e;
+  --color-pro-700: #8a5a12;
+
+  /* status (reserved; always paired with an icon or label) */
+  --color-danger-50: #fdf1f0;
+  --color-danger-600: #b42318;
+  --color-info-50: #f2f4f7;
+
+  /* type */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: var(--font-space-grotesk), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --text-display-xl: clamp(2.6rem, 1.6rem + 4.2vw, 4.6rem);
+  --text-display-xl--line-height: 1.02;
+  --text-display-lg: clamp(2rem, 1.4rem + 2.4vw, 3.1rem);
+  --text-display-lg--line-height: 1.08;
+  --text-display-md: clamp(1.5rem, 1.2rem + 1.2vw, 2.1rem);
+  --text-display-md--line-height: 1.15;
+
+  /* shape */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+
+  /* depth — warm, very soft */
+  --shadow-xs: 0 1px 2px rgb(32 33 36 / 0.04);
+  --shadow-sm: 0 1px 2px rgb(32 33 36 / 0.04), 0 2px 6px rgb(32 33 36 / 0.04);
+  --shadow-md: 0 2px 4px rgb(32 33 36 / 0.04), 0 8px 24px rgb(32 33 36 / 0.06);
+  --shadow-lg: 0 4px 8px rgb(32 33 36 / 0.05), 0 18px 48px rgb(32 33 36 / 0.08);
+
+  /* motion */
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+  body {
+    background: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "cv11", "ss01";
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    color: var(--color-ink);
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  ::selection {
+    background: var(--color-accent-100);
+    color: var(--color-ink);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent-600);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  /* Tabular figures only where numbers align in columns (axes, tables). */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* CSS-only entrances: run on first paint (no hydration dependency), so above-the-fold content and
+   the LCP element are never hidden behind JavaScript. Reduced motion is handled by the rule above. */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+.animate-page { animation: rise 0.4s var(--ease-soft) both; }
+.animate-rise { animation: rise 0.6s var(--ease-soft) both; animation-delay: var(--delay, 0ms); }
+
+/* Subtle paper grain for the hero only; static, no animation. */
+.paper-rule {
+  background-image: linear-gradient(to bottom, transparent calc(100% - 1px), var(--color-line) 1px);
+  background-size: 100% 2.25rem;
+}

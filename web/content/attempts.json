@@ -1,0 +1,49 @@
+{
+ "meta": {
+  "note": "Completed Syllabus 2022 Executive attempts (first exam December 2023), oldest first. Single source for the app, the demo generator and the dataset validator."
+ },
+ "attempts": [
+  {
+   "id": "2023-12",
+   "label": "December 2023",
+   "shortLabel": "Dec 2023",
+   "syllabusVersion": "2022-original"
+  },
+  {
+   "id": "2024-06",
+   "label": "June 2024",
+   "shortLabel": "Jun 2024",
+   "syllabusVersion": "2022-original"
+  },
+  {
+   "id": "2024-12",
+   "label": "December 2024",
+   "shortLabel": "Dec 2024",
+   "syllabusVersion": "2022-original"
+  },
+  {
+   "id": "2025-06",
+   "label": "June 2025",
+   "shortLabel": "Jun 2025",
+   "syllabusVersion": "2022-original"
+  },
+  {
+   "id": "2025-12",
+   "label": "December 2025",
+   "shortLabel": "Dec 2025",
+   "syllabusVersion": "2022-mod-dec2025"
+  },
+  {
+   "id": "2026-06",
+   "label": "June 2026",
+   "shortLabel": "Jun 2026",
+   "syllabusVersion": "2022-mod-dec2025"
+  }
+ ],
+ "next": {
+  "id": "2026-12",
+  "label": "December 2026",
+  "dates": "21–28 December 2026",
+  "startsAt": "2026-12-21T14:00:00+05:30"
+ }
+}

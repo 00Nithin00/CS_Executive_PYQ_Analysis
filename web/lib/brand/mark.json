@@ -1,0 +1,17 @@
+{
+  "name": "Evidence Steps",
+  "concept": "Six evidence cells stacked into an ascending staircase: evidence (cells) → structure (grid) → analysis (ascent) → preparation (the ochre top step).",
+  "viewBox": 32,
+  "radius": 1.5,
+  "colors": { "primary": "#2A7259", "accent": "#B07720", "tile": "#FAFAF7", "tileBorder": "#E7E5E0" },
+  "cells": [
+    { "x": 2, "y": 22, "accent": false },
+    { "x": 12, "y": 22, "accent": false },
+    { "x": 12, "y": 12, "accent": false },
+    { "x": 22, "y": 22, "accent": false },
+    { "x": 22, "y": 12, "accent": false },
+    { "x": 22, "y": 2, "accent": true }
+  ],
+  "cellSize": 8,
+  "notes": "8-unit cells, 2-unit gaps, 2-unit margin on a 32 grid: pixel-exact at 16, 32 and 64 px."
+}

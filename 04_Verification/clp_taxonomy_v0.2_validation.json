@@ -1,0 +1,775 @@
+{
+  "summary": {
+    "taxonomy_version": "0.2",
+    "checks_passed": 18,
+    "checks_total": 18,
+    "tests_passed": 43,
+    "tests_total": 43,
+    "negative_controls_passed": 4,
+    "negative_controls_total": 4,
+    "outcomes": {
+      "CLEAN": 19,
+      "CLEAN_WITH_RULE": 15,
+      "REVIEW": 9
+    },
+    "node_counts": {
+      "subject": 1,
+      "chapter": 20,
+      "topic": 153,
+      "subtopic": 118
+    },
+    "status_counts": {
+      "CURRENT": 266,
+      "PARTIALLY_DELETED": 1,
+      "DELETED_FROM_DEC2025": 24,
+      "OUT_OF_TAXONOMY_REVIEW": 1
+    },
+    "classification_use_counts": {
+      "STRUCTURAL": 20,
+      "CLASSIFIABLE": 267,
+      "ALIAS_ONLY": 4,
+      "CONTROL": 1
+    },
+    "ALL_PASS": true
+  },
+  "checks": [
+    {
+      "id": "V01 unique taxonomy_id",
+      "pass": true,
+      "detail": "292 nodes; duplicates: []"
+    },
+    {
+      "id": "V02 parent exists with correct level",
+      "pass": true,
+      "detail": "bad: []"
+    },
+    {
+      "id": "V03 status values valid (OOT only on control; PARTIALLY_DELETED only on chapters)",
+      "pass": true,
+      "detail": "bad: []"
+    },
+    {
+      "id": "V04 deleted nodes only in 2022-original; current nodes include 2022-mod-dec2025",
+      "pass": true,
+      "detail": "bad: []"
+    },
+    {
+      "id": "V05 children of a deleted node are deleted",
+      "pass": true,
+      "detail": "bad: []"
+    },
+    {
+      "id": "V06 alias/deprecated nodes point to an ACTIVE classifiable node",
+      "pass": true,
+      "detail": "bad: []"
+    },
+    {
+      "id": "V07 eligibility flags follow the rules",
+      "pass": true,
+      "detail": "bad: []"
+    },
+    {
+      "id": "V08 holding node: exactly one, status OUT_OF_TAXONOMY_REVIEW, excluded from all analytics",
+      "pass": true,
+      "detail": "control nodes: ['CLP.UNMAPPED']"
+    },
+    {
+      "id": "V09 deleted classifiable nodes: historical yes, current priority no",
+      "pass": true,
+      "detail": "19 deleted classifiable nodes"
+    },
+    {
+      "id": "V10 Oppression and Mismanagement retained: DELETED_FROM_DEC2025, historical-only",
+      "pass": true,
+      "detail": "{\"status\": \"DELETED_FROM_DEC2025\", \"historical_analytics_eligible\": true, \"current_priority_eligible\": false}"
+    },
+    {
+      "id": "V11 canonical_taxonomy_location / lesson_by_syllabus_version consistent",
+      "pass": true,
+      "detail": "bad: []"
+    },
+    {
+      "id": "V12 moved CSR topics: one canonical node each in L18, L17 aliases, historical L17 recorded",
+      "pass": true,
+      "detail": "bad: []; classifiable CSR topic nodes: ['CLP.L18.T05', 'CLP.L18.T06', 'CLP.L18.T07']"
+    },
+    {
+      "id": "V13 every non-control node has topic_source_reference with document and page",
+      "pass": true,
+      "detail": "missing: []"
+    },
+    {
+      "id": "V14 subtopic basis declared; statutory-basis subtopics say so explicitly",
+      "pass": true,
+      "detail": "bad: []"
+    },
+    {
+      "id": "V15 every chapter/topic name found verbatim in S1 or S1-ORIG",
+      "pass": true,
+      "detail": "not found: []"
+    },
+    {
+      "id": "V16 S1-ORIG bullet count per lesson == taxonomy topics (19 lessons)",
+      "pass": true,
+      "detail": "mismatches: {}"
+    },
+    {
+      "id": "V17 every M2-anchored subtopic heading appears on its cited page (or the next)",
+      "pass": true,
+      "detail": "bad: []"
+    },
+    {
+      "id": "V18 no v0.1 taxonomy_id removed in this version",
+      "pass": true,
+      "detail": "missing: []; added: ['CLP.L14.T02.S04']; renamed: [('CLP.L02.T01.S01', 'Limited liability and its exceptions', 'Limited liability and its exceptions (incl. unlimited companies)'), ('CLP.L18.T03.S01', 'Business responsibility reporting; social stock exchange', 'Business responsibility reporting (Reg. 34(2)(f) LODR)')]"
+    }
+  ],
+  "tests": [
+    {
+      "id": "H-01",
+      "attempt": "2026-06",
+      "primary": "CLP.L14.T03.S04",
+      "expected": "CLEAN",
+      "derived": "CLEAN",
+      "historical_lesson_at_exam_time": "CLP.L14",
+      "historical_node_at_exam_time": null,
+      "rule": null,
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "List the grounds on which a person is disqualified from being appointed a director"
+    },
+    {
+      "id": "H-02",
+      "attempt": "2026-06",
+      "primary": "CLP.L14.T03.S01",
+      "expected": "CLEAN",
+      "derived": "CLEAN",
+      "historical_lesson_at_exam_time": "CLP.L14",
+      "historical_node_at_exam_time": null,
+      "rule": null,
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Can the Board fill a casual vacancy or appoint an additional director, and for how long?"
+    },
+    {
+      "id": "H-03",
+      "attempt": "2026-06",
+      "primary": "CLP.L15.T03.S01",
+      "expected": "CLEAN_WITH_RULE",
+      "derived": "CLEAN_WITH_RULE",
+      "historical_lesson_at_exam_time": "CLP.L15",
+      "historical_node_at_exam_time": null,
+      "rule": "DD-08",
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Board wants to borrow beyond paid-up capital plus free reserves; what approval is needed?"
+    },
+    {
+      "id": "H-04",
+      "attempt": "2026-06",
+      "primary": "CLP.L16.T03.S01",
+      "expected": "CLEAN_WITH_RULE",
+      "derived": "CLEAN_WITH_RULE",
+      "historical_lesson_at_exam_time": "CLP.L16",
+      "historical_node_at_exam_time": null,
+      "rule": "Methodology 6.2 multi-topic",
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Validity of a Board meeting where some directors joined by video conference and quorum was in doubt"
+    },
+    {
+      "id": "H-05",
+      "attempt": "2026-06",
+      "primary": "CLP.L13.T05.S01",
+      "expected": "CLEAN",
+      "derived": "CLEAN",
+      "historical_lesson_at_exam_time": "CLP.L13",
+      "historical_node_at_exam_time": null,
+      "rule": null,
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Can an AGM be called at shorter notice, and with whose consent?"
+    },
+    {
+      "id": "H-06",
+      "attempt": "2026-06",
+      "primary": "CLP.L13.T08.S02",
+      "expected": "CLEAN_WITH_RULE",
+      "derived": "CLEAN_WITH_RULE",
+      "historical_lesson_at_exam_time": "CLP.L13",
+      "historical_node_at_exam_time": null,
+      "rule": "DD-09",
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Who may demand a poll at a general meeting?"
+    },
+    {
+      "id": "H-07",
+      "attempt": "2026-06",
+      "primary": "CLP.L04.T10",
+      "expected": "CLEAN",
+      "derived": "CLEAN",
+      "historical_lesson_at_exam_time": "CLP.L04",
+      "historical_node_at_exam_time": null,
+      "rule": null,
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Conditions a company must satisfy before buying back its shares"
+    },
+    {
+      "id": "H-08",
+      "attempt": "2026-06",
+      "primary": "CLP.L07.T02.S01",
+      "expected": "CLEAN",
+      "derived": "CLEAN",
+      "historical_lesson_at_exam_time": "CLP.L07",
+      "historical_node_at_exam_time": null,
+      "rule": null,
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Effect of not registering a charge within the prescribed time"
+    },
+    {
+      "id": "H-09",
+      "attempt": "2026-06",
+      "primary": "CLP.L09.T04.S01",
+      "expected": "CLEAN",
+      "derived": "CLEAN",
+      "historical_lesson_at_exam_time": "CLP.L09",
+      "historical_node_at_exam_time": null,
+      "rule": null,
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Rotation of auditors in a listed company"
+    },
+    {
+      "id": "H-10",
+      "attempt": "2024-06",
+      "primary": "CLP.L18.T05",
+      "expected": "CLEAN_WITH_RULE",
+      "derived": "CLEAN_WITH_RULE",
+      "historical_lesson_at_exam_time": "CLP.L17",
+      "historical_node_at_exam_time": "CLP.L17.T01",
+      "rule": "DD-05",
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Composition of the CSR committee (asked in a June 2024 paper)"
+    },
+    {
+      "id": "H-11",
+      "attempt": "2024-12",
+      "primary": "CLP.L17.T03",
+      "expected": "CLEAN",
+      "derived": "CLEAN",
+      "historical_lesson_at_exam_time": "CLP.L17",
+      "historical_node_at_exam_time": null,
+      "rule": null,
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Treatment of unspent CSR amount (asked in a December 2024 paper)"
+    },
+    {
+      "id": "H-12",
+      "attempt": "2026-06",
+      "primary": "CLP.L18.T01.S01",
+      "expected": "CLEAN",
+      "derived": "CLEAN",
+      "historical_lesson_at_exam_time": "CLP.L18",
+      "historical_node_at_exam_time": null,
+      "rule": null,
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Matters to be included in the Board's report"
+    },
+    {
+      "id": "H-13",
+      "attempt": "2026-06",
+      "primary": "CLP.L10.T01.S03",
+      "expected": "CLEAN",
+      "derived": "CLEAN",
+      "historical_lesson_at_exam_time": "CLP.L10",
+      "historical_node_at_exam_time": null,
+      "rule": null,
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Procedure for a fast-track merger of two small companies"
+    },
+    {
+      "id": "H-14",
+      "attempt": "2024-06",
+      "primary": "CLP.L10.T02",
+      "expected": "CLEAN",
+      "derived": "CLEAN",
+      "historical_lesson_at_exam_time": "CLP.L10",
+      "historical_node_at_exam_time": null,
+      "rule": null,
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Who may apply to the Tribunal for relief against oppression? (asked in a June 2024 paper)"
+    },
+    {
+      "id": "H-15",
+      "attempt": "2024-06",
+      "primary": "CLP.L12.T13",
+      "expected": "CLEAN",
+      "derived": "CLEAN",
+      "historical_lesson_at_exam_time": "CLP.L12",
+      "historical_node_at_exam_time": null,
+      "rule": null,
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Powers of SFIO during an investigation (asked in a June 2024 paper)"
+    },
+    {
+      "id": "H-16",
+      "attempt": "2026-06",
+      "primary": "CLP.L19.T07.S01",
+      "expected": "CLEAN",
+      "derived": "CLEAN",
+      "historical_lesson_at_exam_time": "CLP.L19",
+      "historical_node_at_exam_time": null,
+      "rule": null,
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Managerial remuneration above 11% of net profits: approvals and consequences"
+    },
+    {
+      "id": "H-17",
+      "attempt": "2026-06",
+      "primary": "CLP.L02.T08",
+      "expected": "CLEAN_WITH_RULE",
+      "derived": "CLEAN_WITH_RULE",
+      "historical_lesson_at_exam_time": "CLP.L02",
+      "historical_node_at_exam_time": null,
+      "rule": "DD-13",
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Is a given company a 'small company' under the revised thresholds?"
+    },
+    {
+      "id": "H-18",
+      "attempt": "2026-06",
+      "primary": "CLP.L02.T06.S02",
+      "expected": "CLEAN_WITH_RULE",
+      "derived": "CLEAN_WITH_RULE",
+      "historical_lesson_at_exam_time": "CLP.L02",
+      "historical_node_at_exam_time": null,
+      "rule": "Statutory-basis subtopic; DD-18",
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Who can incorporate a One Person Company, and what restrictions apply?"
+    },
+    {
+      "id": "H-19",
+      "attempt": "2026-06",
+      "primary": "CLP.UNMAPPED",
+      "expected": "REVIEW",
+      "derived": "REVIEW",
+      "historical_lesson_at_exam_time": null,
+      "historical_node_at_exam_time": null,
+      "rule": "v0.2 decision CF-1 (Section 8 concept-level -> holding node)",
+      "review_reasons": [
+        "OUT_OF_TAXONOMY_REVIEW (holding node; excluded from analytics)"
+      ],
+      "pass": true,
+      "problems": [],
+      "prompt": "Licence and restrictions for a Section 8 company"
+    },
+    {
+      "id": "H-20",
+      "attempt": "2026-06",
+      "primary": "CLP.L16.T10",
+      "expected": "CLEAN_WITH_RULE",
+      "derived": "CLEAN_WITH_RULE",
+      "historical_lesson_at_exam_time": "CLP.L16",
+      "historical_node_at_exam_time": null,
+      "rule": "DD-12",
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Draft minutes of a Board meeting approving an allotment"
+    },
+    {
+      "id": "H-21",
+      "attempt": "2026-06",
+      "primary": "CLP.L15.T06",
+      "expected": "CLEAN_WITH_RULE",
+      "derived": "CLEAN_WITH_RULE",
+      "historical_lesson_at_exam_time": "CLP.L15",
+      "historical_node_at_exam_time": null,
+      "rule": "Methodology 6.2 multi-topic",
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Approval route for a material related-party transaction in a listed company"
+    },
+    {
+      "id": "H-22",
+      "attempt": "2026-06",
+      "primary": "CLP.L04.T09.S02",
+      "expected": "CLEAN",
+      "derived": "CLEAN",
+      "historical_lesson_at_exam_time": "CLP.L04",
+      "historical_node_at_exam_time": null,
+      "rule": null,
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Procedure on transmission of shares after a member's death"
+    },
+    {
+      "id": "H-23",
+      "attempt": "2026-06",
+      "primary": "CLP.L03.T03.S05",
+      "expected": "CLEAN_WITH_RULE",
+      "derived": "CLEAN_WITH_RULE",
+      "historical_lesson_at_exam_time": "CLP.L03",
+      "historical_node_at_exam_time": null,
+      "rule": "DD-07",
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Alteration of share capital by consolidation or sub-division"
+    },
+    {
+      "id": "H-24",
+      "attempt": "2026-06",
+      "primary": "CLP.L08.T02.S01",
+      "expected": "CLEAN",
+      "derived": "CLEAN",
+      "historical_lesson_at_exam_time": "CLP.L08",
+      "historical_node_at_exam_time": null,
+      "rule": null,
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Requirements for declaring interim dividend out of current-year profits"
+    },
+    {
+      "id": "N-01",
+      "attempt": "2026-06",
+      "primary": "CLP.UNMAPPED",
+      "expected": "REVIEW",
+      "derived": "REVIEW",
+      "historical_lesson_at_exam_time": null,
+      "historical_node_at_exam_time": null,
+      "rule": "CF-1",
+      "review_reasons": [
+        "OUT_OF_TAXONOMY_REVIEW (holding node; excluded from analytics)"
+      ],
+      "pass": true,
+      "problems": [],
+      "prompt": "What are the conditions for obtaining a licence under section 8, and what are the features of such a company?"
+    },
+    {
+      "id": "N-02",
+      "attempt": "2026-06",
+      "primary": "CLP.L13.T05.S05",
+      "expected": "CLEAN_WITH_RULE",
+      "derived": "CLEAN_WITH_RULE",
+      "historical_lesson_at_exam_time": "CLP.L13",
+      "historical_node_at_exam_time": null,
+      "rule": "Functional-rule routing (UNMAPPED node notes); M2 p.550",
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Can a member of a section 8 company appoint a non-member as proxy?"
+    },
+    {
+      "id": "N-03",
+      "attempt": "2026-06",
+      "primary": "CLP.L01.T06",
+      "expected": "CLEAN_WITH_RULE",
+      "derived": "CLEAN_WITH_RULE",
+      "historical_lesson_at_exam_time": "CLP.L01",
+      "historical_node_at_exam_time": null,
+      "rule": "CF-2 (statutory companies -> Applicability of the Companies Act)",
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Does the Companies Act, 2013 apply to a corporation constituted by a special Act of Parliament?"
+    },
+    {
+      "id": "N-04",
+      "attempt": "2026-06",
+      "primary": "CLP.L02.T01.S01",
+      "expected": "REVIEW",
+      "derived": "REVIEW",
+      "historical_lesson_at_exam_time": "CLP.L02",
+      "historical_node_at_exam_time": null,
+      "rule": "CF-3; placement confidence MEDIUM -> mandatory review (methodology 10.4)",
+      "review_reasons": [
+        "placement confidence MEDIUM -> mandatory human review (methodology 10.4)"
+      ],
+      "pass": true,
+      "problems": [],
+      "prompt": "Explain the liability of members of an unlimited company"
+    },
+    {
+      "id": "N-05",
+      "attempt": "2026-06",
+      "primary": "CLP.UNMAPPED",
+      "expected": "REVIEW",
+      "derived": "REVIEW",
+      "historical_lesson_at_exam_time": null,
+      "historical_node_at_exam_time": null,
+      "rule": "CF-4",
+      "review_reasons": [
+        "OUT_OF_TAXONOMY_REVIEW (holding node; excluded from analytics)"
+      ],
+      "pass": true,
+      "problems": [],
+      "prompt": "Who may become a member of a producer company, and what are its objects?"
+    },
+    {
+      "id": "N-06",
+      "attempt": "2026-06",
+      "primary": "CLP.L15.T01",
+      "expected": "CLEAN_WITH_RULE",
+      "derived": "CLEAN_WITH_RULE",
+      "historical_lesson_at_exam_time": "CLP.L15",
+      "historical_node_at_exam_time": null,
+      "rule": "Functional-rule routing; M2 p.643 (Board Composition)",
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "What is the minimum and maximum number of directors of a producer company?"
+    },
+    {
+      "id": "N-07",
+      "attempt": "2026-06",
+      "primary": "CLP.L01.T07",
+      "expected": "CLEAN_WITH_RULE",
+      "derived": "CLEAN_WITH_RULE",
+      "historical_lesson_at_exam_time": "CLP.L01",
+      "historical_node_at_exam_time": null,
+      "rule": "CF-5 (Nidhi definition, M2 p.24)",
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "What is a Nidhi company?"
+    },
+    {
+      "id": "N-08",
+      "attempt": "2024-12",
+      "primary": "CLP.L10.T02",
+      "expected": "CLEAN",
+      "derived": "CLEAN",
+      "historical_lesson_at_exam_time": "CLP.L10",
+      "historical_node_at_exam_time": null,
+      "rule": null,
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Grounds on which members may petition the Tribunal for oppression and mismanagement (asked in a December 2024 paper)"
+    },
+    {
+      "id": "N-09",
+      "attempt": "2026-06",
+      "primary": "CLP.L10.T02",
+      "expected": "REVIEW",
+      "derived": "REVIEW",
+      "historical_lesson_at_exam_time": null,
+      "historical_node_at_exam_time": null,
+      "rule": "Deleted content in current attempt -> SYLLABUS_TRANSITION",
+      "review_reasons": [
+        "SYLLABUS_TRANSITION (deleted content asked in a post-Dec 2025 attempt)"
+      ],
+      "pass": true,
+      "problems": [],
+      "prompt": "Grounds on which members may petition the Tribunal for oppression and mismanagement (asked in a June 2026 paper)"
+    },
+    {
+      "id": "N-10",
+      "attempt": "2025-06",
+      "primary": "CLP.L18.T06",
+      "expected": "CLEAN_WITH_RULE",
+      "derived": "CLEAN_WITH_RULE",
+      "historical_lesson_at_exam_time": "CLP.L17",
+      "historical_node_at_exam_time": "CLP.L17.T02",
+      "rule": "DD-05",
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "What must a company's CSR policy contain? (asked in a June 2025 paper)"
+    },
+    {
+      "id": "N-11",
+      "attempt": "2025-12",
+      "primary": "CLP.L18.T06",
+      "expected": "CLEAN",
+      "derived": "CLEAN",
+      "historical_lesson_at_exam_time": "CLP.L18",
+      "historical_node_at_exam_time": null,
+      "rule": null,
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "What must a company's CSR policy contain? (asked in a December 2025 paper)"
+    },
+    {
+      "id": "N-12",
+      "attempt": "2025-12",
+      "primary": "CLP.L17.T05",
+      "expected": "REVIEW",
+      "derived": "REVIEW",
+      "historical_lesson_at_exam_time": null,
+      "historical_node_at_exam_time": null,
+      "rule": "Deleted content in current attempt -> SYLLABUS_TRANSITION",
+      "review_reasons": [
+        "SYLLABUS_TRANSITION (deleted content asked in a post-Dec 2025 attempt)"
+      ],
+      "pass": true,
+      "problems": [],
+      "prompt": "How is an ongoing CSR project's unspent amount treated? (asked in a December 2025 paper)"
+    },
+    {
+      "id": "N-13",
+      "attempt": "2026-06",
+      "primary": "CLP.L14.T02.S04",
+      "expected": "CLEAN",
+      "derived": "CLEAN",
+      "historical_lesson_at_exam_time": "CLP.L14",
+      "historical_node_at_exam_time": null,
+      "rule": null,
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "How often must independent directors meet without non-independent directors, and what do they review?"
+    },
+    {
+      "id": "N-14",
+      "attempt": "2026-06",
+      "primary": "CLP.UNMAPPED",
+      "expected": "REVIEW",
+      "derived": "REVIEW",
+      "historical_lesson_at_exam_time": null,
+      "historical_node_at_exam_time": null,
+      "rule": "Judgement-call decision JC-6",
+      "review_reasons": [
+        "OUT_OF_TAXONOMY_REVIEW (holding node; excluded from analytics)"
+      ],
+      "pass": true,
+      "problems": [],
+      "prompt": "What is e-Form ACTIVE and what happens if a company does not file it?"
+    },
+    {
+      "id": "N-15",
+      "attempt": "2026-06",
+      "primary": "CLP.UNMAPPED",
+      "expected": "REVIEW",
+      "derived": "REVIEW",
+      "historical_lesson_at_exam_time": null,
+      "historical_node_at_exam_time": null,
+      "rule": "Judgement-call decision JC-5 (SSE split out)",
+      "review_reasons": [
+        "OUT_OF_TAXONOMY_REVIEW (holding node; excluded from analytics)"
+      ],
+      "pass": true,
+      "problems": [],
+      "prompt": "What is a Social Stock Exchange?"
+    },
+    {
+      "id": "N-16",
+      "attempt": "2026-06",
+      "primary": "CLP.L18.T03.S01",
+      "expected": "CLEAN",
+      "derived": "CLEAN",
+      "historical_lesson_at_exam_time": "CLP.L18",
+      "historical_node_at_exam_time": null,
+      "rule": null,
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Which listed companies must include a business responsibility report in the annual report?"
+    },
+    {
+      "id": "N-17",
+      "attempt": "2026-06",
+      "primary": "CLP.L04.T01.S01",
+      "expected": "CLEAN_WITH_RULE",
+      "derived": "CLEAN_WITH_RULE",
+      "historical_lesson_at_exam_time": "CLP.L04",
+      "historical_node_at_exam_time": null,
+      "rule": "JC-3 (DVR not split across topics)",
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Conditions for issuing equity shares with differential voting rights"
+    },
+    {
+      "id": "N-18",
+      "attempt": "2026-06",
+      "primary": "CLP.L01.T05.S02",
+      "expected": "CLEAN",
+      "derived": "CLEAN",
+      "historical_lesson_at_exam_time": "CLP.L01",
+      "historical_node_at_exam_time": null,
+      "rule": null,
+      "review_reasons": [],
+      "pass": true,
+      "problems": [],
+      "prompt": "Explain the doctrine of alter ego"
+    },
+    {
+      "id": "N-19",
+      "attempt": "2026-06",
+      "primary": "CLP.L02.T01.S01",
+      "expected": "REVIEW",
+      "derived": "REVIEW",
+      "historical_lesson_at_exam_time": "CLP.L02",
+      "historical_node_at_exam_time": null,
+      "rule": "JC-2; placement confidence MEDIUM -> mandatory review (methodology 10.4)",
+      "review_reasons": [
+        "placement confidence MEDIUM -> mandatory human review (methodology 10.4)"
+      ],
+      "pass": true,
+      "problems": [],
+      "prompt": "Explain the principle of limited liability and its exceptions"
+    }
+  ],
+  "negative_controls": [
+    {
+      "id": "X-01",
+      "node": "CLP.L17.T02",
+      "rejected_because": "ALIAS_ONLY",
+      "pass": true
+    },
+    {
+      "id": "X-02",
+      "node": "CLP.L16.T01.S01",
+      "rejected_because": "DEPRECATED",
+      "pass": true
+    },
+    {
+      "id": "X-03",
+      "node": "CLP.L14",
+      "rejected_because": "STRUCTURAL",
+      "pass": true
+    },
+    {
+      "id": "X-04",
+      "node": "CLP.UNMAPPED",
+      "rejected_because": "NOT_ANALYTICS_ELIGIBLE",
+      "pass": true
+    }
+  ]
+}
