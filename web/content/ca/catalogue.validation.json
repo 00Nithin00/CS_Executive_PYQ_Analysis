@@ -1,0 +1,100 @@
+{
+ "qualification": "CA",
+ "source": "research/ca/ca_catalogue.json",
+ "sourceSha256": "89451124c478488aa8ffcb30a34735410616e0af63d0fe9a4b412c917a51378d",
+ "importedAt": "2026-10-23T10:16:40.656Z",
+ "offline": false,
+ "checks": [
+  {
+   "name": "paper ids unique",
+   "ok": true
+  },
+  {
+   "name": "every paper has a level",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "name": "every paper has an official sourceUrl",
+   "ok": true
+  },
+  {
+   "name": "every published resource has provenance",
+   "ok": true
+  },
+  {
+   "name": "no excluded record is published",
+   "ok": true
+  }
+ ],
+ "excluded": [],
+ "counts": {
+  "papers": 16,
+  "researchResources": 344,
+  "published": 344,
+  "excluded": 0,
+  "publishedByType": {
+   "SYLLABUS": 22,
+   "STUDY_MATERIAL": 63,
+   "MTP": 6,
+   "QUESTION_PAPER": 89,
+   "SUGGESTED_ANSWER": 111,
+   "RTP": 43,
+   "NOTICE": 10
+  },
+  "researchUnverified": 10
+ },
+ "unverifiedFromResearch": [
+  {
+   "what": "Foundation Paper-3 (Quantitative Aptitude) and Paper-4 (Business Economics) question papers for May 2026, Jan 2026, Sep 2025, May 2025, Jan 2025 (and earlier)",
+   "candidateUrl": null,
+   "why": "Not listed on the official Foundation question-paper page; only Paper-1 and Paper-2 (descriptive) are published for those attempts. Sep 2026 is the first attempt where P3/P4 papers appear."
+  },
+  {
+   "what": "Foundation suggested answers, September 2026 attempt",
+   "candidateUrl": null,
+   "why": "Not yet listed on https://www.icai.org/post/suggested-answer-foundation-course as of 2026-10-23 (latest listed: May 2026)."
+  },
+  {
+   "what": "Foundation suggested answers, Paper-3 and Paper-4 for Jan 2025 and Sep 2024",
+   "candidateUrl": null,
+   "why": "Official pages for those attempts list only Paper-1 and Paper-2."
+  },
+  {
+   "what": "Final question papers / suggested answers, November 2026 attempt",
+   "candidateUrl": null,
+   "why": "Exam scheduled 2-13 November 2026 (per notice of 02-05-2026); not yet held on 2026-10-23."
+  },
+  {
+   "what": "Intermediate RTP for January 2027",
+   "candidateUrl": null,
+   "why": "Not yet listed on https://www.icai.org/post/rtp-intermediate-course (latest: September 2026). Foundation Jan 2027 RTP is published."
+  },
+  {
+   "what": "Mock Test Paper (MTP) Series I & II question papers and answers (any level, latest attempts)",
+   "candidateUrl": "https://bosmtp.icai.org/",
+   "why": "Per the official MTP announcements (14.10.2026, 21.10.2026), papers are downloadable only after login to the BoS Knowledge Portal / BoS MTP Registration Portal / BoS app. Not accessed (no login per rules). The public BoS page education_content.php?p=Mock Test Papers only lists stale Sep 2025 announcements."
+  },
+  {
+   "what": "Hindi-medium suggested answers (Foundation/Intermediate/Final Jan 2026, Sep 2025) and Hindi-medium RTPs",
+   "candidateUrl": "https://www.icai.org/post/suggested-answer-foundation-course",
+   "why": "Listed officially but not catalogued in this pass (scope prioritised English medium). Only Foundation Sep 2026 Hindi-medium question papers were catalogued."
+  },
+  {
+   "what": "Examiner comments / Summary of Examiner's Comments per attempt",
+   "candidateUrl": null,
+   "why": "Listed on suggested-answer pages but outside the requested resource types; not catalogued."
+  },
+  {
+   "what": "Chapter-level study material PDFs",
+   "candidateUrl": null,
+   "why": "Catalogue links to the official per-paper/edition study material pages instead of hundreds of chapter PDFs; chapter PDFs not individually verified."
+  },
+  {
+   "what": "Self-Paced Online Modules (SPOM Sets A-D) syllabus/study material",
+   "candidateUrl": "https://www.icai.org/post/syllabus-nset-spom",
+   "why": "Part of the scheme but not an exam level in this catalogue schema; not verified."
+  }
+ ],
+ "ok": true
+}

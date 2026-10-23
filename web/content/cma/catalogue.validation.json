@@ -1,0 +1,128 @@
+{
+ "qualification": "CMA",
+ "source": "research/cma/cma_catalogue.json",
+ "sourceSha256": "c2b48bd3a4215dc9c8f6f11b6bf6720fb088c2f1549616ba7b87d3bb3ec1585b",
+ "importedAt": "2026-10-23T10:16:40.710Z",
+ "offline": false,
+ "checks": [
+  {
+   "name": "paper ids unique",
+   "ok": true
+  },
+  {
+   "name": "every paper has a level",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "name": "every paper has an official sourceUrl",
+   "ok": true
+  },
+  {
+   "name": "every published resource has provenance",
+   "ok": true
+  },
+  {
+   "name": "no excluded record is published",
+   "ok": true
+  }
+ ],
+ "excluded": [],
+ "counts": {
+  "papers": 22,
+  "researchResources": 216,
+  "published": 216,
+  "excluded": 0,
+  "publishedByType": {
+   "SYLLABUS": 25,
+   "STUDY_MATERIAL": 26,
+   "QUESTION_PAPER": 112,
+   "MTP": 45,
+   "NOTICE": 8
+  },
+  "researchUnverified": 16
+ },
+ "unverifiedFromResearch": [
+  {
+   "what": "June 2026 Final Paper 20A question paper - second listing",
+   "candidateUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/June_2026/Syllabus_2022/35944e13-ef45-43d2-8d31-4a43aed87d00_P20A_June_2026.pdf",
+   "why": "The June 2026 question-paper page lists Paper-20A twice under Final (this link appears first, out of order, before Paper-13). HTTP 206 application/pdf on range request, but which of the two files is the authoritative SPMBV paper could not be confirmed without opening the PDF. The other listing (..._P20A_SPMBV_JUNE 2026.pdf) is recorded in resources."
+  },
+  {
+   "what": "Study Material (Syllabus 2022) - Paper 14: Strategic Financial Management (SFM)",
+   "candidateUrl": "https://drive.google.com/file/d/1pyorCMycoOC-w-XfL-EMxVJKz8eunIti/view?usp=drive_link",
+   "why": "Linked from the official page https://icmai.in/ClntStudents/StudyMaterials/3 but hosted on Google Drive, not an ICMAI domain. Range GET returned 200 text/html; charset=utf-8 (Drive viewer page, publicly viewable; Drive file title matches the paper). Ownership of the Drive file cannot be verified, so excluded per the official-domain rule."
+  },
+  {
+   "what": "Study Material (Syllabus 2022) - Paper 15: DIRECT TAX LAWS AND INTERNATIONAL TAXATION (DIT)",
+   "candidateUrl": "https://drive.google.com/file/d/1VSvKuSxLes8e1pgAYWsWcpXqn7X0cw3w/view?usp=drive_link",
+   "why": "Linked from the official page https://icmai.in/ClntStudents/StudyMaterials/3 but hosted on Google Drive, not an ICMAI domain. Range GET returned 200 text/html; charset=utf-8 (Drive viewer page, publicly viewable; Drive file title matches the paper). Ownership of the Drive file cannot be verified, so excluded per the official-domain rule."
+  },
+  {
+   "what": "Study Material (Syllabus 2022) - Paper 16: STRATEGIC COST MANAGEMENT (SCM)",
+   "candidateUrl": "https://drive.google.com/file/d/13jQZGRrCRAY2PyuYslhauZArqqbGOXMT/view?usp=drive_link",
+   "why": "Linked from the official page https://icmai.in/ClntStudents/StudyMaterials/3 but hosted on Google Drive, not an ICMAI domain. Range GET returned 200 text/html; charset=utf-8 (Drive viewer page, publicly viewable; Drive file title matches the paper). Ownership of the Drive file cannot be verified, so excluded per the official-domain rule."
+  },
+  {
+   "what": "Study Material (Syllabus 2022) - Paper 18: CORPORATE FINANCIAL REPORTING (CFR)",
+   "candidateUrl": "https://drive.google.com/file/d/1R44vL85KrXIwWjeVdbe_JP2Il_TDgFMG/view?usp=drive_link",
+   "why": "Linked from the official page https://icmai.in/ClntStudents/StudyMaterials/3 but hosted on Google Drive, not an ICMAI domain. Range GET returned 200 text/html; charset=utf-8 (Drive viewer page, publicly viewable; Drive file title matches the paper). Ownership of the Drive file cannot be verified, so excluded per the official-domain rule."
+  },
+  {
+   "what": "Study Material (Syllabus 2022) - Paper 19: INDIRECT TAX LAWS AND PRACTICE (ITLP)",
+   "candidateUrl": "https://drive.google.com/file/d/1aLxaFfyFCAnzhSMKUmBoH4AznObphdTY/view?usp=drive_link",
+   "why": "Linked from the official page https://icmai.in/ClntStudents/StudyMaterials/3 but hosted on Google Drive, not an ICMAI domain. Range GET returned 200 text/html; charset=utf-8 (Drive viewer page, publicly viewable; Drive file title matches the paper). Ownership of the Drive file cannot be verified, so excluded per the official-domain rule."
+  },
+  {
+   "what": "Study Material (Syllabus 2022) - ELECTIVES Paper 20A: STRATEGIC PERFORMANCE MANAGEMENT AND BUSINESS VALUATION (SPMBV)",
+   "candidateUrl": "https://drive.google.com/file/d/1Ce3MOSa05Pw9oZ0A9YBSX_hNJBcpYcgk/view?usp=sharing",
+   "why": "Linked from the official page https://icmai.in/ClntStudents/StudyMaterials/3 but hosted on Google Drive, not an ICMAI domain. Range GET returned 200 text/html; charset=utf-8 (Drive viewer page, publicly viewable; Drive file title matches the paper). Ownership of the Drive file cannot be verified, so excluded per the official-domain rule."
+  },
+  {
+   "what": "Suggested answers (all levels, all Syllabus 2022 terms)",
+   "candidateUrl": "https://eicmai.in/Suggested_Answers/registration.aspx",
+   "why": "The official Suggested Answers page (https://icmai.in/ClntStudents/Suggested_Answers) links only to 'Download Suggested Answers from December 2011 Term upto June 2026 Term' at eicmai.in/Suggested_Answers/registration.aspx, which is a login form titled 'Suggested Answers (Except Foundation Student)' requiring a student Registration No. and an image CAPTCHA. No public direct PDF links exist; per the rules no login/form submission was attempted. The login page itself returns HTTP 200 text/html."
+  },
+  {
+   "what": "Marks per paper (all 22 papers)",
+   "candidateUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Curriculum_2022.pdf",
+   "why": "No icmai.in HTML page states paper marks. They appear to be given only in PDFs ('CMA Curriculum 2022 at a Glance', 'CMA Syllabus 2022 Full Version', per-paper curriculum PDFs), which were not downloaded in full per the brief. papers[].marks left null. Needs a human read of Curriculum_2022.pdf."
+  },
+  {
+   "what": "Group composition for Intermediate and Final (which papers are in Group I/II/III/IV); whether Foundation has groups",
+   "candidateUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Curriculum_2022.pdf",
+   "why": "Groups are confirmed to exist for Intermediate and Final (examicmai.in exam application page: 'Intermediate and Final students, those who have already applied for one group...'), but no HTML page lists which papers belong to which group. levels[].groups left empty and papers[].groupId null. Old group-wise pages (e.g. icmai.in/studentswebsite/Syl-2022-Inter-Stdy-Mtrls_G1.php) seen in search results now return 404."
+  },
+  {
+   "what": "Paper format (descriptive / objective / mixed) per paper",
+   "candidateUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+   "why": "Not stated on any HTML page; only in PDFs not downloaded. papers[].format set to 'unknown'. (An old 2022 circular refers to an 'online Foundation Examination', but that is not evidence of the current format.)"
+  },
+  {
+   "what": "Foundation question papers for December 2025, June 2025, December 2024, June 2024 and December 2023 terms",
+   "candidateUrl": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=2",
+   "why": "The official question-paper pages for these terms (menuId=2..6) list only Intermediate and Final papers. Foundation papers are listed only for the June 2026 term (menuId=1). Nothing to verify for earlier Foundation terms."
+  },
+  {
+   "what": "Model Question Papers (MQP) for other terms / Intermediate / Final",
+   "candidateUrl": "https://icmai.in/ClntStudents/ClntMQPList",
+   "why": "The MQP page offers December 2023 to December 2026 terms and Foundation/Intermediate/Final, but each selection is a POST form button (with an anti-forgery token), not a link. Per the no-form-submission rule only the default view (December 2026, Foundation, Paper 3) was catalogued."
+  },
+  {
+   "what": "Legacy studentswebsite URLs for Syllabus 2022 question papers / MQPs (e.g. exam_qp_D25_2022.php, exam_qp_D24_2022.php, exam_qp_J24.php, mqp2022_fnd.php)",
+   "candidateUrl": "https://icmai.in/studentswebsite/exam_qp_D25_2022.php",
+   "why": "These were returned by web search but now return HTTP 404; ICMAI has moved to the new /ClntStudents/ site. Use the ClntQuestionPaperList?menuId=N pages instead."
+  },
+  {
+   "what": "Legacy Curriculum 2022 PDF path on icmai.in",
+   "candidateUrl": "https://icmai.in/upload/Students/Syllabus2022/Curriculum_2022.pdf",
+   "why": "Returned by web search; now HTTP 404. Current copy is on ICMAI's CDN: https://dwpivt501gtb6.cloudfront.net/upload/students/Curriculum_2022.pdf (206 application/pdf)."
+  },
+  {
+   "what": "Term/edition applicability of Practice Test Papers",
+   "candidateUrl": "https://icmai.in/ClntStudents/Practice_TestPaper/1",
+   "why": "The Practice Test Paper pages do not state the term they target; a few answer-file names mention June 2026 (e.g. PTP_Answer_Paper_5_Syllabus2022_June2026_Set_1.pdf). attempt recorded as null for all PTP resources."
+  }
+ ],
+ "ok": true
+}
