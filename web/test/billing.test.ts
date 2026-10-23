@@ -63,9 +63,8 @@ async function userWithCheckout(email: string, subId: string, qualification: "cs
     source: "RAZORPAY", providerReference: subId, userId: u.id, qualification, providerPlanId: "plan_CS",
     providerStatus: "created", status: "PENDING", startedAt: null, expiresAt: null, cancelAtPeriodEnd: false,
   });
-  remote.get(subId) ?? remoteSub(subId, { status: "created", current_start: null, current_end: null, notes: { user_id: u.id, qualification } });
-  const r = remote.get(subId)!;
-  r.notes = { user_id: u.id, qualification };
+  if (!remote.has(subId)) remoteSub(subId, { status: "created", current_start: null, current_end: null });
+  remote.get(subId)!.notes = { user_id: u.id, qualification };
   return u;
 }
 const plan = async (userId: string, q: "cs" | "ca" | "cma" = "cs") => resolveEntitlements(await store.listSubscriptions(userId), q).plan;
