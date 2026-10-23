@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 import { store } from "@/lib/store";
 import { safeNextPath } from "./redirect";
 import { hashPassword, verifyPassword } from "./password";
-import { loginThrottle } from "./throttle";
+import { clientIp, loginThrottle, signupThrottle } from "./throttle";
 import { createSession, destroySession, readSession } from "./session";
 
 export interface AuthFormState {
@@ -29,6 +29,9 @@ export async function signupAction(_prev: AuthFormState, form: FormData): Promis
   if (password.length < LIMITS.passwordMin) fieldErrors.password = `Use at least ${LIMITS.passwordMin} characters.`;
   else if (password.length > LIMITS.passwordMax) fieldErrors.password = `Use at most ${LIMITS.passwordMax} characters.`;
   if (Object.keys(fieldErrors).length) return { fieldErrors, values: { name, email } };
+  if (!(await signupThrottle.attempt(await clientIp()))) {
+    return { error: "Too many sign-ups from this network. Please try again in an hour.", values: { name, email } };
+  }
 
   try {
     const user = await store.createUser({ name, email, passwordHash: await hashPassword(password), role: "USER" });
@@ -46,16 +49,15 @@ export async function loginAction(_prev: AuthFormState, form: FormData): Promise
   const email = String(form.get("email") ?? "").trim().toLowerCase().slice(0, LIMITS.email);
   const password = String(form.get("password") ?? "");
   if (password.length > LIMITS.passwordMax) return { error: "That email and password don't match an account.", values: { email } };
-  if (loginThrottle.isLocked(email)) {
+  if (!(await loginThrottle.attempt(email, await clientIp()))) {
     return { error: "Too many failed attempts for this account. Please wait 15 minutes and try again.", values: { email } };
   }
   const user = email ? await store.findUserByEmail(email) : null;
   // Same message for unknown email and wrong password.
   if (!user || !(await verifyPassword(password, user.passwordHash))) {
-    loginThrottle.fail(email);
     return { error: "That email and password don't match an account.", values: { email } };
   }
-  loginThrottle.reset(email);
+  await loginThrottle.reset(email);
   await createSession(user.id);
   redirect(safeNext(form.get("next")));
 }

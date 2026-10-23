@@ -1,49 +1,51 @@
-// Adversarial entitlement / auth audit against a RUNNING production server.
+// Adversarial entitlement / auth audit against a RUNNING production server backed by an ISOLATED Postgres database.
 //
+//   createdb atlas_audit && DATABASE_URL=postgres://localhost:5432/atlas_audit npm run db:migrate
 //   npm run build
-//   FILE_STORE_PATH=/tmp/audit-store.json AUTH_SECRET=<32+ chars> PORT=3311 npm start &
-//   FILE_STORE_PATH=/tmp/audit-store.json AUTH_SECRET=<same> BASE=http://localhost:3311 node scripts/audit-security.mjs
+//   DATABASE_URL=postgres://localhost:5432/atlas_audit AUTH_SECRET=<32+ chars> PORT=3311 npm start &
+//   DATABASE_URL=postgres://localhost:5432/atlas_audit AUTH_SECRET=<same> BASE=http://localhost:3311 npm run audit:security
 //
-// The script provisions users directly in the (isolated!) file store, mints sessions with the
+// The script provisions users directly in the (isolated!) database, mints sessions with the
 // server's secret, then tries to obtain Pro data / Pro writes / admin writes as each identity,
 // including by invoking server actions directly by ID. Exit code 1 if any test fails.
 import { SignJWT } from "jose";
 import { randomBytes, randomUUID, scryptSync } from "node:crypto";
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
+import postgres from "postgres";
 
 const BASE = process.env.BASE ?? "http://localhost:3311";
-const STORE = process.env.FILE_STORE_PATH;
+const DB_URL = process.env.DATABASE_URL;
 const SECRET = process.env.AUTH_SECRET;
-if (!STORE || !SECRET) throw new Error("Set FILE_STORE_PATH and AUTH_SECRET to the values the server was started with.");
-if (!STORE.includes("audit") && !STORE.includes("tmp")) throw new Error("Refusing to touch a store path that does not look isolated (must contain 'audit' or 'tmp').");
+if (!DB_URL || !SECRET) throw new Error("Set DATABASE_URL and AUTH_SECRET to the values the server was started with.");
+if (!/audit|test/.test(new URL(DB_URL).pathname)) throw new Error("Refusing to touch a database whose name does not contain 'audit' or 'test'.");
+const sql = postgres(DB_URL, { max: 2, prepare: false, onnotice: () => {} });
 
 // ---------------------------------------------------------------- fixtures
-const load = () => (existsSync(STORE) ? JSON.parse(readFileSync(STORE, "utf8")) : { users: [], subscriptions: [], bookmarks: [], progress: [], studyPlans: [] });
-const save = (d) => writeFileSync(STORE, JSON.stringify(d, null, 2));
-function user(email, role = "USER") {
-  const d = load();
-  let u = d.users.find((x) => x.email === email);
-  if (!u) {
-    const salt = randomBytes(16);
-    u = { id: randomUUID(), email, name: email.split("@")[0], passwordHash: `scrypt$${salt.toString("hex")}$${scryptSync("pw-123456", salt, 64).toString("hex")}`, role, createdAt: new Date().toISOString() };
-    d.users.push(u);
-    save(d);
-  }
+async function user(email, role = "USER") {
+  const [found] = await sql`select id, email, role from users where email = ${email}`;
+  if (found) return found;
+  const salt = randomBytes(16);
+  const hash = `scrypt$${salt.toString("hex")}$${scryptSync("pw-123456", salt, 64).toString("hex")}`;
+  const [u] = await sql`insert into users (email, name, password_hash, role) values (${email}, ${email.split("@")[0]}, ${hash}, ${role}) returning id, email, role`;
   return u;
 }
-function grant(u) {
-  const d = load();
-  d.subscriptions.push({ id: randomUUID(), userId: u.id, plan: "PRO", status: "ACTIVE", source: "ADMIN_GRANT", startedAt: new Date(Date.now() - 1000).toISOString(), expiresAt: null, providerReference: null });
-  save(d);
+async function grant(u) {
+  await sql`insert into subscriptions (user_id, qualification, plan, status, source, started_at) values (${u.id}, 'cs', 'PRO', 'ACTIVE', 'ADMIN_GRANT', now() - interval '1 second')`;
 }
+const subs = async (u) =>
+  Number((await sql`select count(*)::int as n from subscriptions where user_id = ${u.id} and status = 'ACTIVE' and plan = 'PRO' and qualification = 'cs'`)[0].n);
+const count = async (table, u) => Number((await sql`select count(*)::int as n from ${sql(table)} where user_id = ${u.id}`)[0].n);
+const roleOf = async (u) => (await sql`select role from users where id = ${u.id}`)[0].role;
+
+const free = await user("audit-free@example.com");
+const pro = await user("audit-pro@example.com");
+const admin = await user("audit-admin@example.com", "ADMIN");
+const victim = await user("audit-victim@example.com");
+if ((await subs(pro)) === 0) await grant(pro);
+
 const key = new TextEncoder().encode(SECRET);
 const mint = (claims, exp = "1h", k = key) => new SignJWT(claims).setProtectedHeader({ alg: "HS256" }).setIssuedAt().setExpirationTime(exp).sign(k);
 
-const free = user("audit-free@example.com");
-const pro = user("audit-pro@example.com");
-const admin = user("audit-admin@example.com", "ADMIN");
-const victim = user("audit-victim@example.com");
-if (!load().subscriptions.some((s) => s.userId === pro.id && s.status === "ACTIVE")) grant(pro);
 
 const tok = {
   anon: null,
@@ -100,7 +102,6 @@ async function callFormAction(name, fields, token, { page = "/dashboard/admin", 
   const r = await fetch(BASE + page, { method: "POST", redirect: "manual", headers: { "Next-Action": actionId(name), Origin: origin, ...(token ? { cookie: `cse_session=${token}` } : {}) }, body: fd });
   return { status: r.status, body: await r.text(), location: r.headers.get("location") };
 }
-const subs = (u) => load().subscriptions.filter((s) => s.userId === u.id && s.status === "ACTIVE" && s.plan === "PRO").length;
 
 // ---------------------------------------------------------------- 1. read paths
 const PUBLIC_PRO_PAGES = ["/", "/subjects/clp", "/pyq", "/pyq/clp", "/subjects", "/papers", "/resources", "/pricing"];
@@ -157,14 +158,14 @@ for (const [name, t] of Object.entries(forged)) {
   for (const who of ["anon", "free"]) {
     const r = await callAction("toggleBookmarkAction", [qid], tok[who], { page: "/pyq/clp" });
     const u = who === "free" ? free : null;
-    const stored = u ? load().bookmarks.filter((b) => b.userId === u.id).length : 0;
+    const stored = u ? await count("bookmarks", u) : 0;
     check(`[action] ${who} toggleBookmarkAction refused`, /SIGNED_OUT|NOT_ENTITLED/.test(r.body) && stored === 0, r.body.slice(0, 80).replace(/\s+/g, " "));
     const p = await callAction("setProgressAction", ["CLP.L14", "COVERED"], tok[who], { page: "/dashboard/progress" });
-    const pStored = who === "free" ? load().progress.filter((x) => x.userId === free.id).length : 0;
+    const pStored = who === "free" ? await count("user_progress", free) : 0;
     check(`[action] ${who} setProgressAction refused`, (/SIGNED_OUT|NOT_ENTITLED/.test(p.body) || redirectedToLogin(p)) && pStored === 0, (p.location ?? p.body.slice(0, 80)).replace(/\s+/g, " "));
     // same action posted to a public page (bypasses the /dashboard proxy entirely)
     const p2 = await callAction("setProgressAction", ["CLP.L14", "COVERED"], tok[who], { page: "/" });
-    const p2Stored = who === "free" ? load().progress.filter((x) => x.userId === free.id).length : 0;
+    const p2Stored = who === "free" ? await count("user_progress", free) : 0;
     check(`[action] ${who} setProgressAction via public route refused`, !/"ok":true/.test(p2.body) && p2Stored === 0, `status ${p2.status} ${p2.body.slice(0, 80).replace(/\s+/g, " ")}`);
   }
   const ok = await callAction("toggleBookmarkAction", [qid], tok.pro, { page: "/pyq/clp" });
@@ -177,44 +178,44 @@ for (const [name, t] of Object.entries(forged)) {
   check("[csrf] cross-origin server-action call rejected", cross.status >= 400 || !/"ok":true/.test(cross.body), `status ${cross.status}`);
 }
 for (const who of ["anon", "free", "pro"]) {
-  const before = subs(victim);
+  const before = await subs(victim);
   await callFormAction("grantProAction", { userId: victim.id }, tok[who]);
-  check(`[admin-action] ${who} cannot grant Pro`, subs(victim) === before, `active PRO subs ${before} → ${subs(victim)}`);
-  const selfBefore = who === "free" ? subs(free) : 0;
+  { const after = await subs(victim); check(`[admin-action] ${who} cannot grant Pro`, after === before, `active PRO subs ${before} → ${after}`); }
+  const selfBefore = who === "free" ? await subs(free) : 0;
   if (who === "free") {
     await callFormAction("grantProAction", { userId: free.id }, tok.free);
-    check("[admin-action] free cannot grant Pro to self", subs(free) === selfBefore);
+    check("[admin-action] free cannot grant Pro to self", (await subs(free)) === selfBefore);
   }
 }
 {
   const g = await callFormAction("grantProAction", { userId: victim.id }, tok.admin);
-  check("[admin-action] admin can grant Pro", subs(victim) === 1 && g.body.includes("Pro granted"), `active PRO subs = ${subs(victim)} · ${g.status} ${g.body.slice(0, 160).replace(/\s+/g, " ")}`);
+  { const n = await subs(victim); check("[admin-action] admin can grant Pro", n === 1 && g.body.includes("Pro granted"), `active PRO subs = ${n} · ${g.status} ${g.body.slice(0, 160).replace(/\s+/g, " ")}`); }
   const victimTok = await mint({ userId: victim.id });
   const r1 = await get("/pyq/clp", victimTok);
   check("[revoke] granted user sees Pro data", r1.body.includes("repeatStatus"));
   for (const who of ["anon", "free"]) {
     await callFormAction("revokeProAction", { userId: victim.id }, tok[who]);
-    check(`[admin-action] ${who} cannot revoke Pro`, subs(victim) === 1);
+    check(`[admin-action] ${who} cannot revoke Pro`, (await subs(victim)) === 1);
   }
   await callFormAction("revokeProAction", { userId: victim.id }, tok.admin);
   const r2 = await get("/pyq/clp", victimTok);
-  check("[revoke] revoke removes Pro on the very next request (same session)", subs(victim) === 0 && leaks(r2.body).length === 0, leaks(r2.body).join(","));
+  check("[revoke] revoke removes Pro on the very next request (same session)", (await subs(victim)) === 0 && leaks(r2.body).length === 0, leaks(r2.body).join(","));
   const badId = await callFormAction("grantProAction", { userId: "not-a-uuid'; DROP" }, tok.admin);
-  check("[admin-action] grant with invalid user id is rejected with a clear error", load().subscriptions.every((s) => s.userId !== "not-a-uuid'; DROP") && badId.body.includes("Invalid user id"), `status ${badId.status}`);
+  check("[admin-action] grant with invalid user id is rejected with a clear error", Number((await sql`select count(*)::int as n from subscriptions where user_id::text = ${"not-a-uuid'; DROP"}`)[0].n) === 0 && badId.body.includes("Invalid user id"), `status ${badId.status}`);
   const ghost = await callFormAction("grantProAction", { userId: randomUUID() }, tok.admin);
   check("[admin-action] grant for unknown user reports 'User not found'", ghost.body.includes("User not found"));
   await callFormAction("grantProAction", { userId: victim.id }, tok.admin);
   const dup = await callFormAction("grantProAction", { userId: victim.id }, tok.admin);
-  check("[admin-action] duplicate grant is refused (no stacked subscriptions)", subs(victim) === 1 && dup.body.includes("already has Pro"), `active PRO subs = ${subs(victim)}`);
+  { const n = await subs(victim); check("[admin-action] duplicate grant is refused (no stacked subscriptions)", n === 1 && /already has (CS )?Pro/.test(dup.body), `active PRO subs = ${n}`); }
   const ok = await callFormAction("revokeProAction", { userId: victim.id }, tok.admin);
-  check("[admin-action] revoke reports success", ok.body.includes("Pro revoked") && subs(victim) === 0);
+  check("[admin-action] revoke reports success", ok.body.includes("Pro revoked") && (await subs(victim)) === 0);
 }
 
 // ---------------------------------------------------------------- 4. self-elevation via form input
 {
   const fd = await callAction("saveStudyPlanAction", [{ ok: true }, "role=ADMIN&plan=PRO"], tok.free, { page: "/dashboard/study-plan" });
   check("[elevation] free saveStudyPlanAction refused", /NOT_ENTITLED/.test(fd.body) || !/"ok":true/.test(fd.body));
-  check("[elevation] free user still FREE and USER after all attempts", subs(free) === 0 && load().users.find((u) => u.id === free.id).role === "USER");
+  check("[elevation] free user still FREE and USER after all attempts", (await subs(free)) === 0 && (await roleOf(free)) === "USER");
 }
 
 // ---------------------------------------------------------------- 5. auth: redirects, throttle, logout invalidation
@@ -249,4 +250,5 @@ for (const who of ["anon", "free", "pro"]) {
 const failed = results.filter((r) => !r.ok);
 console.log(`\n${results.length - failed.length}/${results.length} security tests passed`);
 writeFileSync(new URL("../.audit-security-results.json", import.meta.url), JSON.stringify(results, null, 2));
+await sql.end({ timeout: 5 });
 process.exit(failed.length ? 1 : 0);

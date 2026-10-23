@@ -1,16 +1,15 @@
 import "server-only";
-import { createFileStore } from "./file-store";
+import { getDb } from "@/lib/db/client";
+import { createPgStore } from "./pg-store";
 import type { UserStore } from "./types";
 
 /**
- * Store selection. USER_STORE=file (default) uses .data/store.json.
- * USER_STORE=postgres is reserved for the Drizzle implementation (schema in lib/db/schema.ts).
+ * The account/personal-data store. Postgres everywhere (development, tests, production) so that what
+ * is tested is what runs on Vercel. The connection is opened lazily on first use, never at import/build time.
  */
-function select(): UserStore {
-  const kind = process.env.USER_STORE ?? "file";
-  if (kind === "file") return createFileStore();
-  throw new Error(`USER_STORE="${kind}" is not implemented yet. Use "file" or add the Postgres store.`);
-}
+let instance: UserStore | null = null;
+const resolve = () => (instance ??= createPgStore(getDb()));
 
-const globalForStore = globalThis as unknown as { __userStore?: UserStore };
-export const store: UserStore = globalForStore.__userStore ?? (globalForStore.__userStore = select());
+export const store: UserStore = new Proxy({} as UserStore, {
+  get: (_t, prop: keyof UserStore) => resolve()[prop],
+});

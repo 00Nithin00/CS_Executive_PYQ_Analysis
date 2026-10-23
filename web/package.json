@@ -13,7 +13,12 @@
     "admin": "node scripts/admin.mjs",
     "validate:data": "node scripts/validate-dataset.mjs",
     "audit:security": "node scripts/audit-security.mjs",
-    "brand:assets": "node scripts/build-brand-assets.mjs"
+    "brand:assets": "node scripts/build-brand-assets.mjs",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "node scripts/db-migrate.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "e2e:auth": "node scripts/e2e-auth.mjs"
   },
   "dependencies": {
     "drizzle-orm": "^0.45.3",
@@ -21,6 +26,7 @@
     "lucide-react": "^1.52.0",
     "motion": "^14.0.0",
     "next": "16.4.2",
+    "postgres": "3.4.7",
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "server-only": "^0.0.1"
@@ -35,6 +41,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.4.2",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "3.2.4"
   }
 }

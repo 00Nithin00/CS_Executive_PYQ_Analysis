@@ -6,11 +6,13 @@ import { assertCapability, EntitlementError, getViewer, requireAdmin } from "@/l
 import { isCurrentChapter, knownSubjectSlugs, questionExists } from "@/lib/data/service";
 import { store } from "@/lib/store";
 import type { ProgressRecord } from "@/lib/store/types";
+import { isQualification, resolveEntitlements } from "@/lib/entitlements/resolve";
 
-export type ActionResult<T = undefined> = { ok: true; data?: T } | { ok: false; error: "SIGNED_OUT" | "NOT_ENTITLED" | "INVALID" };
+export type ActionResult<T = undefined> = { ok: true; data?: T } | { ok: false; error: "SIGNED_OUT" | "NOT_ENTITLED" | "INVALID" | "UNAVAILABLE" };
 
 async function guard(capability: Parameters<typeof assertCapability>[1]) {
   const viewer = await getViewer();
+  if (viewer.degraded) return { error: "UNAVAILABLE" as const };
   if (!viewer.user) return { error: "SIGNED_OUT" as const };
   try {
     assertCapability(viewer, capability);
@@ -76,10 +78,14 @@ export async function grantProAction(_prev: AdminActionState, form: FormData): P
   if (!UUID_RE.test(userId)) return { status: "error", message: "Invalid user id." };
   const user = await store.findUserById(userId);
   if (!user) return { status: "error", message: "User not found." };
-  const live = (await store.listSubscriptions(userId)).filter((s) => s.status === "ACTIVE" && s.plan === "PRO" && (!s.expiresAt || new Date(s.expiresAt) > new Date()));
-  if (live.length) return { status: "error", message: `${user.email} already has Pro.` };
+  const qualification = String(form.get("qualification") ?? "cs");
+  if (!isQualification(qualification)) return { status: "error", message: "Invalid qualification." };
+  if (resolveEntitlements(await store.listSubscriptions(userId), qualification).plan === "PRO") {
+    return { status: "error", message: `${user.email} already has ${qualification.toUpperCase()} Pro.` };
+  }
   await store.addSubscription({
     userId,
+    qualification,
     plan: "PRO",
     status: "ACTIVE",
     source: "ADMIN_GRANT",
@@ -89,7 +95,7 @@ export async function grantProAction(_prev: AdminActionState, form: FormData): P
     note: `Granted by ${admin.user.email}`,
   });
   revalidatePath("/dashboard/admin");
-  return { status: "success", message: `Pro granted to ${user.email}.` };
+  return { status: "success", message: `${qualification.toUpperCase()} Pro granted to ${user.email}.` };
 }
 
 /** Cancels admin grants only — paid subscriptions (when they exist) are never touched from here. */

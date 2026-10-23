@@ -47,3 +47,7 @@ next-env.d.ts
 # generated audit / validation reports
 *.validation.json
 .audit-security-results.json
+
+# local test artefacts
+.e2e-auth-state.json
+.audit-security-results.json

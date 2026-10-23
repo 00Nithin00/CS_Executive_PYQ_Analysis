@@ -1,28 +1,40 @@
 import "server-only";
+import { headers } from "next/headers";
+import { store } from "@/lib/store";
 
-// Per-account login throttle (in-memory, per server process). Enough to stop online password guessing
-// against one account on a single-server MVP; replace with a shared store (e.g. Postgres/Redis) when
-// running more than one instance.
-const MAX_FAILURES = 10;
-const WINDOW_MS = 15 * 60 * 1000;
-const failures = new Map<string, { count: number; first: number }>();
+// Rate limits are stored in Postgres, so every server instance shares the same counters.
+// Per account: stops online password guessing against one email. Per IP: bounds sign-up spam and credential stuffing.
+export const LIMITS = {
+  loginPerAccount: { limit: 10, windowSeconds: 15 * 60 },
+  loginPerIp: { limit: 50, windowSeconds: 15 * 60 },
+  // Generous: a campus session can put many students behind one college NAT address.
+  signupPerIp: { limit: 20, windowSeconds: 60 * 60 },
+} as const;
+
+/** Client IP as set by the hosting proxy (Vercel overwrites these headers). Falls back to a shared bucket. */
+export async function clientIp(): Promise<string> {
+  const h = await headers();
+  return h.get("x-real-ip")?.trim() || h.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
+}
+
+async function hit(key: string, rule: { limit: number; windowSeconds: number }) {
+  return store.hitRateLimit(key, rule.limit, rule.windowSeconds);
+}
 
 export const loginThrottle = {
-  isLocked(key: string, now = Date.now()) {
-    const f = failures.get(key);
-    if (!f) return false;
-    if (now - f.first > WINDOW_MS) {
-      failures.delete(key);
-      return false;
-    }
-    return f.count >= MAX_FAILURES;
+  /** Counts one login attempt. Returns false when the account or IP is over its limit. */
+  async attempt(email: string, ip: string) {
+    const [account, address] = await Promise.all([hit(`login:acct:${email}`, LIMITS.loginPerAccount), hit(`login:ip:${ip}`, LIMITS.loginPerIp)]);
+    return account.allowed && address.allowed;
   },
-  fail(key: string, now = Date.now()) {
-    const f = failures.get(key);
-    if (!f || now - f.first > WINDOW_MS) failures.set(key, { count: 1, first: now });
-    else f.count++;
+  /** A successful login clears the per-account counter. */
+  reset(email: string) {
+    return store.resetRateLimit(`login:acct:${email}`);
   },
-  reset(key: string) {
-    failures.delete(key);
+};
+
+export const signupThrottle = {
+  async attempt(ip: string) {
+    return (await hit(`signup:ip:${ip}`, LIMITS.signupPerIp)).allowed;
   },
 };

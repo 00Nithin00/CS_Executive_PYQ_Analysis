@@ -1,4 +1,4 @@
-import type { Role, Subscription } from "@/lib/entitlements/resolve";
+import type { Qualification, Role, Subscription, SubscriptionSource } from "@/lib/entitlements/resolve";
 
 export interface UserRecord {
   id: string;
@@ -32,9 +32,39 @@ export interface StudyPlanRecord {
   updatedAt: string;
 }
 
+/** Provider-side state of a paid subscription, as reported by a verified API call or webhook. */
+export interface ProviderSubscriptionState {
+  source: Exclude<SubscriptionSource, "ADMIN_GRANT" | "COUPON">;
+  providerReference: string;
+  userId: string;
+  qualification: Qualification;
+  providerPlanId: string | null;
+  providerStatus: string;
+  status: Subscription["status"];
+  startedAt: string | null;
+  expiresAt: string | null;
+  cancelAtPeriodEnd: boolean;
+}
+
+export interface PaymentRecordInput {
+  provider: Exclude<SubscriptionSource, "ADMIN_GRANT" | "COUPON">;
+  providerPaymentId: string;
+  providerSubscriptionReference: string | null;
+  amountPaise: number;
+  currency: string;
+  status: string;
+  amountRefundedPaise: number;
+}
+
+export interface RateLimitResult {
+  allowed: boolean;
+  count: number;
+  retryAfterSeconds: number;
+}
+
 /**
- * Persistence boundary for accounts and personal data.
- * Implementations: file store (local/dev, now) and Postgres via Drizzle (lib/db/schema.ts, later).
+ * Persistence boundary for accounts, entitlements, billing and personal data.
+ * Implementation: Postgres via Drizzle (./pg-store.ts). Every method is scoped by user id where the data is personal.
  */
 export interface UserStore {
   findUserByEmail(email: string): Promise<UserRecord | null>;
@@ -46,7 +76,19 @@ export interface UserStore {
 
   listSubscriptions(userId: string): Promise<Subscription[]>;
   addSubscription(input: Omit<Subscription, "id">): Promise<Subscription>;
-  updateSubscription(id: string, patch: Partial<Omit<Subscription, "id" | "userId">>): Promise<void>;
+  updateSubscription(id: string, patch: Partial<Omit<Subscription, "id" | "userId" | "qualification">>): Promise<void>;
+  findSubscriptionByProviderReference(source: Subscription["source"], providerReference: string): Promise<Subscription | null>;
+  /** Insert or update the row for a provider subscription. Safe to call repeatedly with the same state. */
+  upsertProviderSubscription(state: ProviderSubscriptionState): Promise<Subscription>;
+
+  /** Records a webhook delivery. Returns false when this event id was already recorded (duplicate delivery). */
+  recordWebhookEvent(provider: Subscription["source"], eventId: string, eventType: string, payload: unknown): Promise<boolean>;
+  markWebhookEvent(provider: Subscription["source"], eventId: string, outcome: string): Promise<void>;
+  upsertPayment(input: PaymentRecordInput): Promise<void>;
+
+  /** Fixed-window counter shared by all instances. Counts this hit and reports whether it is within `limit`. */
+  hitRateLimit(key: string, limit: number, windowSeconds: number): Promise<RateLimitResult>;
+  resetRateLimit(key: string): Promise<void>;
 
   listBookmarks(userId: string): Promise<BookmarkRecord[]>;
   toggleBookmark(userId: string, questionId: string): Promise<boolean>; // returns new state

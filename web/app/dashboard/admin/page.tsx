@@ -19,7 +19,7 @@ export default function Page() {
 async function Content() {
   await requireAdmin();
   const users = await store.listUsers();
-  const rows = await Promise.all(users.map(async (u) => ({ u, e: resolveEntitlements(await store.listSubscriptions(u.id)) })));
+  const rows = await Promise.all(users.map(async (u) => ({ u, e: resolveEntitlements(await store.listSubscriptions(u.id), "cs") })));
   return (
     <>
       <DashHeading title="Admin" lead="Grant or revoke Pro with an explicit ADMIN_GRANT subscription (no expiry). Every grant is recorded with who issued it." />
