@@ -35,7 +35,7 @@ export function PageHeader({
         )}
         <div className="animate-rise">
           {eyebrow && <Eyebrow className="mb-3">{eyebrow}</Eyebrow>}
-          <h1 className="max-w-3xl text-display-lg font-semibold">{title}</h1>
+          <h1 className="max-w-3xl text-display-lg font-semibold [overflow-wrap:anywhere]">{title}</h1>
           {lead && <p className="mt-4 max-w-2xl text-[1.0625rem] leading-relaxed text-ink-3">{lead}</p>}
           {children && <div className="mt-6">{children}</div>}
         </div>

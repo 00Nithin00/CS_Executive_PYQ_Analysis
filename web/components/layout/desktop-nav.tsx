@@ -3,7 +3,7 @@
 import { m } from "motion/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { PRIMARY_NAV } from "@/lib/config/site";
+import { isNavActive, PRIMARY_NAV } from "@/lib/config/site";
 import { cn } from "@/lib/utils/cn";
 
 export function DesktopNav() {
@@ -12,7 +12,7 @@ export function DesktopNav() {
     <nav aria-label="Primary" className="hidden lg:block">
       <ul className="flex items-center gap-1">
         {PRIMARY_NAV.map((item) => {
-          const active = pathname === item.href || pathname.startsWith(`${item.href}/`);
+          const active = isNavActive(item, pathname);
           return (
             <li key={item.href} className="relative">
               <Link

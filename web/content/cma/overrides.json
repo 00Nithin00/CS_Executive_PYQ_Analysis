@@ -1,0 +1,358 @@
+{
+ "_comment": "Facts entered by hand from the official syllabus. Every value carries its citation; the import pipeline refuses uncited overrides.",
+ "papers": {
+  "cma-f-p1": {
+   "marks": 100,
+   "groupId": null,
+   "citation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13 'CMA Course Structure' (Foundation, total 400); PDF p.16 note 'Each Paper carries 100 marks'"
+   }
+  },
+  "cma-f-p2": {
+   "marks": 100,
+   "groupId": null,
+   "citation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13 'CMA Course Structure' (Foundation, total 400); PDF p.16 note 'Each Paper carries 100 marks'"
+   }
+  },
+  "cma-f-p3": {
+   "marks": 100,
+   "groupId": null,
+   "citation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13 'CMA Course Structure' (Foundation, total 400); PDF p.16 note 'Each Paper carries 100 marks'"
+   }
+  },
+  "cma-f-p4": {
+   "marks": 100,
+   "groupId": null,
+   "citation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13 'CMA Course Structure' (Foundation, total 400); PDF p.16 note 'Each Paper carries 100 marks'"
+   }
+  },
+  "cma-i-p5": {
+   "marks": 100,
+   "groupId": "1",
+   "citation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13 'CMA Course Structure' lists Paper 5 under GROUP\u2013I; 'Each Paper carries 100 marks' note (PDF pp.16\u201319)"
+   }
+  },
+  "cma-i-p6": {
+   "marks": 100,
+   "groupId": "1",
+   "citation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13 'CMA Course Structure' lists Paper 6 under GROUP\u2013I; 'Each Paper carries 100 marks' note (PDF pp.16\u201319)"
+   }
+  },
+  "cma-i-p7": {
+   "marks": 100,
+   "groupId": "1",
+   "citation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13 'CMA Course Structure' lists Paper 7 under GROUP\u2013I; 'Each Paper carries 100 marks' note (PDF pp.16\u201319)"
+   }
+  },
+  "cma-i-p8": {
+   "marks": 100,
+   "groupId": "1",
+   "citation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13 'CMA Course Structure' lists Paper 8 under GROUP\u2013I; 'Each Paper carries 100 marks' note (PDF pp.16\u201319)"
+   }
+  },
+  "cma-i-p9": {
+   "marks": 100,
+   "groupId": "2",
+   "citation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13 'CMA Course Structure' lists Paper 9 under GROUP\u2013II; 'Each Paper carries 100 marks' note (PDF pp.16\u201319)"
+   }
+  },
+  "cma-i-p10": {
+   "marks": 100,
+   "groupId": "2",
+   "citation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13 'CMA Course Structure' lists Paper 10 under GROUP\u2013II; 'Each Paper carries 100 marks' note (PDF pp.16\u201319)"
+   }
+  },
+  "cma-i-p11": {
+   "marks": 100,
+   "groupId": "2",
+   "citation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13 'CMA Course Structure' lists Paper 11 under GROUP\u2013II; 'Each Paper carries 100 marks' note (PDF pp.16\u201319)"
+   }
+  },
+  "cma-i-p12": {
+   "marks": 100,
+   "groupId": "2",
+   "citation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13 'CMA Course Structure' lists Paper 12 under GROUP\u2013II; 'Each Paper carries 100 marks' note (PDF pp.16\u201319)"
+   }
+  },
+  "cma-fin-p13": {
+   "marks": 100,
+   "groupId": "3",
+   "citation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13 'CMA Course Structure' lists Paper 13 under GROUP\u2013III; 'Each Paper carries 100 marks' note (PDF pp.16\u201319)"
+   }
+  },
+  "cma-fin-p14": {
+   "marks": 100,
+   "groupId": "3",
+   "citation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13 'CMA Course Structure' lists Paper 14 under GROUP\u2013III; 'Each Paper carries 100 marks' note (PDF pp.16\u201319)"
+   }
+  },
+  "cma-fin-p15": {
+   "marks": 100,
+   "groupId": "3",
+   "citation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13 'CMA Course Structure' lists Paper 15 under GROUP\u2013III; 'Each Paper carries 100 marks' note (PDF pp.16\u201319)"
+   }
+  },
+  "cma-fin-p16": {
+   "marks": 100,
+   "groupId": "3",
+   "citation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13 'CMA Course Structure' lists Paper 16 under GROUP\u2013III; 'Each Paper carries 100 marks' note (PDF pp.16\u201319)"
+   }
+  },
+  "cma-fin-p17": {
+   "marks": 100,
+   "groupId": "4",
+   "citation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13 'CMA Course Structure' lists Paper 17 under GROUP\u2013IV; 'Each Paper carries 100 marks' note (PDF pp.16\u201319)"
+   }
+  },
+  "cma-fin-p18": {
+   "marks": 100,
+   "groupId": "4",
+   "citation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13 'CMA Course Structure' lists Paper 18 under GROUP\u2013IV; 'Each Paper carries 100 marks' note (PDF pp.16\u201319)"
+   }
+  },
+  "cma-fin-p19": {
+   "marks": 100,
+   "groupId": "4",
+   "citation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13 'CMA Course Structure' lists Paper 19 under GROUP\u2013IV; 'Each Paper carries 100 marks' note (PDF pp.16\u201319)"
+   }
+  },
+  "cma-fin-p20a": {
+   "marks": 100,
+   "groupId": null,
+   "elective": true,
+   "citation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13 'ELECTIVES' 20A/20B/20C: students select any one at Final enrolment; not assigned to a group in the structure table; 'Each Paper carries 100 marks'"
+   }
+  },
+  "cma-fin-p20b": {
+   "marks": 100,
+   "groupId": null,
+   "elective": true,
+   "citation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13 'ELECTIVES' 20A/20B/20C: students select any one at Final enrolment; not assigned to a group in the structure table; 'Each Paper carries 100 marks'"
+   }
+  },
+  "cma-fin-p20c": {
+   "marks": 100,
+   "groupId": null,
+   "elective": true,
+   "citation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13 'ELECTIVES' 20A/20B/20C: students select any one at Final enrolment; not assigned to a group in the structure table; 'Each Paper carries 100 marks'"
+   }
+  }
+ },
+ "levels": {
+  "foundation": {
+   "groups": [],
+   "totalMarks": 400,
+   "structureCitation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13: Foundation [TOTAL MARKS: 400], no groups"
+   }
+  },
+  "intermediate": {
+   "groups": [
+    {
+     "id": "1",
+     "name": "Group I",
+     "paperIds": [
+      "cma-i-p5",
+      "cma-i-p6",
+      "cma-i-p7",
+      "cma-i-p8"
+     ]
+    },
+    {
+     "id": "2",
+     "name": "Group II",
+     "paperIds": [
+      "cma-i-p9",
+      "cma-i-p10",
+      "cma-i-p11",
+      "cma-i-p12"
+     ]
+    }
+   ],
+   "totalMarks": 800,
+   "structureCitation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13: Intermediate [TOTAL MARKS: 800], Group\u2013I P5\u2013P8, Group\u2013II P9\u2013P12"
+   }
+  },
+  "final": {
+   "groups": [
+    {
+     "id": "3",
+     "name": "Group III",
+     "paperIds": [
+      "cma-fin-p13",
+      "cma-fin-p14",
+      "cma-fin-p15",
+      "cma-fin-p16"
+     ]
+    },
+    {
+     "id": "4",
+     "name": "Group IV",
+     "paperIds": [
+      "cma-fin-p17",
+      "cma-fin-p18",
+      "cma-fin-p19"
+     ]
+    }
+   ],
+   "electives": {
+    "chooseOne": [
+     "cma-fin-p20a",
+     "cma-fin-p20b",
+     "cma-fin-p20c"
+    ]
+   },
+   "totalMarks": 800,
+   "structureCitation": {
+    "document": "CMA Syllabus 2022 (CMA_Syllabus2022_FV.pdf)",
+    "url": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+    "linkedFrom": "https://icmai.in/ClntStudents/CMASyllabus",
+    "sha256": "25b9b19a837974e2bbd65c1327dcfb85144148e1607aa3f246402a17a6196445",
+    "readAt": "2026-10-23",
+    "location": "PDF p.13: Final [TOTAL MARKS: 800], Group\u2013III P13\u2013P16, Group\u2013IV P17\u2013P19, Electives 20A/20B/20C (choose one at enrolment)"
+   }
+  }
+ }
+}

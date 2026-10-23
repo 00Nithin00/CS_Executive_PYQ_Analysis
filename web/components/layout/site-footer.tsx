@@ -12,8 +12,8 @@ export function SiteFooter() {
           <div className="max-w-xs">
             <ProductLogo variant="horizontal" />
             <p className="mt-4 text-sm leading-relaxed text-ink-3">
-              An independent preparation platform for the ICSI CS Executive Programme. Not affiliated with or endorsed by the Institute of
-              Company Secretaries of India.
+              An independent preparation platform for CA, CMA and CS students. Not affiliated with or endorsed by ICAI, ICMAI or ICSI
+              (the Institutes of Chartered Accountants, Cost Accountants and Company Secretaries of India).
             </p>
           </div>
           <FooterCol title="Subjects" links={SUBJECTS.map((s) => ({ href: `/subjects/${s.slug}`, label: s.shortName }))} />
@@ -29,7 +29,7 @@ export function SiteFooter() {
           />
         </div>
         <div className="mt-10 flex flex-col gap-2 border-t border-line pt-6 text-xs text-ink-3 sm:flex-row sm:justify-between">
-          <p>Official documents are linked at their ICSI source and are not re-hosted here.</p>
+          <p>Official documents are linked at their ICAI, ICMAI or ICSI source and are not re-hosted here.</p>
           <p>Historical patterns describe past examinations. They do not predict future questions.</p>
         </div>
       </Container>

@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState, type MouseEvent, type ReactNode } from "react";
 import { useFocusTrap } from "@/lib/utils/use-focus-trap";
-import { PRIMARY_NAV, RESOURCE_SECTIONS } from "@/lib/config/site";
+import { isNavActive, PRIMARY_NAV, RESOURCE_SECTIONS } from "@/lib/config/site";
 import { cn } from "@/lib/utils/cn";
 
 /** Full-height panel that slides down under the header, with staggered links. */
@@ -100,8 +100,8 @@ export function MobileMenu({ authSlot }: { authSlot: ReactNode }) {
               variants={{ hidden: {}, show: { transition: { staggerChildren: 0.035, delayChildren: 0.05 } } }}
             >
               <ul className="divide-y divide-line border-y border-line">
-                {[{ href: "/", label: "Home" }, ...PRIMARY_NAV, { href: "/papers", label: "Previous Papers" }].map((item) => {
-                  const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
+                {[{ href: "/", label: "Home" }, ...PRIMARY_NAV, { href: "/papers", label: "CS Previous Papers" }].map((item) => {
+                  const active = item.href === "/" ? pathname === "/" : isNavActive(item, pathname);
                   return (
                     <m.li key={item.href} variants={{ hidden: { opacity: 0, y: 8 }, show: { opacity: 1, y: 0 } }}>
                       <Link

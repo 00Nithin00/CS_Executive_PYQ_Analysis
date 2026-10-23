@@ -18,7 +18,8 @@
     "db:migrate": "node scripts/db-migrate.mjs",
     "test": "vitest run",
     "test:watch": "vitest",
-    "e2e:auth": "node scripts/e2e-auth.mjs"
+    "e2e:auth": "node scripts/e2e-auth.mjs",
+    "content:import": "node scripts/import-qualification.mjs"
   },
   "dependencies": {
     "drizzle-orm": "^0.45.3",

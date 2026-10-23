@@ -1,0 +1,3820 @@
+{
+  "qualification": "CMA",
+  "body": {
+    "name": "The Institute of Cost Accountants of India",
+    "url": "https://icmai.in"
+  },
+  "retrievedAt": "2026-10-23",
+  "schemes": [
+    {
+      "id": "cma-2022",
+      "name": "CMA Syllabus 2022",
+      "effectiveFrom": "Admission/Registration/Enrollment under CMA Syllabus 2022 commenced from 1st August, 2022 and onwards (June 2023 term of Examinations and onwards)",
+      "sourceUrls": [
+        "https://icmai.in/ClntStudents/CMASyllabus",
+        "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+        "https://icmai.in/ClntStudents/CMACurriculum",
+        "https://dwpivt501gtb6.cloudfront.net/upload/students/Curriculum_2022.pdf",
+        "https://icmai.in/ClntStudents/Student_News_Update_inner",
+        "https://dwpivt501gtb6.cloudfront.net/upload/students/Notification_ARE_0707_22.pdf"
+      ]
+    }
+  ],
+  "levels": [
+    {
+      "id": "foundation",
+      "name": "Foundation Course",
+      "schemeId": "cma-2022",
+      "examSessions": [
+        "June",
+        "December"
+      ],
+      "examSessionsSourceUrl": "https://icmai.in/ClntStudents/ClntQuestionPaperList",
+      "groups": []
+    },
+    {
+      "id": "intermediate",
+      "name": "Intermediate Course",
+      "schemeId": "cma-2022",
+      "examSessions": [
+        "June",
+        "December"
+      ],
+      "examSessionsSourceUrl": "https://icmai.in/ClntStudents/ClntQuestionPaperList",
+      "groups": []
+    },
+    {
+      "id": "final",
+      "name": "Final Course",
+      "schemeId": "cma-2022",
+      "examSessions": [
+        "June",
+        "December"
+      ],
+      "examSessionsSourceUrl": "https://icmai.in/ClntStudents/ClntQuestionPaperList",
+      "groups": []
+    }
+  ],
+  "papers": [
+    {
+      "id": "cma-f-p1",
+      "levelId": "foundation",
+      "groupId": null,
+      "number": 1,
+      "name": "Fundamentals of Business Laws and Business Communication",
+      "marks": null,
+      "format": "unknown",
+      "sourceUrl": "https://icmai.in/ClntStudents/CourseCurriculum/1"
+    },
+    {
+      "id": "cma-f-p2",
+      "levelId": "foundation",
+      "groupId": null,
+      "number": 2,
+      "name": "Fundamentals of Financial and Cost Accounting",
+      "marks": null,
+      "format": "unknown",
+      "sourceUrl": "https://icmai.in/ClntStudents/CourseCurriculum/1"
+    },
+    {
+      "id": "cma-f-p3",
+      "levelId": "foundation",
+      "groupId": null,
+      "number": 3,
+      "name": "Fundamentals of Business Mathematics and Statistics",
+      "marks": null,
+      "format": "unknown",
+      "sourceUrl": "https://icmai.in/ClntStudents/CourseCurriculum/1"
+    },
+    {
+      "id": "cma-f-p4",
+      "levelId": "foundation",
+      "groupId": null,
+      "number": 4,
+      "name": "Fundamentals of Business Economics and Management",
+      "marks": null,
+      "format": "unknown",
+      "sourceUrl": "https://icmai.in/ClntStudents/CourseCurriculum/1"
+    },
+    {
+      "id": "cma-i-p5",
+      "levelId": "intermediate",
+      "groupId": null,
+      "number": 5,
+      "name": "Business Laws and Ethics",
+      "marks": null,
+      "format": "unknown",
+      "sourceUrl": "https://icmai.in/ClntStudents/CourseCurriculum/2"
+    },
+    {
+      "id": "cma-i-p6",
+      "levelId": "intermediate",
+      "groupId": null,
+      "number": 6,
+      "name": "Financial Accounting",
+      "marks": null,
+      "format": "unknown",
+      "sourceUrl": "https://icmai.in/ClntStudents/CourseCurriculum/2"
+    },
+    {
+      "id": "cma-i-p7",
+      "levelId": "intermediate",
+      "groupId": null,
+      "number": 7,
+      "name": "Direct and Indirect Taxation",
+      "marks": null,
+      "format": "unknown",
+      "sourceUrl": "https://icmai.in/ClntStudents/CourseCurriculum/2"
+    },
+    {
+      "id": "cma-i-p8",
+      "levelId": "intermediate",
+      "groupId": null,
+      "number": 8,
+      "name": "Cost Accounting",
+      "marks": null,
+      "format": "unknown",
+      "sourceUrl": "https://icmai.in/ClntStudents/CourseCurriculum/2"
+    },
+    {
+      "id": "cma-i-p9",
+      "levelId": "intermediate",
+      "groupId": null,
+      "number": 9,
+      "name": "Operations Management and Strategic Management",
+      "marks": null,
+      "format": "unknown",
+      "sourceUrl": "https://icmai.in/ClntStudents/CourseCurriculum/2"
+    },
+    {
+      "id": "cma-i-p10",
+      "levelId": "intermediate",
+      "groupId": null,
+      "number": 10,
+      "name": "Corporate Accounting and Auditing",
+      "marks": null,
+      "format": "unknown",
+      "sourceUrl": "https://icmai.in/ClntStudents/CourseCurriculum/2"
+    },
+    {
+      "id": "cma-i-p11",
+      "levelId": "intermediate",
+      "groupId": null,
+      "number": 11,
+      "name": "Financial Management and Business Data Analytics",
+      "marks": null,
+      "format": "unknown",
+      "sourceUrl": "https://icmai.in/ClntStudents/CourseCurriculum/2"
+    },
+    {
+      "id": "cma-i-p12",
+      "levelId": "intermediate",
+      "groupId": null,
+      "number": 12,
+      "name": "Management Accounting",
+      "marks": null,
+      "format": "unknown",
+      "sourceUrl": "https://icmai.in/ClntStudents/CourseCurriculum/2"
+    },
+    {
+      "id": "cma-fin-p13",
+      "levelId": "final",
+      "groupId": null,
+      "number": 13,
+      "name": "Corporate and Economic Laws",
+      "marks": null,
+      "format": "unknown",
+      "sourceUrl": "https://icmai.in/ClntStudents/CourseCurriculum/3"
+    },
+    {
+      "id": "cma-fin-p14",
+      "levelId": "final",
+      "groupId": null,
+      "number": 14,
+      "name": "Strategic Financial Management",
+      "marks": null,
+      "format": "unknown",
+      "sourceUrl": "https://icmai.in/ClntStudents/CourseCurriculum/3"
+    },
+    {
+      "id": "cma-fin-p15",
+      "levelId": "final",
+      "groupId": null,
+      "number": 15,
+      "name": "Direct Tax Laws and International Taxation",
+      "marks": null,
+      "format": "unknown",
+      "sourceUrl": "https://icmai.in/ClntStudents/CourseCurriculum/3"
+    },
+    {
+      "id": "cma-fin-p16",
+      "levelId": "final",
+      "groupId": null,
+      "number": 16,
+      "name": "Strategic Cost Management",
+      "marks": null,
+      "format": "unknown",
+      "sourceUrl": "https://icmai.in/ClntStudents/CourseCurriculum/3"
+    },
+    {
+      "id": "cma-fin-p17",
+      "levelId": "final",
+      "groupId": null,
+      "number": 17,
+      "name": "Cost and Management Audit",
+      "marks": null,
+      "format": "unknown",
+      "sourceUrl": "https://icmai.in/ClntStudents/CourseCurriculum/3"
+    },
+    {
+      "id": "cma-fin-p18",
+      "levelId": "final",
+      "groupId": null,
+      "number": 18,
+      "name": "Corporate Financial Reporting",
+      "marks": null,
+      "format": "unknown",
+      "sourceUrl": "https://icmai.in/ClntStudents/CourseCurriculum/3"
+    },
+    {
+      "id": "cma-fin-p19",
+      "levelId": "final",
+      "groupId": null,
+      "number": 19,
+      "name": "Indirect Tax Laws and Practice",
+      "marks": null,
+      "format": "unknown",
+      "sourceUrl": "https://icmai.in/ClntStudents/CourseCurriculum/3"
+    },
+    {
+      "id": "cma-fin-p20a",
+      "levelId": "final",
+      "groupId": null,
+      "number": 20,
+      "name": "Strategic Performance Management and Business Valuation",
+      "marks": null,
+      "format": "unknown",
+      "sourceUrl": "https://icmai.in/ClntStudents/CourseCurriculum/3"
+    },
+    {
+      "id": "cma-fin-p20b",
+      "levelId": "final",
+      "groupId": null,
+      "number": 20,
+      "name": "Risk Management in Banking and Insurance",
+      "marks": null,
+      "format": "unknown",
+      "sourceUrl": "https://icmai.in/ClntStudents/CourseCurriculum/3"
+    },
+    {
+      "id": "cma-fin-p20c",
+      "levelId": "final",
+      "groupId": null,
+      "number": 20,
+      "name": "Entrepreneurship and Startup",
+      "marks": null,
+      "format": "unknown",
+      "sourceUrl": "https://icmai.in/ClntStudents/CourseCurriculum/3"
+    }
+  ],
+  "resources": [
+    {
+      "id": "cma-f-syl-p1",
+      "title": "Course Curriculum 2022 - PAPER 1: FUNDAMENTALS OF BUSINESS LAWS AND BUSINESS COMMUNICATION (FBLC)",
+      "resourceType": "SYLLABUS",
+      "levelId": "foundation",
+      "paperId": "cma-f-p1",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Syllabus2022/Foundation/P1.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CourseCurriculum/1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-f-syl-p2",
+      "title": "Course Curriculum 2022 - PAPER 2: FUNDAMENTALS OF FINANCIAL AND COST ACCOUNTING (FFCA)",
+      "resourceType": "SYLLABUS",
+      "levelId": "foundation",
+      "paperId": "cma-f-p2",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Syllabus2022/Foundation/P2.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CourseCurriculum/1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-f-syl-p3",
+      "title": "Course Curriculum 2022 - PAPER 3: FUNDAMENTALS OF BUSINESS MATHEMATICS AND STATISTICS (FBMS)",
+      "resourceType": "SYLLABUS",
+      "levelId": "foundation",
+      "paperId": "cma-f-p3",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Syllabus2022/Foundation/P3.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CourseCurriculum/1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-f-syl-p4",
+      "title": "Course Curriculum 2022 - PAPER 4: FUNDAMENTALS OF BUSINESS ECONOMICS AND MANAGEMENT (FBEM)",
+      "resourceType": "SYLLABUS",
+      "levelId": "foundation",
+      "paperId": "cma-f-p4",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Syllabus2022/Foundation/P4.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CourseCurriculum/1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-f-syl",
+      "title": "CMA Syllabus 2022 Full Version",
+      "resourceType": "SYLLABUS",
+      "levelId": "foundation",
+      "paperId": null,
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CMASyllabus",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Single document covering Foundation, Intermediate and Final; repeated once per level because the schema requires a levelId. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-f-sm-p1",
+      "title": "Study Material (Syllabus 2022) - Paper 1: Fundamentals of Business Laws and Business Communication (FBLC)",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "foundation",
+      "paperId": "cma-f-p1",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Paper1_07042026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/StudyMaterials/1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-f-sm-p2",
+      "title": "Study Material (Syllabus 2022) - Paper 2: Fundamentals of Financial and Cost Accounting (FFCA)",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "foundation",
+      "paperId": "cma-f-p2",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Paper2_07042026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/StudyMaterials/1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-f-sm-p3",
+      "title": "Study Material (Syllabus 2022) - Paper 3: Fundamentals of Business Mathematics and Statistics (FBMS)",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "foundation",
+      "paperId": "cma-f-p3",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Paper3_07042026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/StudyMaterials/1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-f-sm-p4",
+      "title": "Study Material (Syllabus 2022) - Paper 4: Fundamentals of Business Economics and Management (FBEM)",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "foundation",
+      "paperId": "cma-f-p4",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Paper4_07042026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/StudyMaterials/1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-f-qp-p1-2026-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2026 Term - Paper- 1 : Fundamentals of Business Laws and Business Communication",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "foundation",
+      "paperId": "cma-f-p1",
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/June_2026/Syllabus_2022/3b8fe5f1-b08d-4222-a8a1-86bd5307039f_P01_FBLC_JUNE_2026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-f-qp-p2-2026-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2026 Term - Paper- 2 : Fundamentals of Financial and Cost Accounting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "foundation",
+      "paperId": "cma-f-p2",
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/June_2026/Syllabus_2022/02a0b19c-5185-47ef-a47d-19e66e0d0f7f_P02_FFCA_JUNE_2026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-f-qp-p3-2026-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2026 Term - Paper- 3 : Fundamentals of Business Mathematics and Statistics",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "foundation",
+      "paperId": "cma-f-p3",
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/June_2026/Syllabus_2022/c32c5da7-5942-4f6c-94cb-f8b45fd99c93_P03_FBMS_JUNE%202026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200. URL contains spaces in the official link; recorded percent-encoded (%20)."
+    },
+    {
+      "id": "cma-f-qp-p4-2026-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2026 Term - Paper- 4 : Fundamentals of Business Economics and Management",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "foundation",
+      "paperId": "cma-f-p4",
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/June_2026/Syllabus_2022/e7e4124f-5350-41b7-ad53-cf6a43151377_P04_FBEM_JUNE_2026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-f-mqp-p3-2026-12",
+      "title": "MQP - Foundation - Syllabus 2022 (December 2026 Term) - PAPER - 3 FUNDAMENTALS OF BUSINESS MATHEMATICS & STATISTICS",
+      "resourceType": "MTP",
+      "levelId": "foundation",
+      "paperId": "cma-f-p3",
+      "attempt": "2026-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/MQP/December_2026/Foundation/573a025f-9836-4d05-91c1-1e0bcc4a7814_Q_MQP_Paper%203_Syl22_Dec2026_Set1_Uploading.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntMQPList",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Model Question Paper (ICMAI term \"MQP\"). Only paper shown on the default MQP page; other MQP terms/levels are reachable only via POST form buttons, which were not used. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200. URL contains spaces in the official link; recorded percent-encoded (%20)."
+    },
+    {
+      "id": "cma-f-ptp-p1-answers",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 1 - FUNDAMENTALS OF BUSINESS LAWS AND BUSINESS COMMUNICATION - Answers",
+      "resourceType": "MTP",
+      "levelId": "foundation",
+      "paperId": "cma-f-p1",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Foundation/AnswerPaper1.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; answer paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-f-ptp-p1-questions",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 1 - FUNDAMENTALS OF BUSINESS LAWS AND BUSINESS COMMUNICATION - Questions",
+      "resourceType": "MTP",
+      "levelId": "foundation",
+      "paperId": "cma-f-p1",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Foundation/Paper1.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; question paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-f-ptp-p2-answers",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 2 - FUNDAMENTALS OF FINANCIAL AND COST ACCOUNTING - Answers",
+      "resourceType": "MTP",
+      "levelId": "foundation",
+      "paperId": "cma-f-p2",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Foundation/AnswerPaper2.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; answer paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-f-ptp-p2-questions",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 2 - FUNDAMENTALS OF FINANCIAL AND COST ACCOUNTING - Questions",
+      "resourceType": "MTP",
+      "levelId": "foundation",
+      "paperId": "cma-f-p2",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Foundation/Paper2.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; question paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-f-ptp-p3-answers",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 3 - FUNDAMENTALS OF BUSINESS MATHEMATICS AND STATISTICS - Answers",
+      "resourceType": "MTP",
+      "levelId": "foundation",
+      "paperId": "cma-f-p3",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Foundation/AnswerPaper3.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; answer paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-f-ptp-p3-questions",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 3 - FUNDAMENTALS OF BUSINESS MATHEMATICS AND STATISTICS - Questions",
+      "resourceType": "MTP",
+      "levelId": "foundation",
+      "paperId": "cma-f-p3",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Foundation/Paper3.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; question paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-f-ptp-p4-answers",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 4 - FUNDAMENTALS OF BUSINESS ECONOMICS AND MANAGEMENT - Answers",
+      "resourceType": "MTP",
+      "levelId": "foundation",
+      "paperId": "cma-f-p4",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Foundation/AnswerPaper4.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; answer paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-f-ptp-p4-questions",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 4 - FUNDAMENTALS OF BUSINESS ECONOMICS AND MANAGEMENT - Questions",
+      "resourceType": "MTP",
+      "levelId": "foundation",
+      "paperId": "cma-f-p4",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Foundation/Paper4.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; question paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-f-notice-2026-12-foundation-course-examination-time-table-programme",
+      "title": "Foundation Course Examination Time Table & Programme – December 2026",
+      "resourceType": "NOTICE",
+      "levelId": "foundation",
+      "paperId": null,
+      "attempt": "2026-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/DECEMBER_2026_FOUNDATION_20260813143427.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Overview",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-f-notice-admission-registration-enrollment-in-foundation-in",
+      "title": "Admission/ Registration/Enrollment in Foundation/ Intermediate/ Final Course under CMA Syllabus 2022 to be commenced from 1st August, 2022 and onwards (June 2023 term of Examinations and onwards).",
+      "resourceType": "NOTICE",
+      "levelId": "foundation",
+      "paperId": null,
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Notification_ARE_0707_22.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Student_News_Update_inner",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Applies to all three levels; levelId set to foundation only because the schema requires one level. Source of schemes[0].effectiveFrom. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-syl-p5",
+      "title": "Course Curriculum 2022 - PAPER 5: BUSINESS LAWS AND ETHICS (BLE)",
+      "resourceType": "SYLLABUS",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p5",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P5.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CourseCurriculum/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-syl-p6",
+      "title": "Course Curriculum 2022 - PAPER 6: FINANCIAL ACCOUNTING (FA)",
+      "resourceType": "SYLLABUS",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p6",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P6.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CourseCurriculum/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-syl-p7",
+      "title": "Course Curriculum 2022 - PAPER 7: DIRECT AND INDIRECT TAXATION (DITX)",
+      "resourceType": "SYLLABUS",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p7",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P7.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CourseCurriculum/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-syl-p8",
+      "title": "Course Curriculum 2022 - PAPER 8: COST ACCOUNTING (CA)",
+      "resourceType": "SYLLABUS",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p8",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P8.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CourseCurriculum/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-syl-p9",
+      "title": "Course Curriculum 2022 - PAPER 9: OPERATIONS MANAGEMENT AND STRATEGIC MANAGEMENT (OMSM)",
+      "resourceType": "SYLLABUS",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p9",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P9.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CourseCurriculum/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-syl-p10",
+      "title": "Course Curriculum 2022 - PAPER 10: CORPORATE ACCOUNTING AND AUDITING (CAA)",
+      "resourceType": "SYLLABUS",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p10",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P10.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CourseCurriculum/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-syl-p11",
+      "title": "Course Curriculum 2022 - PAPER 11: FINANCIAL MANAGEMENT AND BUSINESS DATA ANALYTICS (FMDA)",
+      "resourceType": "SYLLABUS",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p11",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P11.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CourseCurriculum/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-syl-p12",
+      "title": "Course Curriculum 2022 - PAPER 12: MANAGEMENT ACCOUNTING (MA)",
+      "resourceType": "SYLLABUS",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p12",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P12.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CourseCurriculum/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-syl",
+      "title": "CMA Syllabus 2022 Full Version",
+      "resourceType": "SYLLABUS",
+      "levelId": "intermediate",
+      "paperId": null,
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CMASyllabus",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Single document covering Foundation, Intermediate and Final; repeated once per level because the schema requires a levelId. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-supp-p5-2026-12",
+      "title": "Supplementary for December 2026 Term of Examinations (Syllabus 2022) - Paper 5",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p5",
+      "attempt": "2026-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/supplementary/Supplementary_Paper%205%20for%20December%202026%20Term%20of%20Examination%20(1)_20260828145435.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Supplementary_currentterm",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Supplementary study material (amendments) applicable to the December 2026 term, listed under \"Supplementary for December 2026 Term of Examinations - Syllabus 2022\". Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200. URL contains spaces in the official link; recorded percent-encoded (%20)."
+    },
+    {
+      "id": "cma-i-supp-p6-2026-12",
+      "title": "Supplementary for December 2026 Term of Examinations (Syllabus 2022) - Paper 6",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p6",
+      "attempt": "2026-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/supplementary/Supplementary_Paper%206%20for%20December%202026%20Term%20of%20Examination_20260828154818.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Supplementary_currentterm",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Supplementary study material (amendments) applicable to the December 2026 term, listed under \"Supplementary for December 2026 Term of Examinations - Syllabus 2022\". Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200. URL contains spaces in the official link; recorded percent-encoded (%20)."
+    },
+    {
+      "id": "cma-i-supp-p7-sec-b-7a-2026-12",
+      "title": "Supplementary for December 2026 Term of Examinations (Syllabus 2022) - Paper 7A",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p7",
+      "attempt": "2026-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/supplementary/Supplementary_Paper%207A%20for%20December%202026%20Term%20of%20Examination)_20260828154849.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Supplementary_currentterm",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Supplementary study material (amendments) applicable to the December 2026 term, listed under \"Supplementary for December 2026 Term of Examinations - Syllabus 2022\". Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200. URL contains spaces in the official link; recorded percent-encoded (%20)."
+    },
+    {
+      "id": "cma-i-supp-p7-sec-b-7b-2026-12",
+      "title": "Supplementary for December 2026 Term of Examinations (Syllabus 2022) - Paper 7B",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p7",
+      "attempt": "2026-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/supplementary/Supplementary_Paper%207B%20for%20December%202026%20Term%20of%20Examination_20260828154918.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Supplementary_currentterm",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Supplementary study material (amendments) applicable to the December 2026 term, listed under \"Supplementary for December 2026 Term of Examinations - Syllabus 2022\". Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200. URL contains spaces in the official link; recorded percent-encoded (%20)."
+    },
+    {
+      "id": "cma-i-sm-p5",
+      "title": "Study Material (Syllabus 2022) - Paper 5: BUSINESS LAWS AND ETHICS (BLE)",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p5",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P5_0904_2026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/StudyMaterials/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-sm-p6",
+      "title": "Study Material (Syllabus 2022) - Paper 6: FINANCIAL ACCOUNTING (FA)",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p6",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P6_0904_2026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/StudyMaterials/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-sm-p7-sec-a",
+      "title": "Study Material (Syllabus 2022) - Paper 7: DIRECT AND INDIRECT TAXATION (DITX) SECTION A: DIRECT TAXATION (DT)",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p7",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P7A_0904_2026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/StudyMaterials/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-sm-p7-sec-b",
+      "title": "Study Material (Syllabus 2022) - Paper 7: DIRECT AND INDIRECT TAXATION (DITX) SECTION B: INDIRECT TAXATION (IDT)",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p7",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P7B_0904_2026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/StudyMaterials/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-sm-p8",
+      "title": "Study Material (Syllabus 2022) - Paper 8: COST ACCOUNTING (CA)",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p8",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P8_0904_2026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/StudyMaterials/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-sm-p9",
+      "title": "Study Material (Syllabus 2022) - Paper 9: OPERATIONS MANAGEMENT AND STRATEGIC MANAGEMENT (OMSM)",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p9",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P9_0904_2026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/StudyMaterials/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-sm-p10",
+      "title": "Study Material (Syllabus 2022) - Paper 10: CORPORATE ACCOUNTING AND AUDITING (CAA)",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p10",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P10_0904_2026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/StudyMaterials/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-sm-p11",
+      "title": "Study Material (Syllabus 2022) - Paper 11: FINANCIAL MANAGEMENT AND BUSINESS DATA ANALYTICS (FMDA)",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p11",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P11_0904_2026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/StudyMaterials/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-sm-p12",
+      "title": "Study Material (Syllabus 2022) - Paper 12: MANAGEMENT ACCOUNTING (MA)",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p12",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P12_0904_2026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/StudyMaterials/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p5-2026-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2026 Term - Paper-5 Business Laws and Ethics",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p5",
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/P5_BLE_JUNE_2026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200. Hosted under a different folder (QuestionPaper/syllabus2022/) than the other June 2026 files; as linked on the official page."
+    },
+    {
+      "id": "cma-i-qp-p6-2026-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2026 Term - Paper-6 Financial Accounting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p6",
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/June_2026/Syllabus_2022/19446e10-cbac-4319-9213-f998774f5e2d_P6_FA_JUNE2026_20260614075628.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p7-2026-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2026 Term - Paper-7 Direct and Indirect Taxation",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p7",
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/June_2026/Syllabus_2022/cd6d8855-ec5a-465b-bec9-19d335fe3be9_P_7_20260615183139.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p8-2026-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2026 Term - Paper-8 Cost Accounting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p8",
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/June_2026/Syllabus_2022/0f375d51-1422-4836-b345-6e8f630994f3_P-8.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p9-2026-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2026 Term - Paper-9 Operations Management and Strategic Management",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p9",
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/P9_OMSM_JUNE2026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200. Hosted under a different folder (QuestionPaper/syllabus2022/) than the other June 2026 files; as linked on the official page."
+    },
+    {
+      "id": "cma-i-qp-p10-2026-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2026 Term - Paper-10 Corporate Accounting and Auditing",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p10",
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/June_2026/Syllabus_2022/ae67ba2d-07b3-46fc-973e-dca79c734383_P10_CAA_JUNE_2026_20260615100910.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p11-2026-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2026 Term - Paper-11 Financial Management and Business Data Analytics",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p11",
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/June_2026/Syllabus_2022/33b18f78-f453-4fdd-8282-af4cf28547ee_P11_FMDA_JUNE_2026_20260616173541.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p12-2026-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2026 Term - Paper-12 Management Accounting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p12",
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/June_2026/Syllabus_2022/991788da-bad3-446f-8e18-888edbf27959_P12_CAA_JUNE%202026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200. URL contains spaces in the official link; recorded percent-encoded (%20)."
+    },
+    {
+      "id": "cma-i-qp-p5-2025-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2025 Term - Paper-5 Business Laws and Ethics",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p5",
+      "attempt": "2025-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec25/Paper5.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p6-2025-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2025 Term - Paper-6 Financial Accounting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p6",
+      "attempt": "2025-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec25/Paper6.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p7-2025-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2025 Term - Paper-7 Direct and Indirect Taxation",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p7",
+      "attempt": "2025-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec25/Paper7.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p8-2025-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2025 Term - Paper-8 Cost Accounting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p8",
+      "attempt": "2025-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec25/Paper8.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p9-2025-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2025 Term - Paper-9 Operations Management and Strategic Management",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p9",
+      "attempt": "2025-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec25/Paper9.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p10-2025-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2025 Term - Paper-10 Corporate Accounting and Auditing",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p10",
+      "attempt": "2025-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec25/Paper10.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p11-2025-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2025 Term - Paper-11 Financial Management and Business Data Analytics",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p11",
+      "attempt": "2025-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec25/Paper11.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p12-2025-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2025 Term - Paper-12 Management Accounting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p12",
+      "attempt": "2025-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec25/Paper12.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p5-2025-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2025 Term - Paper-5 Business Laws and Ethics",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p5",
+      "attempt": "2025-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/June25/Paper5.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p6-2025-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2025 Term - Paper-6 Financial Accounting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p6",
+      "attempt": "2025-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/June25/Paper6.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p7-2025-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2025 Term - Paper-7 Direct and Indirect Taxation",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p7",
+      "attempt": "2025-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/June25/Paper7.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p8-2025-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2025 Term - Paper-8 Cost Accounting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p8",
+      "attempt": "2025-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/June25/Paper8.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p9-2025-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2025 Term - Paper-9 Operations Management and Strategic Management",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p9",
+      "attempt": "2025-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/June25/Paper9.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p10-2025-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2025 Term - Paper-10 Corporate Accounting and Auditing",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p10",
+      "attempt": "2025-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/June25/Paper10.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p11-2025-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2025 Term - Paper-11 Financial Management and Business Data Analytics",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p11",
+      "attempt": "2025-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/June25/Paper11.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p12-2025-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2025 Term - Paper-12 Management Accounting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p12",
+      "attempt": "2025-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/June25/Paper12.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p5-2024-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2024 Term - Paper-5 Business Laws and Ethics",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p5",
+      "attempt": "2024-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec24/Paper5.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=4",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p6-2024-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2024 Term - Paper-6 Financial Accounting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p6",
+      "attempt": "2024-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec24/Paper6.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=4",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p7-2024-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2024 Term - Paper-7 Direct and Indirect Taxation",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p7",
+      "attempt": "2024-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec24/Paper7.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=4",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p8-2024-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2024 Term - Paper-8 Cost Accounting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p8",
+      "attempt": "2024-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec24/Paper8.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=4",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p9-2024-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2024 Term - Paper-9 Operations Management and Strategic Management",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p9",
+      "attempt": "2024-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec24/Paper9.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=4",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p10-2024-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2024 Term - Paper-10 Corporate Accounting and Auditing",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p10",
+      "attempt": "2024-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec24/Paper10.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=4",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p11-2024-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2024 Term - Paper-11 Financial Management and Business Data Analytics",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p11",
+      "attempt": "2024-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec24/Paper11.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=4",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p12-2024-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2024 Term - Paper-12 Management Accounting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p12",
+      "attempt": "2024-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec24/Paper12.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=4",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p5-2024-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2024 Term - Paper-5 Business Laws and Ethics",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p5",
+      "attempt": "2024-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Jun24/Paper5.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=5",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p6-2024-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2024 Term - Paper-6 Financial Accounting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p6",
+      "attempt": "2024-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Jun24/P6_FA.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=5",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p7-2024-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2024 Term - Paper-7 Direct and Indirect Taxation",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p7",
+      "attempt": "2024-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Jun24/Paper7.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=5",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p8-2024-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2024 Term - Paper-8 Cost Accounting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p8",
+      "attempt": "2024-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Jun24/Paper8.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=5",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p9-2024-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2024 Term - Paper-9 Operations Management and Strategic Management",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p9",
+      "attempt": "2024-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Jun24/P9_OMSM.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=5",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p10-2024-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2024 Term - Paper-10 Corporate Accounting and Auditing",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p10",
+      "attempt": "2024-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Jun24/P10_CAA.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=5",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p11-2024-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2024 Term - Paper-11 Financial Management and Business Data Analytics",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p11",
+      "attempt": "2024-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Jun24/Paper11.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=5",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p12-2024-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2024 Term - Paper-12 Management Accounting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p12",
+      "attempt": "2024-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Jun24/Paper12.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=5",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p5-2023-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2023 Term - Paper-5 Business Laws and Ethics",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p5",
+      "attempt": "2023-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec23/Paper5.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=6",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p6-2023-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2023 Term - Paper-6 Financial Accounting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p6",
+      "attempt": "2023-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec23/Paper6.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=6",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p7-2023-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2023 Term - Paper-7 Direct and Indirect Taxation",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p7",
+      "attempt": "2023-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec23/Paper7.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=6",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p8-2023-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2023 Term - Paper-8 Cost Accounting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p8",
+      "attempt": "2023-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec23/Paper8.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=6",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p9-2023-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2023 Term - Paper-9 Operations Management and Strategic Management",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p9",
+      "attempt": "2023-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec23/Paper9.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=6",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p10-2023-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2023 Term - Paper-10 Corporate Accounting and Auditing",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p10",
+      "attempt": "2023-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec23/Paper10.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=6",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p11-2023-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2023 Term - Paper-11 Financial Management and Business Data Analytics",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p11",
+      "attempt": "2023-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec23/Paper11.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=6",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-qp-p12-2023-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2023 Term - Paper-12 Management Accounting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p12",
+      "attempt": "2023-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec23/Paper12.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=6",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-ptp-p5-answers",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 5 - BUSINESS LAWS AND ETHICS - Answers",
+      "resourceType": "MTP",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p5",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Inter/PTP_Answer_Paper_5_Syllabus2022_June2026_Set_1.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; answer paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-ptp-p5-questions",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 5 - BUSINESS LAWS AND ETHICS - Questions",
+      "resourceType": "MTP",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p5",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Inter/Paper5.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; question paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-ptp-p6-answers",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 6 - FINANCIAL ACCOUNTING - Answers",
+      "resourceType": "MTP",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p6",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Inter/AnswerPaper6.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; answer paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-ptp-p6-questions",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 6 - FINANCIAL ACCOUNTING - Questions",
+      "resourceType": "MTP",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p6",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Inter/Paper6.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; question paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-ptp-p7-answers",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 7 - DIRECT AND INDIRECT TAXATION - Answers",
+      "resourceType": "MTP",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p7",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Inter/AnswerPaper7.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; answer paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-ptp-p7-questions",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 7 - DIRECT AND INDIRECT TAXATION - Questions",
+      "resourceType": "MTP",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p7",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Inter/Paper7.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; question paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-ptp-p8-answers",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 8 - COST ACCOUNTING - Answers",
+      "resourceType": "MTP",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p8",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Inter/AnswerPaper8.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; answer paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-ptp-p8-questions",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 8 - COST ACCOUNTING - Questions",
+      "resourceType": "MTP",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p8",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Inter/Paper8.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; question paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-ptp-p9-answers",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 9 - OPERATIONS MANAGEMENT AND STRATEGIC MANAGEMENT - Answers",
+      "resourceType": "MTP",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p9",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Inter/AnswerPaper9.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; answer paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-ptp-p9-questions",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 9 - OPERATIONS MANAGEMENT AND STRATEGIC MANAGEMENT - Questions",
+      "resourceType": "MTP",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p9",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Inter/Paper9.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; question paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-ptp-p10-answers",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 10 - CORPORATE ACCOUNTING AND AUDITING - Answers",
+      "resourceType": "MTP",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p10",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Inter/AnswerPaper10.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; answer paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-ptp-p10-questions",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 10 - CORPORATE ACCOUNTING AND AUDITING - Questions",
+      "resourceType": "MTP",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p10",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Inter/Paper10.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; question paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-ptp-p11-answers",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 11 - FINANCIAL MANAGEMENT AND BUSINESS DATA ANALYTICS - Answers",
+      "resourceType": "MTP",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p11",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Inter/AnswerPaper11.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; answer paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-ptp-p11-questions",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 11 - FINANCIAL MANAGEMENT AND BUSINESS DATA ANALYTICS - Questions",
+      "resourceType": "MTP",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p11",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Inter/Paper11.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; question paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-ptp-p12-answers",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 12 - MANAGEMENT ACCOUNTING - Answers",
+      "resourceType": "MTP",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p12",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Inter/PTP_Answer_Paper_12_June2026_Syllabus2022.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; answer paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-ptp-p12-questions",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 12 - MANAGEMENT ACCOUNTING - Questions",
+      "resourceType": "MTP",
+      "levelId": "intermediate",
+      "paperId": "cma-i-p12",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Inter/Paper12.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; question paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-notice-2026-12-clarification-for-december-2026-term-of-examinatio",
+      "title": "Clarification for December 2026 term of Examination under Syllabus 2022 (15.09.2026)",
+      "resourceType": "NOTICE",
+      "levelId": "intermediate",
+      "paperId": null,
+      "attempt": "2026-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Circulars/Clarification_Dec2026_20260915142245.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Student_Circulars",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Directorate of Studies clarification (applicable amendments/cut-off for the term); likely covers Intermediate and Final - content not inspected (no full PDF download). Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-notice-2026-12-intermediate-and-final-examination-time-table-prog",
+      "title": "Intermediate and Final Examination Time Table & Programme – December 2026",
+      "resourceType": "NOTICE",
+      "levelId": "intermediate",
+      "paperId": null,
+      "attempt": "2026-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/December_2026_Inter_Final_20260813143653.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Overview",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Covers both Intermediate and Final; also listed on /ClntStudents/UpdateandAnnouncements. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-notice-2026-06-clarification-for-june-2026-term-of-examination-un",
+      "title": "Clarification for June 2026 term of Examination under Syllabus 2022 (16.03.2026)",
+      "resourceType": "NOTICE",
+      "levelId": "intermediate",
+      "paperId": null,
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Circulars/DOSClarification_June2026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Student_Circulars",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Content not inspected (no full PDF download). Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-i-notice-2026-06-examiners-comments-summary-intermediate-june-2026",
+      "title": "Examiners Comments Summary - Intermediate, June 2026 (Syllabus 2022)",
+      "resourceType": "NOTICE",
+      "levelId": "intermediate",
+      "paperId": null,
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Intermediate-Examiner-Comment-Summary-JUNE-2026_20260822223824.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ExaminerComments",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-syl-p13",
+      "title": "Course Curriculum 2022 - PAPER 13: CORPORATE AND ECONOMIC LAWS (CEL)",
+      "resourceType": "SYLLABUS",
+      "levelId": "final",
+      "paperId": "cma-fin-p13",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P13.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CourseCurriculum",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-syl-p14",
+      "title": "Course Curriculum 2022 - PAPER 14: STRATEGIC FINANCIAL MANAGEMENT(SFM)",
+      "resourceType": "SYLLABUS",
+      "levelId": "final",
+      "paperId": "cma-fin-p14",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P14.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CourseCurriculum",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-syl-p15",
+      "title": "Course Curriculum 2022 - PAPER 15: DIRECT TAX LAWS AND INTERNATIONAL TAXATION (DIT)",
+      "resourceType": "SYLLABUS",
+      "levelId": "final",
+      "paperId": "cma-fin-p15",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P15.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CourseCurriculum",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-syl-p16",
+      "title": "Course Curriculum 2022 - PAPER 16: STRATEGIC COST MANAGEMENT (SCM)",
+      "resourceType": "SYLLABUS",
+      "levelId": "final",
+      "paperId": "cma-fin-p16",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P16.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CourseCurriculum",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-syl-p17",
+      "title": "Course Curriculum 2022 - PAPER 17: COST AND MANAGEMENT AUDIT (CMAD)",
+      "resourceType": "SYLLABUS",
+      "levelId": "final",
+      "paperId": "cma-fin-p17",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P17.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CourseCurriculum",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-syl-p18",
+      "title": "Course Curriculum 2022 - PAPER 18: CORPORATE FINANCIAL REPORTING (CFR)",
+      "resourceType": "SYLLABUS",
+      "levelId": "final",
+      "paperId": "cma-fin-p18",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P18.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CourseCurriculum",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-syl-p19",
+      "title": "Course Curriculum 2022 - PAPER 19: INDIRECT TAX LAWS AND PRACTICE (ITLP)",
+      "resourceType": "SYLLABUS",
+      "levelId": "final",
+      "paperId": "cma-fin-p19",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P19.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CourseCurriculum",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-syl-p20a",
+      "title": "Course Curriculum 2022 - PAPER 20A: STRATEGIC PERFORMANCE MANAGEMENT AND BUSINESS VALUATION (SPMBV)",
+      "resourceType": "SYLLABUS",
+      "levelId": "final",
+      "paperId": "cma-fin-p20a",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P20A.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CourseCurriculum",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-syl-p20b",
+      "title": "Course Curriculum 2022 - PAPER 20B: RISK MANAGEMENT IN BANKING AND INSURANCE (RMBI)",
+      "resourceType": "SYLLABUS",
+      "levelId": "final",
+      "paperId": "cma-fin-p20b",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P20B.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CourseCurriculum",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-syl-p20c",
+      "title": "Course Curriculum 2022 - PAPER 20C: ENTREPRENEURSHIP AND STARTUP (ENTS)",
+      "resourceType": "SYLLABUS",
+      "levelId": "final",
+      "paperId": "cma-fin-p20c",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/P20C.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CourseCurriculum",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-syl",
+      "title": "CMA Syllabus 2022 Full Version",
+      "resourceType": "SYLLABUS",
+      "levelId": "final",
+      "paperId": null,
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/CMASyllabus",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Single document covering Foundation, Intermediate and Final; repeated once per level because the schema requires a levelId. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-supp-p13-2026-12",
+      "title": "Supplementary for December 2026 Term of Examinations (Syllabus 2022) - Paper 13",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "final",
+      "paperId": "cma-fin-p13",
+      "attempt": "2026-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/supplementary/Supplementary_Paper%2013%20for%20December%202026%20Term%20of%20Examination_20260828154945.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Supplementary_currentterm",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Supplementary study material (amendments) applicable to the December 2026 term, listed under \"Supplementary for December 2026 Term of Examinations - Syllabus 2022\". Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200. URL contains spaces in the official link; recorded percent-encoded (%20)."
+    },
+    {
+      "id": "cma-fin-supp-p15-2026-12",
+      "title": "Supplementary for December 2026 Term of Examinations (Syllabus 2022) - Paper 15",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "final",
+      "paperId": "cma-fin-p15",
+      "attempt": "2026-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/supplementary/Supplementary_Paper%2015%20for%20December%202026%20Term%20of%20Examination_20260828155009.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Supplementary_currentterm",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Supplementary study material (amendments) applicable to the December 2026 term, listed under \"Supplementary for December 2026 Term of Examinations - Syllabus 2022\". Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200. URL contains spaces in the official link; recorded percent-encoded (%20)."
+    },
+    {
+      "id": "cma-fin-supp-p17-2026-12",
+      "title": "Supplementary for December 2026 Term of Examinations (Syllabus 2022) - Paper 17",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "final",
+      "paperId": "cma-fin-p17",
+      "attempt": "2026-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/supplementary/Supplementary_Paper%2017%20for%20December%202026%20Term%20of%20Examination_20260827093217_20261022172513.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Supplementary_currentterm",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Supplementary study material (amendments) applicable to the December 2026 term, listed under \"Supplementary for December 2026 Term of Examinations - Syllabus 2022\". Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200. URL contains spaces in the official link; recorded percent-encoded (%20)."
+    },
+    {
+      "id": "cma-fin-supp-p18-2026-12",
+      "title": "Supplementary for December 2026 Term of Examinations (Syllabus 2022) - Paper 18",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "final",
+      "paperId": "cma-fin-p18",
+      "attempt": "2026-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/supplementary/Supplementary_Paper%2018%20for%20December%202026%20Term%20of%20Examination_20260828155038.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Supplementary_currentterm",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Supplementary study material (amendments) applicable to the December 2026 term, listed under \"Supplementary for December 2026 Term of Examinations - Syllabus 2022\". Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200. URL contains spaces in the official link; recorded percent-encoded (%20)."
+    },
+    {
+      "id": "cma-fin-supp-p19-2026-12",
+      "title": "Supplementary for December 2026 Term of Examinations (Syllabus 2022) - Paper 19",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "final",
+      "paperId": "cma-fin-p19",
+      "attempt": "2026-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/supplementary/Supplementary_Paper%2019%20for%20December%202026%20Term%20of%20Examination_20260903124852.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Supplementary_currentterm",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Supplementary study material (amendments) applicable to the December 2026 term, listed under \"Supplementary for December 2026 Term of Examinations - Syllabus 2022\". Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200. URL contains spaces in the official link; recorded percent-encoded (%20)."
+    },
+    {
+      "id": "cma-fin-sm-p13",
+      "title": "Study Material (Syllabus 2022) - Paper 13: CORPORATE AND ECONOMIC LAWS (CEL)",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "final",
+      "paperId": "cma-fin-p13",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Study-Materials/Paper_13_Reprint_July_2026_(1)_20260827165735.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/StudyMaterials/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200. Reprint July 2026 edition."
+    },
+    {
+      "id": "cma-fin-sm-p17",
+      "title": "Study Material (Syllabus 2022) - Paper 17: COST & MANAGEMENT AUDIT (CMAD)",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "final",
+      "paperId": "cma-fin-p17",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Study-Materials/Paper_17_Reprint_July_2026_20260818152806.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/StudyMaterials/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200. Reprint July 2026 edition."
+    },
+    {
+      "id": "cma-fin-sm-p20b",
+      "title": "Study Material (Syllabus 2022) - ELECTIVES Paper 20B: RISK MANAGEMENT IN BANKING AND INSURANCE (RMBI)",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "final",
+      "paperId": "cma-fin-p20b",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Syllabus2022/Final_Stdy_Mtrl/P20B.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/StudyMaterials/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-sm-p20c",
+      "title": "Study Material (Syllabus 2022) - ELECTIVES Paper 20C: Entrepreneurship and Start Up (ENTS)",
+      "resourceType": "STUDY_MATERIAL",
+      "levelId": "final",
+      "paperId": "cma-fin-p20c",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Syllabus2022/Final_Stdy_Mtrl/P20C_new.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/StudyMaterials/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p13-2026-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2026 Term - Paper-13 Corporate and Economic Laws",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p13",
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/P13_CEL_JUNE_2026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200. Hosted under a different folder (QuestionPaper/syllabus2022/) than the other June 2026 files; as linked on the official page."
+    },
+    {
+      "id": "cma-fin-qp-p14-2026-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2026 Term - Paper-14 Strategic Financial Management",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p14",
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/June_2026/Syllabus_2022/9936d0ae-2167-43ed-82e4-da8734566506_P14_SFM_JUNE_2026_2026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p15-2026-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2026 Term - Paper-15 Direct Tax Laws and International Taxation",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p15",
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/June_2026/Syllabus_2022/ed7fa64c-f474-424e-b868-c42bd048d350_P15_DIT_JUNE_2026_20260615134226.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p16-2026-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2026 Term - Paper-16 Strategic Cost Management",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p16",
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/June_2026/Syllabus_2022/a89e3e4d-fc63-40dd-8361-f027eb548b54_P-16.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p17-2026-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2026 Term - Paper-17 Cost and Management Audit",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p17",
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/P17_CMAD_JUNE_2026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200. Hosted under a different folder (QuestionPaper/syllabus2022/) than the other June 2026 files; as linked on the official page."
+    },
+    {
+      "id": "cma-fin-qp-p18-2026-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2026 Term - Paper-18 Corporate Financial Reporting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p18",
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/June_2026/Syllabus_2022/0e22457f-46a8-40b7-82f4-8724ac278056_P18_CFR_JUNE2026_20260614141145.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p19-2026-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2026 Term - Paper-19 Indirect Tax Laws & Practice",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p19",
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/June_2026/Syllabus_2022/838b1ae2-86e1-440d-ab26-cd7640504e6e_P-19_20260616173520.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p20a-2026-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2026 Term - Paper-20A Strategic Performance Management and Business Valuation",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p20a",
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/June_2026/Syllabus_2022/6527ba99-87ea-4908-8a79-f4e4eb681451_P20A_SPMBV_JUNE%202026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200. URL contains spaces in the official link; recorded percent-encoded (%20)."
+    },
+    {
+      "id": "cma-fin-qp-p20b-2026-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2026 Term - Paper-20B Risk Management in Banking and Insurance",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p20b",
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/June_2026/Syllabus_2022/503a67b6-6dee-4efe-b2f7-a910df587ec4_P20B_RMBI_JUNE%202026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200. URL contains spaces in the official link; recorded percent-encoded (%20)."
+    },
+    {
+      "id": "cma-fin-qp-p20c-2026-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2026 Term - Paper-20C Entrepreneurship and Startup",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p20c",
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/June_2026/Syllabus_2022/b6d4a4f6-7597-4f7c-839d-a8cc3872bacc_P20C_ENTS_JUNE%202026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=1",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200. URL contains spaces in the official link; recorded percent-encoded (%20)."
+    },
+    {
+      "id": "cma-fin-qp-p13-2025-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2025 Term - Paper-13 Corporate and Economic Laws",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p13",
+      "attempt": "2025-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec25/Paper13.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p14-2025-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2025 Term - Paper-14 Strategic Financial Management",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p14",
+      "attempt": "2025-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec25/Paper14.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p15-2025-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2025 Term - Paper-15 Direct Tax Laws and International Taxation",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p15",
+      "attempt": "2025-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec25/Paper15.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p16-2025-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2025 Term - Paper-16 Strategic Cost Management",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p16",
+      "attempt": "2025-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec25/Paper16.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p17-2025-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2025 Term - Paper-17 Cost and Management Audit",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p17",
+      "attempt": "2025-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec25/Paper17.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p18-2025-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2025 Term - Paper-18 Corporate Financial Reporting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p18",
+      "attempt": "2025-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec25/Paper18.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p19-2025-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2025 Term - Paper-19 Indirect Tax Laws & Practice",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p19",
+      "attempt": "2025-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec25/Paper19.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p20a-2025-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2025 Term - Paper-20A Strategic Performance Management and Business Valuation",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p20a",
+      "attempt": "2025-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec25/Paper20A.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p20b-2025-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2025 Term - Paper-20B Risk Management in Banking and Insurance",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p20b",
+      "attempt": "2025-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec25/Paper20B.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p20c-2025-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2025 Term - Paper-20C Entrepreneurship and Startup",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p20c",
+      "attempt": "2025-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec25/Paper20C.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=2",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p13-2025-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2025 Term - Paper-13 Corporate and Economic Laws",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p13",
+      "attempt": "2025-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/June25/Paper13.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p14-2025-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2025 Term - Paper-14 Strategic Financial Management",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p14",
+      "attempt": "2025-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/June25/Paper14.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p15-2025-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2025 Term - Paper-15 Direct Tax Laws and International Taxation",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p15",
+      "attempt": "2025-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/June25/Paper15.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p16-2025-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2025 Term - Paper-16 Strategic Cost Management",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p16",
+      "attempt": "2025-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/June25/Paper16.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p17-2025-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2025 Term - Paper-17 Cost and Management Audit",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p17",
+      "attempt": "2025-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/June25/Paper17.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p18-2025-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2025 Term - Paper-18 Corporate Financial Reporting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p18",
+      "attempt": "2025-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/June25/Paper18.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p19-2025-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2025 Term - Paper-19 Indirect Tax Laws & Practice",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p19",
+      "attempt": "2025-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/June25/Paper19.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p20a-2025-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2025 Term - Paper-20A Strategic Performance Management and Business Valuation",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p20a",
+      "attempt": "2025-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/June25/Paper20A.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p20b-2025-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2025 Term - Paper-20B Risk Management in Banking and Insurance",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p20b",
+      "attempt": "2025-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/June25/Paper20B.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p20c-2025-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2025 Term - Paper-20C Entrepreneurship and Startup",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p20c",
+      "attempt": "2025-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/June25/Paper20C.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p13-2024-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2024 Term - Paper-13 Corporate and Economic Laws",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p13",
+      "attempt": "2024-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec24/Paper13.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=4",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p14-2024-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2024 Term - Paper-14 Strategic Financial Management",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p14",
+      "attempt": "2024-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec24/Paper14.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=4",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p15-2024-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2024 Term - Paper-15 Direct Tax Laws And International Taxation",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p15",
+      "attempt": "2024-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec24/Paper15.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=4",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p16-2024-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2024 Term - Paper-16 Strategic Cost Management",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p16",
+      "attempt": "2024-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec24/Paper16.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=4",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p17-2024-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2024 Term - Paper-17 Cost and Management Audit",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p17",
+      "attempt": "2024-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec24/Paper17.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=4",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p18-2024-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2024 Term - Paper-18 Corporate Financial Reporting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p18",
+      "attempt": "2024-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec24/Paper18.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=4",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p19-2024-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2024 Term - Paper-19 Indirect Tax Laws & Practice",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p19",
+      "attempt": "2024-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec24/Paper19.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=4",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p20a-2024-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2024 Term - Paper-20A Strategic Performance Management And Business Valuation",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p20a",
+      "attempt": "2024-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec24/Paper20A.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=4",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p20b-2024-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2024 Term - Paper-20B Risk Management In Banking And Insurance",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p20b",
+      "attempt": "2024-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec24/Paper20B.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=4",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p20c-2024-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2024 Term - Paper-20C Entrepreneurship and Startup",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p20c",
+      "attempt": "2024-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec24/Paper20C.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=4",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p13-2024-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2024 Term - Paper-13 Corporate and Economic Laws",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p13",
+      "attempt": "2024-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Jun24/Paper13.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=5",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p14-2024-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2024 Term - Paper-14 Strategic Financial Management",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p14",
+      "attempt": "2024-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Jun24/P14_SFM.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=5",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p15-2024-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2024 Term - Paper-15 Direct Tax Laws and International Taxation",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p15",
+      "attempt": "2024-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Jun24/Paper15.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=5",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p16-2024-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2024 Term - Paper-16 Strategic Cost Management",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p16",
+      "attempt": "2024-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Jun24/Paper16.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=5",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p17-2024-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2024 Term - Paper-17 Cost and Management Audit",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p17",
+      "attempt": "2024-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Jun24/Paper17.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=5",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p18-2024-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2024 Term - Paper-18 Corporate Financial Reporting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p18",
+      "attempt": "2024-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Jun24/P18_CFR.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=5",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p19-2024-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2024 Term - Paper-19 Indirect Tax Laws & Practice",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p19",
+      "attempt": "2024-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Jun24/Paper19.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=5",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p20a-2024-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2024 Term - Paper-20A Strategic Performance Management and Business Valuation",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p20a",
+      "attempt": "2024-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Jun24/Paper20A.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=5",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p20b-2024-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2024 Term - Paper-20B Risk Management in Banking and Insurance",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p20b",
+      "attempt": "2024-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Jun24/Paper20B.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=5",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p20c-2024-06",
+      "title": "Examination Question Papers Syllabus 2022, June 2024 Term - Paper-20C Entrepreneurship and Startup",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p20c",
+      "attempt": "2024-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Jun24/Paper20C.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=5",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p13-2023-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2023 Term - Paper-13 Corporate and Economic Laws",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p13",
+      "attempt": "2023-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec23/Paper13.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=6",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p14-2023-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2023 Term - Paper-14 Strategic Financial Management",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p14",
+      "attempt": "2023-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec23/Paper14.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=6",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p15-2023-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2023 Term - Paper-15 Direct Tax Laws and International Taxation",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p15",
+      "attempt": "2023-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec23/Paper15.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=6",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p16-2023-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2023 Term - Paper-16 Strategic Cost Management",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p16",
+      "attempt": "2023-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec23/Paper16.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=6",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p17-2023-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2023 Term - Paper-17 Cost and Management Audit",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p17",
+      "attempt": "2023-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec23/Paper17.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=6",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p18-2023-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2023 Term - Paper-18 Corporate Financial Reporting",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p18",
+      "attempt": "2023-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec23/Paper18.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=6",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p19-2023-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2023 Term - Paper-19 Indirect Tax Laws & Practice",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p19",
+      "attempt": "2023-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec23/Paper19.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=6",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p20a-2023-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2023 Term - Paper-20A Strategic Performance Management and Business Valuation",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p20a",
+      "attempt": "2023-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec23/Paper20A.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=6",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p20b-2023-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2023 Term - Paper-20B Risk Management in Banking and Insurance",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p20b",
+      "attempt": "2023-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec23/Paper20B.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=6",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-qp-p20c-2023-12",
+      "title": "Examination Question Papers Syllabus 2022, December 2023 Term - Paper-20C Entrepreneurship and Startup",
+      "resourceType": "QUESTION_PAPER",
+      "levelId": "final",
+      "paperId": "cma-fin-p20c",
+      "attempt": "2023-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/syllabus2022/Dec23/Paper20C.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=6",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-ptp-p13-answers",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 13 - CORPORATE AND ECONOMIC LAWS - Answers",
+      "resourceType": "MTP",
+      "levelId": "final",
+      "paperId": "cma-fin-p13",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Final/AnswerPaper13.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; answer paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-ptp-p13-questions",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 13 - CORPORATE AND ECONOMIC LAWS - Questions",
+      "resourceType": "MTP",
+      "levelId": "final",
+      "paperId": "cma-fin-p13",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Final/Paper13.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; question paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-ptp-p14-answers",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 14 - STRATEGIC FINANCIAL MANAGEMENT - Answers",
+      "resourceType": "MTP",
+      "levelId": "final",
+      "paperId": "cma-fin-p14",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Final/AnswerPaper14.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; answer paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-ptp-p14-questions",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 14 - STRATEGIC FINANCIAL MANAGEMENT - Questions",
+      "resourceType": "MTP",
+      "levelId": "final",
+      "paperId": "cma-fin-p14",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Final/Paper14.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; question paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-ptp-p15-answers",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 15 - DIRECT TAX LAWS AND INTERNATIONAL TAXATION - Answers",
+      "resourceType": "MTP",
+      "levelId": "final",
+      "paperId": "cma-fin-p15",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Final/AnswerPaper15.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; answer paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-ptp-p15-questions",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 15 - DIRECT TAX LAWS AND INTERNATIONAL TAXATION - Questions",
+      "resourceType": "MTP",
+      "levelId": "final",
+      "paperId": "cma-fin-p15",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Final/Paper15.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; question paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-ptp-p16-answers",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 16 - STRATEGIC COST MANAGEMENTT - Answers",
+      "resourceType": "MTP",
+      "levelId": "final",
+      "paperId": "cma-fin-p16",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Final/AnswerPaper16.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; answer paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-ptp-p16-questions",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 16 - STRATEGIC COST MANAGEMENTT - Questions",
+      "resourceType": "MTP",
+      "levelId": "final",
+      "paperId": "cma-fin-p16",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Final/Paper16.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; question paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-ptp-p17-answers",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 17 - COST AND MANAGEMENT AUDIT - Answers",
+      "resourceType": "MTP",
+      "levelId": "final",
+      "paperId": "cma-fin-p17",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Final/AnswerPaper17.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; answer paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-ptp-p17-questions",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 17 - COST AND MANAGEMENT AUDIT - Questions",
+      "resourceType": "MTP",
+      "levelId": "final",
+      "paperId": "cma-fin-p17",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Final/Paper17.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; question paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-ptp-p18-answers",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 18 - CORPORATE FINANCIAL REPORTING - Answers",
+      "resourceType": "MTP",
+      "levelId": "final",
+      "paperId": "cma-fin-p18",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Final/AnswerPaper18.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; answer paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-ptp-p18-questions",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 18 - CORPORATE FINANCIAL REPORTING - Questions",
+      "resourceType": "MTP",
+      "levelId": "final",
+      "paperId": "cma-fin-p18",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Final/Paper18.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; question paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-ptp-p19-answers",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 19 - INDIRECT TAX LAWS AND PRACTICE - Answers",
+      "resourceType": "MTP",
+      "levelId": "final",
+      "paperId": "cma-fin-p19",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Final/AnswerPaper19.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; answer paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-ptp-p19-questions",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 19 - INDIRECT TAX LAWS AND PRACTICE - Questions",
+      "resourceType": "MTP",
+      "levelId": "final",
+      "paperId": "cma-fin-p19",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Final/Paper19.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; question paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-ptp-p20a-answers",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 20A - STRATEGIC PERFORMANCE MANAGEMENT AND BUSINESS VALUATION - Answers",
+      "resourceType": "MTP",
+      "levelId": "final",
+      "paperId": "cma-fin-p20a",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Final/PTP_Answer_Paper__Final_20A_Set_1_June2026.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; answer paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-ptp-p20a-questions",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 20A - STRATEGIC PERFORMANCE MANAGEMENT AND BUSINESS VALUATION - Questions",
+      "resourceType": "MTP",
+      "levelId": "final",
+      "paperId": "cma-fin-p20a",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Final/Paper20A.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; question paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-ptp-p20b-answers",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 20B - RISK MANAGEMENT IN BANKING & INSURANCE - Answers",
+      "resourceType": "MTP",
+      "levelId": "final",
+      "paperId": "cma-fin-p20b",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Final/AnswerPaper20B.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; answer paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-ptp-p20b-questions",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 20B - RISK MANAGEMENT IN BANKING & INSURANCE - Questions",
+      "resourceType": "MTP",
+      "levelId": "final",
+      "paperId": "cma-fin-p20b",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Final/Paper20B.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; question paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-ptp-p20c-answers",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 20C - ENTREPRENEURSHIP AND STARTUP - Answers",
+      "resourceType": "MTP",
+      "levelId": "final",
+      "paperId": "cma-fin-p20c",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Final/AnswerPaper20C.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; answer paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-ptp-p20c-questions",
+      "title": "Practice Test Paper (Syllabus 2022) - Paper 20C - ENTREPRENEURSHIP AND STARTUP - Questions",
+      "resourceType": "MTP",
+      "levelId": "final",
+      "paperId": "cma-fin-p20c",
+      "attempt": null,
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Practice-Test-Paper/Syl2022/Final/Paper20C.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Practice_TestPaper/3",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "ICMAI calls these \"Practice Test Papers\" (PTP), not MTPs; question paper. Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-notice-2026-12-intermediate-and-final-examination-time-table-prog",
+      "title": "Intermediate and Final Examination Time Table & Programme – December 2026",
+      "resourceType": "NOTICE",
+      "levelId": "final",
+      "paperId": null,
+      "attempt": "2026-12",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/December_2026_Inter_Final_20260813143653.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/Overview",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Same document as the Intermediate entry (single combined PDF). Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    },
+    {
+      "id": "cma-fin-notice-2026-06-examiners-comments-summary-final-june-2026-syllabu",
+      "title": "Examiners Comments Summary - Final, June 2026 (Syllabus 2022)",
+      "resourceType": "NOTICE",
+      "levelId": "final",
+      "paperId": null,
+      "attempt": "2026-06",
+      "officialUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Final-Examiner-Comment-Summary-JUNE-2026_20260822223907.pdf",
+      "sourcePage": "https://icmai.in/ClntStudents/ExaminerComments",
+      "http": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "checkedAt": "2026-10-23"
+      },
+      "notes": "Range GET (bytes 0-1023) returned 206 Partial Content; HEAD returned 200."
+    }
+  ],
+  "unverified": [
+    {
+      "what": "June 2026 Final Paper 20A question paper - second listing",
+      "candidateUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/QuestionPaper/June_2026/Syllabus_2022/35944e13-ef45-43d2-8d31-4a43aed87d00_P20A_June_2026.pdf",
+      "why": "The June 2026 question-paper page lists Paper-20A twice under Final (this link appears first, out of order, before Paper-13). HTTP 206 application/pdf on range request, but which of the two files is the authoritative SPMBV paper could not be confirmed without opening the PDF. The other listing (..._P20A_SPMBV_JUNE 2026.pdf) is recorded in resources."
+    },
+    {
+      "what": "Study Material (Syllabus 2022) - Paper 14: Strategic Financial Management (SFM)",
+      "candidateUrl": "https://drive.google.com/file/d/1pyorCMycoOC-w-XfL-EMxVJKz8eunIti/view?usp=drive_link",
+      "why": "Linked from the official page https://icmai.in/ClntStudents/StudyMaterials/3 but hosted on Google Drive, not an ICMAI domain. Range GET returned 200 text/html; charset=utf-8 (Drive viewer page, publicly viewable; Drive file title matches the paper). Ownership of the Drive file cannot be verified, so excluded per the official-domain rule."
+    },
+    {
+      "what": "Study Material (Syllabus 2022) - Paper 15: DIRECT TAX LAWS AND INTERNATIONAL TAXATION (DIT)",
+      "candidateUrl": "https://drive.google.com/file/d/1VSvKuSxLes8e1pgAYWsWcpXqn7X0cw3w/view?usp=drive_link",
+      "why": "Linked from the official page https://icmai.in/ClntStudents/StudyMaterials/3 but hosted on Google Drive, not an ICMAI domain. Range GET returned 200 text/html; charset=utf-8 (Drive viewer page, publicly viewable; Drive file title matches the paper). Ownership of the Drive file cannot be verified, so excluded per the official-domain rule."
+    },
+    {
+      "what": "Study Material (Syllabus 2022) - Paper 16: STRATEGIC COST MANAGEMENT (SCM)",
+      "candidateUrl": "https://drive.google.com/file/d/13jQZGRrCRAY2PyuYslhauZArqqbGOXMT/view?usp=drive_link",
+      "why": "Linked from the official page https://icmai.in/ClntStudents/StudyMaterials/3 but hosted on Google Drive, not an ICMAI domain. Range GET returned 200 text/html; charset=utf-8 (Drive viewer page, publicly viewable; Drive file title matches the paper). Ownership of the Drive file cannot be verified, so excluded per the official-domain rule."
+    },
+    {
+      "what": "Study Material (Syllabus 2022) - Paper 18: CORPORATE FINANCIAL REPORTING (CFR)",
+      "candidateUrl": "https://drive.google.com/file/d/1R44vL85KrXIwWjeVdbe_JP2Il_TDgFMG/view?usp=drive_link",
+      "why": "Linked from the official page https://icmai.in/ClntStudents/StudyMaterials/3 but hosted on Google Drive, not an ICMAI domain. Range GET returned 200 text/html; charset=utf-8 (Drive viewer page, publicly viewable; Drive file title matches the paper). Ownership of the Drive file cannot be verified, so excluded per the official-domain rule."
+    },
+    {
+      "what": "Study Material (Syllabus 2022) - Paper 19: INDIRECT TAX LAWS AND PRACTICE (ITLP)",
+      "candidateUrl": "https://drive.google.com/file/d/1aLxaFfyFCAnzhSMKUmBoH4AznObphdTY/view?usp=drive_link",
+      "why": "Linked from the official page https://icmai.in/ClntStudents/StudyMaterials/3 but hosted on Google Drive, not an ICMAI domain. Range GET returned 200 text/html; charset=utf-8 (Drive viewer page, publicly viewable; Drive file title matches the paper). Ownership of the Drive file cannot be verified, so excluded per the official-domain rule."
+    },
+    {
+      "what": "Study Material (Syllabus 2022) - ELECTIVES Paper 20A: STRATEGIC PERFORMANCE MANAGEMENT AND BUSINESS VALUATION (SPMBV)",
+      "candidateUrl": "https://drive.google.com/file/d/1Ce3MOSa05Pw9oZ0A9YBSX_hNJBcpYcgk/view?usp=sharing",
+      "why": "Linked from the official page https://icmai.in/ClntStudents/StudyMaterials/3 but hosted on Google Drive, not an ICMAI domain. Range GET returned 200 text/html; charset=utf-8 (Drive viewer page, publicly viewable; Drive file title matches the paper). Ownership of the Drive file cannot be verified, so excluded per the official-domain rule."
+    },
+    {
+      "what": "Suggested answers (all levels, all Syllabus 2022 terms)",
+      "candidateUrl": "https://eicmai.in/Suggested_Answers/registration.aspx",
+      "why": "The official Suggested Answers page (https://icmai.in/ClntStudents/Suggested_Answers) links only to 'Download Suggested Answers from December 2011 Term upto June 2026 Term' at eicmai.in/Suggested_Answers/registration.aspx, which is a login form titled 'Suggested Answers (Except Foundation Student)' requiring a student Registration No. and an image CAPTCHA. No public direct PDF links exist; per the rules no login/form submission was attempted. The login page itself returns HTTP 200 text/html."
+    },
+    {
+      "what": "Marks per paper (all 22 papers)",
+      "candidateUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Curriculum_2022.pdf",
+      "why": "No icmai.in HTML page states paper marks. They appear to be given only in PDFs ('CMA Curriculum 2022 at a Glance', 'CMA Syllabus 2022 Full Version', per-paper curriculum PDFs), which were not downloaded in full per the brief. papers[].marks left null. Needs a human read of Curriculum_2022.pdf."
+    },
+    {
+      "what": "Group composition for Intermediate and Final (which papers are in Group I/II/III/IV); whether Foundation has groups",
+      "candidateUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/Curriculum_2022.pdf",
+      "why": "Groups are confirmed to exist for Intermediate and Final (examicmai.in exam application page: 'Intermediate and Final students, those who have already applied for one group...'), but no HTML page lists which papers belong to which group. levels[].groups left empty and papers[].groupId null. Old group-wise pages (e.g. icmai.in/studentswebsite/Syl-2022-Inter-Stdy-Mtrls_G1.php) seen in search results now return 404."
+    },
+    {
+      "what": "Paper format (descriptive / objective / mixed) per paper",
+      "candidateUrl": "https://dwpivt501gtb6.cloudfront.net/upload/students/CMA_Syllabus2022_FV.pdf",
+      "why": "Not stated on any HTML page; only in PDFs not downloaded. papers[].format set to 'unknown'. (An old 2022 circular refers to an 'online Foundation Examination', but that is not evidence of the current format.)"
+    },
+    {
+      "what": "Foundation question papers for December 2025, June 2025, December 2024, June 2024 and December 2023 terms",
+      "candidateUrl": "https://icmai.in/ClntStudents/ClntQuestionPaperList?menuId=2",
+      "why": "The official question-paper pages for these terms (menuId=2..6) list only Intermediate and Final papers. Foundation papers are listed only for the June 2026 term (menuId=1). Nothing to verify for earlier Foundation terms."
+    },
+    {
+      "what": "Model Question Papers (MQP) for other terms / Intermediate / Final",
+      "candidateUrl": "https://icmai.in/ClntStudents/ClntMQPList",
+      "why": "The MQP page offers December 2023 to December 2026 terms and Foundation/Intermediate/Final, but each selection is a POST form button (with an anti-forgery token), not a link. Per the no-form-submission rule only the default view (December 2026, Foundation, Paper 3) was catalogued."
+    },
+    {
+      "what": "Legacy studentswebsite URLs for Syllabus 2022 question papers / MQPs (e.g. exam_qp_D25_2022.php, exam_qp_D24_2022.php, exam_qp_J24.php, mqp2022_fnd.php)",
+      "candidateUrl": "https://icmai.in/studentswebsite/exam_qp_D25_2022.php",
+      "why": "These were returned by web search but now return HTTP 404; ICMAI has moved to the new /ClntStudents/ site. Use the ClntQuestionPaperList?menuId=N pages instead."
+    },
+    {
+      "what": "Legacy Curriculum 2022 PDF path on icmai.in",
+      "candidateUrl": "https://icmai.in/upload/Students/Syllabus2022/Curriculum_2022.pdf",
+      "why": "Returned by web search; now HTTP 404. Current copy is on ICMAI's CDN: https://dwpivt501gtb6.cloudfront.net/upload/students/Curriculum_2022.pdf (206 application/pdf)."
+    },
+    {
+      "what": "Term/edition applicability of Practice Test Papers",
+      "candidateUrl": "https://icmai.in/ClntStudents/Practice_TestPaper/1",
+      "why": "The Practice Test Paper pages do not state the term they target; a few answer-file names mention June 2026 (e.g. PTP_Answer_Paper_5_Syllabus2022_June2026_Set_1.pdf). attempt recorded as null for all PTP resources."
+    }
+  ]
+}
