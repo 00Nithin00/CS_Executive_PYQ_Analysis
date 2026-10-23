@@ -83,8 +83,12 @@ export interface UserStore {
 
   /** Records a webhook delivery. Returns false when this event id was already recorded (duplicate delivery). */
   recordWebhookEvent(provider: Subscription["source"], eventId: string, eventType: string, payload: unknown): Promise<boolean>;
+  /** Outcome of a previously recorded event (null outcome = recorded but not finished, e.g. the handler crashed). */
+  getWebhookEvent(provider: Subscription["source"], eventId: string): Promise<{ outcome: string | null } | null>;
   markWebhookEvent(provider: Subscription["source"], eventId: string, outcome: string): Promise<void>;
   upsertPayment(input: PaymentRecordInput): Promise<void>;
+  /** The provider subscription reference a recorded payment belongs to, if known. */
+  findPaymentSubscriptionReference(provider: PaymentRecordInput["provider"], providerPaymentId: string): Promise<string | null>;
 
   /** Fixed-window counter shared by all instances. Counts this hit and reports whether it is within `limit`. */
   hitRateLimit(key: string, limit: number, windowSeconds: number): Promise<RateLimitResult>;

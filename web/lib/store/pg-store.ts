@@ -165,6 +165,14 @@ export function createPgStore(db: Db): UserStore {
         .returning({ eventId: webhookEvents.eventId });
       return r.length === 1;
     },
+    async getWebhookEvent(provider, eventId) {
+      const [r] = await db
+        .select({ outcome: webhookEvents.outcome })
+        .from(webhookEvents)
+        .where(and(eq(webhookEvents.provider, provider), eq(webhookEvents.eventId, eventId)))
+        .limit(1);
+      return r ?? null;
+    },
     async markWebhookEvent(provider, eventId, outcome) {
       await db
         .update(webhookEvents)
@@ -189,6 +197,16 @@ export function createPgStore(db: Db): UserStore {
           target: [payments.provider, payments.providerPaymentId],
           set: { status: p.status, amountRefundedPaise: p.amountRefundedPaise, updatedAt: new Date(), ...(sub ? { subscriptionId: sub.id, userId: sub.userId } : {}) },
         });
+    },
+
+    async findPaymentSubscriptionReference(provider, providerPaymentId) {
+      const [r] = await db
+        .select({ ref: subscriptions.providerReference })
+        .from(payments)
+        .innerJoin(subscriptions, eq(payments.subscriptionId, subscriptions.id))
+        .where(and(eq(payments.provider, provider), eq(payments.providerPaymentId, providerPaymentId)))
+        .limit(1);
+      return r?.ref ?? null;
     },
 
     async hitRateLimit(key, limit, windowSeconds) {
