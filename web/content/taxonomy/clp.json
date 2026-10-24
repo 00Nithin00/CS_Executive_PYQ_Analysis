@@ -1,10 +1,10 @@
 {
  "meta": {
   "subject": "clp",
-  "taxonomyVersion": "0.2",
-  "methodologyVersionAtBuild": "0.3",
+  "taxonomyVersion": "0.3",
+  "methodologyVersionAtBuild": "0.4",
   "status": "FROZEN_FOR_PAPER_ANALYSIS",
-  "exportedFrom": "taxonomy/clp_taxonomy_v0.2.json"
+  "exportedFrom": "taxonomy/clp_taxonomy_v0.3.json"
  },
  "chapters": [
   {

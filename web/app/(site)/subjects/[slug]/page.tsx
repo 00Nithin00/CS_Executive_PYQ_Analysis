@@ -44,7 +44,8 @@ export default async function SubjectPage({ params }: PageProps<"/subjects/[slug
               {p.label} · {p.marks} marks
             </Badge>
           ))}
-          {subject.taxonomyVersion && <Badge tone="accent">Taxonomy v{subject.taxonomyVersion}</Badge>}
+          {subject.taxonomyVersion && <Badge tone="accent">Syllabus taxonomy v{subject.taxonomyVersion}</Badge>}
+          {subject.intelligenceStatus !== "AVAILABLE" && <Badge tone="outline">Question dataset not yet verified</Badge>}
         </div>
       </PageHeader>
 
@@ -52,7 +53,7 @@ export default async function SubjectPage({ params }: PageProps<"/subjects/[slug
         <section aria-labelledby="intel">
           <div className="mb-6 flex flex-wrap items-center gap-3">
             <h2 id="intel" className="text-display-md font-semibold">
-              {subject.intelligenceStatus === "DEMO" ? "Sample PYQ analysis" : "PYQ intelligence"}
+              {subject.intelligenceStatus === "DEMO" ? "Demonstration analysis (synthetic questions)" : "PYQ intelligence"}
             </h2>
             {subject.intelligenceStatus === "DEMO" && <DemoBadge />}
           </div>

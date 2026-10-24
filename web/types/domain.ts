@@ -1,5 +1,5 @@
 // Domain types shared by the UI, the data providers and (later) the database layer.
-// The academic shapes follow PROJECT_METHODOLOGY.md (v0.3) §5 and the frozen CLP taxonomy v0.2.
+// The academic shapes follow PROJECT_METHODOLOGY.md (v0.3) §5 and the frozen CLP taxonomy (v0.3; nodes unchanged from v0.2).
 
 export type SubjectSlug = "jigl" | "clp" | "sbill" | "cafm" | "cmsl" | "ecipl" | "tlp";
 
@@ -9,8 +9,11 @@ export type SyllabusVersion = "2022-original" | "2022-mod-dec2025";
 
 export type SyllabusStatus = "CURRENT" | "DELETED_FROM_DEC2025" | "PARTIALLY_DELETED" | "OUT_OF_TAXONOMY_REVIEW";
 
-/** Where a dataset came from. The UI must label anything that is not VERIFIED. */
-export type Provenance = "DEMO" | "VERIFIED";
+/**
+ * Where a dataset came from. The UI must label anything that is not VERIFIED.
+ * CANDIDATE: the local AI-desk-review candidate preview only (never served by the production provider).
+ */
+export type Provenance = "DEMO" | "VERIFIED" | "CANDIDATE";
 
 /** How far an analytics product is from being publishable for a subject. */
 export type IntelligenceStatus = "AVAILABLE" | "DEMO" | "IN_PREPARATION";
@@ -123,6 +126,11 @@ export interface QuestionRecord {
   relatedQuestionIds: string[];
   sourceUrl: string | null;
   sourcePage: number | null;
+  /**
+   * Review-status overlay: true while the record's review is unresolved. It stays in every historical figure
+   * but never counts as current-syllabus priority evidence. Per record; the node's own eligibility is unchanged.
+   */
+  currentPriorityHold?: boolean;
 }
 
 /** What a Free viewer is allowed to receive. */

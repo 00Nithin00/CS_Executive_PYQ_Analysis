@@ -13,8 +13,11 @@ export async function generateMetadata({ params }: PageProps<"/pyq/[subject]">):
   if (!s) return {};
   // Indexed only once the subject's question set is verified; demo / in-preparation pages stay out of search.
   return pageMetadata({
-    title: `${s.shortName} previous-year questions`,
-    description: `${s.name}: previous-year questions by attempt, chapter and topic.`,
+    title: s.intelligenceStatus === "AVAILABLE" ? `${s.shortName} previous-year questions` : `${s.shortName} PYQ explorer (demonstration)`,
+    description:
+      s.intelligenceStatus === "AVAILABLE"
+        ? `${s.name}: previous-year questions by attempt, chapter and topic.`
+        : `${s.name}: a demonstration of the question explorer. Synthetic questions, not ICSI examination history.`,
     path: `/pyq/${s.slug}`,
     index: s.intelligenceStatus === "AVAILABLE",
   });

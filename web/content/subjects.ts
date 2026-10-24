@@ -59,7 +59,7 @@ export const SUBJECTS: Subject[] = [
       { label: "Part II — Company Administration & Meetings", marks: 40 },
     ],
     lessons: [], // filled from the frozen taxonomy (content/taxonomy/clp.json)
-    taxonomyVersion: "0.2",
+    taxonomyVersion: "0.3",
     intelligenceStatus: "DEMO",
   },
   {

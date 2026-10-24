@@ -2,7 +2,7 @@
  "meta": {
   "provenance": "DEMO",
   "subject": "clp",
-  "taxonomyVersion": "0.2",
+  "taxonomyVersion": "0.3",
   "note": "Synthetic demo records. Not ICSI questions. Replace with the approved dataset (web_export) when available.",
   "generator": "scripts/generate-demo-questions.mjs"
  },

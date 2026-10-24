@@ -52,6 +52,10 @@ export interface ChapterStat {
   marks: number;
   attemptsAppeared: AttemptId[];
   marksByAttempt: Record<string, number>;
+  /** CR-007: built only from records whose own topic is current-priority eligible and not held by the review overlay. */
+  currentQuestionCount: number;
+  currentMarks: number;
+  currentMarksByAttempt: Record<string, number>;
 }
 
 export type PriorityLabel = "HIGH" | "MEDIUM" | "LOW" | "INSUFFICIENT_HISTORY" | "NOT_EXAMINABLE";
@@ -71,7 +75,10 @@ export interface RecurringConcept {
   topicName: string;
   attempts: AttemptId[];
   occurrences: number;
+  /** True when the concept recurs (>= 2 attempts) through records that each count as current-priority evidence. */
   currentPriorityEligible: boolean;
+  /** Attempts in which the concept appears through current-priority records only. */
+  currentAttempts: AttemptId[];
 }
 
 export interface AttemptStat {
@@ -83,7 +90,10 @@ export interface AttemptStat {
 }
 
 export interface SubjectAnalytics extends AnalyticsEnvelope {
+  /** Historical: every eligible record, including records held by the review overlay. */
   topics: TopicStat[];
+  /** Current-syllabus evidence: only records that each count as current (own topic eligible, no review hold). */
+  currentTopics: TopicStat[];
   chapters: ChapterStat[];
   priority: PriorityEntry[];
   recurringConcepts: RecurringConcept[];

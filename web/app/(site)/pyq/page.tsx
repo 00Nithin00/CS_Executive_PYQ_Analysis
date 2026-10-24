@@ -4,8 +4,8 @@ import { PyqPageBody } from "@/components/pyq/pyq-page-body";
 import { listSubjects } from "@/lib/data/service";
 
 export const metadata: Metadata = pageMetadata({
-  title: "PYQ Intelligence",
-  description: "Browse CS Executive previous-year questions by attempt, chapter, topic and concept.",
+  title: "PYQ explorer (demonstration)",
+  description: "A demonstration of how CS Executive previous-year questions will be browsed by attempt, chapter, topic and concept. Synthetic questions only.",
   path: "/pyq", index: false,
 });
 

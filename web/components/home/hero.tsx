@@ -23,8 +23,9 @@ export function Hero() {
           </div>
           <div className="animate-rise" style={{ "--delay": "120ms" } as React.CSSProperties}>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-3">
-              Official CS Executive resources in one place, and every past question organised by syllabus, chapter, topic and concept — so
-              you can see what has actually been examined, how often, and for how many marks.
+              Official CS Executive resources in one place: study material, past papers, guideline answers and syllabus notices, linked at
+              their ICSI source. Past questions are being organised by syllabus, chapter, topic and concept.
+
             </p>
           </div>
           <div className="animate-rise" style={{ "--delay": "180ms" } as React.CSSProperties}>
@@ -32,16 +33,16 @@ export function Hero() {
               <ButtonLink href="/subjects" size="lg">
                 Explore Subjects <ArrowRight aria-hidden className="size-4" />
               </ButtonLink>
-              <ButtonLink href="/pyq" size="lg" variant="secondary">
-                Explore PYQ Intelligence
+              <ButtonLink href="/resources" size="lg" variant="secondary">
+                Official resources
               </ButtonLink>
             </div>
           </div>
           <div className="animate-rise" style={{ "--delay": "240ms" } as React.CSSProperties}>
             <p className="mt-8 flex items-start gap-2 text-sm text-ink-3">
               <ShieldCheck aria-hidden className="mt-0.5 size-4 shrink-0 text-accent-600" />
-              Built from official ICSI examination papers, with every figure traceable to a specific question. Verification of the
-              historical dataset is in progress.
+              Question analysis shown on this site uses synthetic demonstration data. No historical dataset has been verified or published
+              yet.
             </p>
           </div>
         </div>

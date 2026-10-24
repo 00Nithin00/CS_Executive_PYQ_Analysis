@@ -10,10 +10,10 @@ export function PyqPageBody({ subjects, active }: { subjects: Subject[]; active:
   return (
     <>
       <PageHeader
-        eyebrow="PYQ Intelligence"
-        title="Every past question, in its place in the syllabus."
-        lead="Browse questions from the Syllabus 2022 attempts by attempt and chapter. Pro adds topic placement, question type, repeat status and the history of each concept."
-        crumbs={[{ href: "/", label: "Home" }, { href: "/pyq", label: "PYQ Intelligence" }]}
+        eyebrow="PYQ explorer · demonstration"
+        title="How past questions will be organised in the syllabus."
+        lead="This explorer currently holds synthetic demonstration questions mapped to the official syllabus. They are not ICSI questions. Real questions are added subject by subject once each dataset is verified."
+        crumbs={[{ href: "/", label: "Home" }, { href: "/pyq", label: "PYQ explorer (demo)" }]}
       />
       <Container className="py-8 sm:py-10">
         <nav aria-label="Subject" className="-mx-4 mb-8 overflow-x-auto px-4 sm:mx-0 sm:px-0">

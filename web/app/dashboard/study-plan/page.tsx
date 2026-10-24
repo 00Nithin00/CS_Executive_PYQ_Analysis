@@ -60,7 +60,7 @@ async function Content() {
             {clp?.provenance === "DEMO" && <DemoBadge />}
           </div>
           <div className="rounded-lg border border-line bg-surface px-4">
-            <PriorityList entries={focus} />
+            <PriorityList provenance={clp?.provenance ?? "VERIFIED"} entries={focus} />
           </div>
         </section>
       </div>

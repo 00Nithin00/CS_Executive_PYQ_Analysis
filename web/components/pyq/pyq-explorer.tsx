@@ -136,7 +136,7 @@ export function PyqExplorer({
                 setLimit(PAGE);
               }}
               placeholder="Search by concept, chapter or topic"
-              className="h-11 w-full rounded-full border border-line bg-surface pr-4 pl-10 text-[0.9375rem] placeholder:text-ink-4 focus:border-accent-500 focus:outline-none"
+              className="h-11 w-full rounded-full border border-line bg-surface pr-4 pl-10 text-[0.9375rem] placeholder:text-ink-4 focus:border-accent-500 focus:outline-none focus:ring-2 focus:ring-accent-500/40"
             />
           </label>
           <Button variant="secondary" className="lg:hidden" onClick={() => setSheetOpen(true)} aria-label={`Filters${activeCount ? `, ${activeCount} active` : ""}`}>
@@ -312,7 +312,7 @@ function Select({
         value={value}
         disabled={disabled}
         onChange={(e) => onChange(e.target.value)}
-        className="h-11 w-full appearance-none rounded-md border border-line bg-surface bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 20 20%22 fill=%22%236b7280%22><path d=%22M5.5 7.5 10 12l4.5-4.5%22 stroke=%22%236b7280%22 stroke-width=%221.6%22 fill=%22none%22/></svg>')] bg-[length:1.1rem] bg-[right_0.75rem_center] bg-no-repeat pr-9 pl-3 text-sm text-ink focus:border-accent-500 focus:outline-none disabled:cursor-not-allowed"
+        className="h-11 w-full appearance-none rounded-md border border-line bg-surface bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 20 20%22 fill=%22%236b7280%22><path d=%22M5.5 7.5 10 12l4.5-4.5%22 stroke=%22%236b7280%22 stroke-width=%221.6%22 fill=%22none%22/></svg>')] bg-[length:1.1rem] bg-[right_0.75rem_center] bg-no-repeat pr-9 pl-3 text-sm text-ink focus:border-accent-500 focus:outline-none focus:ring-2 focus:ring-accent-500/40 disabled:cursor-not-allowed"
       >
         <option value="all">All</option>
         {options.map((o) => (

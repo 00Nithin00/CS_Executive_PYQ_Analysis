@@ -1,5 +1,6 @@
 import { ChevronDown } from "lucide-react";
 import type { ReactNode } from "react";
+import { CandidateBadge } from "@/components/preview/candidate-banner";
 import { DemoBadge } from "@/components/ui/primitives";
 import { cn } from "@/lib/utils/cn";
 import type { Provenance } from "@/types/domain";
@@ -31,6 +32,7 @@ export function ChartFrame({
         </div>
         <div className="flex items-center gap-2">
           {provenance === "DEMO" && <DemoBadge />}
+          {provenance === "CANDIDATE" && <CandidateBadge />}
           {action}
         </div>
       </header>

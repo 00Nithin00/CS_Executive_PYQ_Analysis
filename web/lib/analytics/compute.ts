@@ -45,6 +45,10 @@ function eligible(env: AnalyticsEnvelope, records: QuestionRecord[], idx: Taxono
 /** Marks weight counts compulsory units only; alternatives in a choice group add no marks (methodology §8). */
 const marksOf = (q: QuestionRecord) => (q.isAlternative ? 0 : (q.marks ?? 0));
 
+/** Per-record current-priority evidence: the record's own topic is eligible and no review hold applies (§8, CR-007). */
+const countsAsCurrent = (q: QuestionRecord, idx: TaxonomyIndex) =>
+  idx.topic.get(q.topicId)?.currentPriorityEligible === true && q.currentPriorityHold !== true;
+
 function longestRun(flags: boolean[]) {
   let best = 0;
   let cur = 0;
@@ -82,43 +86,12 @@ export function computeAnalytics(
 ): SubjectAnalytics {
   const rs = eligible(env, records, idx);
   const window = env.attemptsInWindow;
-  const N = window.length;
-  const pos = (a: AttemptId) => window.indexOf(a);
 
-  // ---- topics
-  const byTopic = new Map<string, QuestionRecord[]>();
-  for (const q of rs) byTopic.set(q.topicId, [...(byTopic.get(q.topicId) ?? []), q]);
-
-  const topics: TopicStat[] = [...byTopic.entries()].map(([topicId, qs]) => {
-    const t = idx.topic.get(topicId)!;
-    const ch = idx.chapter.get(t.chapterId)!;
-    const appeared = window.filter((a) => qs.some((q) => q.attempt === a));
-    const flags = window.map((a) => appeared.includes(a));
-    const last = appeared.at(-1) ?? null;
-    const marks = qs.reduce((s, q) => s + marksOf(q), 0);
-    const conceptAttempts = new Map<string, Set<string>>();
-    for (const q of qs) conceptAttempts.set(q.conceptKey, (conceptAttempts.get(q.conceptKey) ?? new Set()).add(q.attempt));
-    return {
-      topicId,
-      topicName: t.name,
-      chapterId: ch.id,
-      chapterName: ch.name,
-      chapterNumber: ch.number,
-      questionCount: qs.length,
-      marks,
-      attemptsAppeared: appeared,
-      marksByAttempt: Object.fromEntries(appeared.map((a) => [a, qs.filter((q) => q.attempt === a).reduce((s, q) => s + marksOf(q), 0)])),
-      coverage: appeared.length,
-      lastSeen: last,
-      attemptsSinceLastSeen: last ? N - 1 - pos(last) : null,
-      longestStreak: longestRun(flags),
-      onCurrentStreak: flags.at(-1) === true,
-      averageMarks: appeared.length ? Math.round((marks / appeared.length) * 10) / 10 : 0,
-      repeatedConceptClusters: [...conceptAttempts.values()].filter((s) => s.size >= 2).length,
-      currentPriorityEligible: t.currentPriorityEligible,
-    };
-  });
-  topics.sort((a, b) => b.coverage - a.coverage || b.marks - a.marks);
+  // ---- topics (historical: every eligible record, including records held by the review overlay)
+  const topics = topicStats(rs, idx, window);
+  // Priority ranks only current-priority evidence, so held records never move a label or a threshold.
+  const priorityTopics = rs.some((q) => q.currentPriorityHold === true) ? topicStats(rs.filter((q) => q.currentPriorityHold !== true), idx, window) : topics;
+  const currentTopics = topicStats(rs.filter((q) => countsAsCurrent(q, idx)), idx, window);
 
   // ---- chapters
   const byChapter = new Map<string, QuestionRecord[]>();
@@ -126,8 +99,13 @@ export function computeAnalytics(
   const chapters: ChapterStat[] = [...byChapter.entries()]
     .map(([chapterId, qs]) => {
       const ch = idx.chapter.get(chapterId)!;
+      const current = qs.filter((q) => countsAsCurrent(q, idx));
       const marksByAttempt: Record<string, number> = {};
-      for (const a of window) marksByAttempt[a] = qs.filter((q) => q.attempt === a).reduce((s, q) => s + marksOf(q), 0);
+      const currentMarksByAttempt: Record<string, number> = {};
+      for (const a of window) {
+        marksByAttempt[a] = qs.filter((q) => q.attempt === a).reduce((s, q) => s + marksOf(q), 0);
+        currentMarksByAttempt[a] = current.filter((q) => q.attempt === a).reduce((s, q) => s + marksOf(q), 0);
+      }
       return {
         chapterId,
         chapterName: ch.name,
@@ -138,22 +116,30 @@ export function computeAnalytics(
         marks: qs.reduce((s, q) => s + marksOf(q), 0),
         attemptsAppeared: window.filter((a) => marksByAttempt[a] > 0),
         marksByAttempt,
+        currentQuestionCount: current.length,
+        currentMarks: current.reduce((s, q) => s + marksOf(q), 0),
+        currentMarksByAttempt,
       };
     })
     .sort((a, b) => b.marks - a.marks);
 
-  // ---- recurring concepts (same concept_key in >= 2 attempts)
+  // ---- recurring concepts (same concept_key in >= 2 attempts); eligibility from each record, not the first one
   const byConcept = new Map<string, QuestionRecord[]>();
   for (const q of rs) byConcept.set(q.conceptKey, [...(byConcept.get(q.conceptKey) ?? []), q]);
   const recurringConcepts: RecurringConcept[] = [...byConcept.entries()]
-    .map(([conceptKey, qs]) => ({
-      conceptKey,
-      conceptName: idx.nameOf(conceptKey),
-      topicName: idx.nameOf(qs[0].topicId),
-      attempts: window.filter((a) => qs.some((q) => q.attempt === a)),
-      occurrences: qs.length,
-      currentPriorityEligible: idx.topic.get(qs[0].topicId)?.currentPriorityEligible ?? false,
-    }))
+    .map(([conceptKey, qs]) => {
+      const current = qs.filter((q) => countsAsCurrent(q, idx));
+      const currentAttempts = window.filter((a) => current.some((q) => q.attempt === a));
+      return {
+        conceptKey,
+        conceptName: idx.nameOf(conceptKey),
+        topicName: idx.nameOf((current[0] ?? qs[0]).topicId),
+        attempts: window.filter((a) => qs.some((q) => q.attempt === a)),
+        occurrences: qs.length,
+        currentPriorityEligible: currentAttempts.length >= 2,
+        currentAttempts,
+      };
+    })
     .filter((c) => c.attempts.length >= 2)
     .sort((a, b) => b.attempts.length - a.attempts.length || b.occurrences - a.occurrences);
 
@@ -192,13 +178,53 @@ export function computeAnalytics(
   return {
     ...env,
     topics,
+    currentTopics,
     chapters,
-    priority: computePriority(topics, idx, attempts, window, env.provenance),
+    priority: computePriority(priorityTopics, idx, attempts, window, env.provenance),
     recurringConcepts,
     attempts: attemptStats,
     questionTypes,
     repeatBreakdown,
   };
+}
+
+function topicStats(rs: QuestionRecord[], idx: TaxonomyIndex, window: AttemptId[]): TopicStat[] {
+  const N = window.length;
+  const pos = (a: AttemptId) => window.indexOf(a);
+  const byTopic = new Map<string, QuestionRecord[]>();
+  for (const q of rs) byTopic.set(q.topicId, [...(byTopic.get(q.topicId) ?? []), q]);
+
+  const topics: TopicStat[] = [...byTopic.entries()].map(([topicId, qs]) => {
+    const t = idx.topic.get(topicId)!;
+    const ch = idx.chapter.get(t.chapterId)!;
+    const appeared = window.filter((a) => qs.some((q) => q.attempt === a));
+    const flags = window.map((a) => appeared.includes(a));
+    const last = appeared.at(-1) ?? null;
+    const marks = qs.reduce((s, q) => s + marksOf(q), 0);
+    const conceptAttempts = new Map<string, Set<string>>();
+    for (const q of qs) conceptAttempts.set(q.conceptKey, (conceptAttempts.get(q.conceptKey) ?? new Set()).add(q.attempt));
+    return {
+      topicId,
+      topicName: t.name,
+      chapterId: ch.id,
+      chapterName: ch.name,
+      chapterNumber: ch.number,
+      questionCount: qs.length,
+      marks,
+      attemptsAppeared: appeared,
+      marksByAttempt: Object.fromEntries(appeared.map((a) => [a, qs.filter((q) => q.attempt === a).reduce((s, q) => s + marksOf(q), 0)])),
+      coverage: appeared.length,
+      lastSeen: last,
+      attemptsSinceLastSeen: last ? N - 1 - pos(last) : null,
+      longestStreak: longestRun(flags),
+      onCurrentStreak: flags.at(-1) === true,
+      averageMarks: appeared.length ? Math.round((marks / appeared.length) * 10) / 10 : 0,
+      repeatedConceptClusters: [...conceptAttempts.values()].filter((s) => s.size >= 2).length,
+      currentPriorityEligible: t.currentPriorityEligible,
+    };
+  });
+  topics.sort((a, b) => b.coverage - a.coverage || b.marks - a.marks);
+  return topics;
 }
 
 // ---------------------------------------------------------------------------------------------
@@ -238,6 +264,7 @@ export function computePriority(topics: TopicStat[], idx: TaxonomyIndex, attempt
     else lab = "LOW";
 
     const demo = provenance === "DEMO";
+    const candidate = provenance === "CANDIDATE";
     const parts = [
       `${demo ? "In the demonstration data, appeared" : "Appeared"} in ${t.coverage} of the last ${N} attempts`,
       `carrying ${t.marks} marks in total (average ${t.averageMarks} per appearance)`,
@@ -249,7 +276,13 @@ export function computePriority(topics: TopicStat[], idx: TaxonomyIndex, attempt
         ? `Removed from the syllabus from December 2025. Shown for history only. ${parts[0]}.`
         : lab === "INSUFFICIENT_HISTORY"
           ? `Only ${eligibleAttempts.length} attempts have examined this topic in its current form — too few to rank.`
-          : `${parts.join(", ")}. ${demo ? "Illustrative only — synthetic questions, not ICSI examination history." : "Historical pattern only; not a prediction."}`;
+          : `${parts.join(", ")}. ${
+              demo
+                ? "Illustrative only — synthetic questions, not ICSI examination history."
+                : candidate
+                  ? "AI desk-review candidate data, not professionally verified. Historical pattern only; not a prediction."
+                  : "Historical pattern only; not a prediction."
+            }`;
 
     return { topicId: t.topicId, topicName: t.topicName, chapterName: t.chapterName, label: lab, points, explanation };
   });

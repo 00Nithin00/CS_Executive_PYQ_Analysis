@@ -26,8 +26,8 @@ export const PLAN_PRESENTATION: PlanPresentation[] = [
     id: "PRO",
     name: "Pro",
     price: null,
-    priceNote: "Pricing will be announced before launch",
-    summary: "Historical PYQ intelligence for each subject as its dataset is verified, with tools to plan and track your preparation.",
+    priceNote: "Not open: no price has been set and no payment is taken",
+    summary: "Planned: historical PYQ intelligence for each subject once its dataset is verified, with tools to plan and track your preparation. Analysis features currently run on synthetic demonstration questions only.",
     highlights: [
       "PYQ_ANALYTICS",
       "TOPIC_FREQUENCY",
@@ -41,6 +41,6 @@ export const PLAN_PRESENTATION: PlanPresentation[] = [
       "MOCK_TESTS",
       "AI_ASSISTANT",
     ],
-    cta: { label: "Join the Pro waitlist", href: "/signup?plan=pro" },
+    cta: { label: "Start with a free account", href: "/signup?plan=pro" },
   },
 ];

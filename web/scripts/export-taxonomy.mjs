@@ -1,5 +1,5 @@
 // Exports the frozen research taxonomy into the website's content folder.
-// Source of truth: ../taxonomy/clp_taxonomy_v0.2.json (FROZEN_FOR_PAPER_ANALYSIS).
+// Source of truth: ../taxonomy/clp_taxonomy_v0.3.json (FROZEN_FOR_PAPER_ANALYSIS; nodes identical to v0.2, CR-001 note only).
 // Only the fields the website needs are kept; IDs, names and statuses are copied verbatim.
 // Usage: node scripts/export-taxonomy.mjs
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
@@ -7,7 +7,7 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const here = dirname(fileURLToPath(import.meta.url));
-const src = resolve(here, "../../taxonomy/clp_taxonomy_v0.2.json");
+const src = resolve(here, "../../taxonomy/clp_taxonomy_v0.3.json");
 const out = resolve(here, "../content/taxonomy/clp.json");
 
 const tax = JSON.parse(readFileSync(src, "utf8"));
@@ -51,7 +51,7 @@ writeFileSync(
         taxonomyVersion: tax.meta.taxonomy_version,
         methodologyVersionAtBuild: tax.meta.methodology_version_at_build,
         status: tax.meta.status,
-        exportedFrom: "taxonomy/clp_taxonomy_v0.2.json",
+        exportedFrom: "taxonomy/clp_taxonomy_v0.3.json",
       },
       chapters,
     },

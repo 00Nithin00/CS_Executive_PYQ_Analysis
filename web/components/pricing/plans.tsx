@@ -35,6 +35,7 @@ export function PlanCards() {
                     <span className="text-ink-2">
                       {FEATURES[c].label}
                       {FEATURES[c].availability === "COMING_SOON" && <Badge tone="outline" className="ml-2 align-middle">Coming soon</Badge>}
+                      {FEATURES[c].availability === "DEMO_DATA_ONLY" && <Badge tone="outline" className="ml-2 align-middle">Demo data only</Badge>}
                     </span>
                   </li>
                 ))}
@@ -69,6 +70,7 @@ export function FeatureMatrix() {
                 <span className="block font-medium text-ink">
                   {FEATURES[c].label}
                   {FEATURES[c].availability === "COMING_SOON" && <span className="ml-2 text-xs font-normal text-ink-3">(coming soon)</span>}
+                  {FEATURES[c].availability === "DEMO_DATA_ONLY" && <span className="ml-2 text-xs font-normal text-ink-3">(demo data only)</span>}
                 </span>
                 <span className="mt-0.5 hidden text-xs text-ink-3 sm:block">{FEATURES[c].description}</span>
               </th>

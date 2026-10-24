@@ -1,5 +1,6 @@
 import { ChevronDown } from "lucide-react";
 import type { PriorityEntry, PriorityLabel } from "@/types/analytics";
+import type { Provenance } from "@/types/domain";
 import { PRIORITY_LABEL } from "@/lib/utils/labels";
 import { cn } from "@/lib/utils/cn";
 
@@ -11,14 +12,33 @@ const TONE: Record<PriorityLabel, string> = {
   NOT_EXAMINABLE: "border border-dashed border-line-strong text-ink-3",
 };
 
-export function PriorityBadge({ label }: { label: PriorityLabel }) {
-  return <span className={cn("inline-flex shrink-0 items-center rounded-full px-2.5 py-0.5 text-xs font-semibold", TONE[label])}>{PRIORITY_LABEL[label]}</span>;
+/** Labels from data that is not verified carry their status in the text itself, so they never read as recommendations. */
+const QUALIFIER: Record<Provenance, string | null> = { VERIFIED: null, DEMO: "Example", CANDIDATE: "Unverified" };
+const NOTE: Record<Provenance, string | null> = {
+  VERIFIED: null,
+  DEMO: "Example labels computed from synthetic demonstration questions. They are not study recommendations and describe no real examination.",
+  CANDIDATE: "Computed from an unverified candidate dataset. Not a study recommendation.",
+};
+
+export function PriorityBadge({ label, provenance = "VERIFIED" }: { label: PriorityLabel; provenance?: Provenance }) {
+  const q = QUALIFIER[provenance];
+  return (
+    <span className={cn("inline-flex shrink-0 items-center rounded-full px-2.5 py-0.5 text-xs font-semibold", TONE[label])}>
+      {q ? `${q}: ${PRIORITY_LABEL[label].toLowerCase()}` : PRIORITY_LABEL[label]}
+    </span>
+  );
 }
 
 /** Each entry expands to show the evidence and the points behind the label (methodology §9). */
-export function PriorityList({ entries }: { entries: PriorityEntry[] }) {
+export function PriorityList({ entries, provenance = "VERIFIED" }: { entries: PriorityEntry[]; provenance?: Provenance }) {
+  const note = NOTE[provenance];
   return (
     <ul className="divide-y divide-line">
+      {note && (
+        <li className="py-3 text-xs text-ink-3" data-priority-note>
+          {note}
+        </li>
+      )}
       {entries.map((e) => (
         <li key={e.topicId}>
           <details className="group py-3">
@@ -27,7 +47,7 @@ export function PriorityList({ entries }: { entries: PriorityEntry[] }) {
                 <p className="font-medium text-ink">{e.topicName}</p>
                 <p className="truncate text-xs text-ink-3">{e.chapterName}</p>
               </div>
-              <PriorityBadge label={e.label} />
+              <PriorityBadge label={e.label} provenance={provenance} />
               <ChevronDown aria-hidden className="mt-0.5 size-4 shrink-0 text-ink-3 transition-transform duration-200 group-open:rotate-180" />
             </summary>
             <div className="mt-3 rounded-md bg-surface-2 p-3 text-sm">

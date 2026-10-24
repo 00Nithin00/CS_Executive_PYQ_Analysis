@@ -7,7 +7,7 @@ import { Container } from "@/components/ui/primitives";
 
 export const metadata: Metadata = pageMetadata({
   title: "Pricing",
-  description: "Free access to every official CS Executive resource. Pro adds PYQ analysis and preparation tools.",
+  description: "Free access to every official resource. Pro, which is not open yet, is planned to add PYQ analysis once datasets are verified.",
   path: "/pricing",
 });
 
@@ -16,8 +16,8 @@ export default function PricingPage() {
     <>
       <PageHeader
         eyebrow="Plans"
-        title="Free for the official material. Pro for the intelligence."
-        lead="Official resources stay free. Pro covers the work of extracting, classifying and verifying every past question — and the tools built on it."
+        title="Free for the official material. Pro is not open yet."
+        lead="Official resources stay free. Pro is planned to cover verified historical analysis and the tools built on it. Its analysis features currently run only on synthetic demonstration questions, so no paid plan is offered."
         crumbs={[{ href: "/", label: "Home" }, { href: "/pricing", label: "Pricing" }]}
       />
       <Container className="py-12">

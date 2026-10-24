@@ -65,7 +65,7 @@ export async function SubjectIntelligence({ subject }: { subject: Subject }) {
             </ChartFrame>
 
             <ChartFrame title={copy.priorityTitle} subtitle={copy.prioritySubtitle} provenance={analytics.provenance}>
-              <PriorityList entries={analytics.priority.filter((p) => p.label === "HIGH" || p.label === "MEDIUM").slice(0, 7)} />
+              <PriorityList provenance={analytics.provenance} entries={analytics.priority.filter((p) => p.label === "HIGH" || p.label === "MEDIUM").slice(0, 7)} />
             </ChartFrame>
           </div>
 
@@ -75,8 +75,8 @@ export async function SubjectIntelligence({ subject }: { subject: Subject }) {
               subtitle={copy.marksSubtitle}
               provenance={analytics.provenance}
               table={{
-                columns: ["Chapter", "Marks", "Questions", "Status"],
-                rows: analytics.chapters.map((c) => [`L${c.chapterNumber} ${c.chapterName}`, c.marks, c.questionCount, removed(c.status) ? "Removed Dec 2025" : "Current"]),
+                columns: ["Chapter", "Marks (all attempts)", "Current-syllabus marks", "Questions", "Status"],
+                rows: analytics.chapters.map((c) => [`L${c.chapterNumber} ${c.chapterName}`, c.marks, c.currentMarks, c.questionCount, removed(c.status) ? "Removed Dec 2025" : "Current"]),
               }}
             >
               <BarList
@@ -105,9 +105,9 @@ export async function SubjectIntelligence({ subject }: { subject: Subject }) {
                         <p className="truncate text-xs text-ink-3">{c.topicName}</p>
                       </div>
                       <div className="flex shrink-0 flex-col items-end gap-1">
-                        <AttemptDots attempts={windowAttempts} appeared={c.attempts} />
+                        <AttemptDots attempts={windowAttempts} appeared={c.currentAttempts} />
                         <span className="tabular text-xs text-ink-3">
-                          {c.attempts.length} of {N}
+                          {c.currentAttempts.length} of {N}
                         </span>
                       </div>
                     </li>

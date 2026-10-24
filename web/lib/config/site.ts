@@ -11,15 +11,47 @@ export const SITE = {
   tagline: "Prepare with evidence, not guesswork.",
   description:
     "Official CA, CMA and CS resources in one place, organised by level and paper — plus structured CS Executive question history, organised by syllabus, chapter, topic and concept.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  // Direct property reads (not the whole process.env object) so every server layer resolves the same value at build time.
+  url: siteUrl({
+    NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL,
+    NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL: process.env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL,
+    VERCEL_PROJECT_PRODUCTION_URL: process.env.VERCEL_PROJECT_PRODUCTION_URL,
+  }),
 } as const;
+
+/**
+ * Public base URL for canonical links, Open Graph, robots and the sitemap.
+ * NEXT_PUBLIC_SITE_URL wins; on Vercel the production domain (a system variable Vercel sets on every build) is
+ * the fallback, so a missing variable never publishes localhost URLs; localhost only for local development.
+ */
+export function siteUrl(env: Record<string, string | undefined>): string {
+  const explicit = env.NEXT_PUBLIC_SITE_URL?.trim();
+  if (explicit) return explicit.replace(/\/$/, "");
+  const vercel = (env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL ?? env.VERCEL_PROJECT_PRODUCTION_URL)?.trim();
+  if (vercel) return `https://${vercel.replace(/^https?:\/\//, "").replace(/\/$/, "")}`;
+  return "http://localhost:3000";
+}
+
+/**
+ * Support contact. Published only when the owner sets NEXT_PUBLIC_SUPPORT_EMAIL; no address is invented.
+ * Until then the Contact, Privacy and Terms pages say plainly that no support address is published yet.
+ */
+export const SUPPORT = {
+  email: process.env.NEXT_PUBLIC_SUPPORT_EMAIL?.trim() || null,
+} as const;
+
+export const LEGAL_LINKS = [
+  { href: "/privacy", label: "Privacy" },
+  { href: "/terms", label: "Terms of use" },
+  { href: "/contact", label: "Contact & support" },
+] as const;
 
 /** `match`: extra path prefixes that mark the item active (CS Executive owns the original CS routes). */
 export const PRIMARY_NAV: readonly { href: string; label: string; match?: readonly string[] }[] = [
   { href: "/cs", label: "CS Executive", match: ["/subjects", "/papers", "/resources"] },
   { href: "/ca", label: "CA" },
   { href: "/cma", label: "CMA" },
-  { href: "/pyq", label: "PYQ Intelligence" },
+  // PYQ is not in the primary navigation while it shows demonstration data only; it stays linked, labelled, from the footer and /cs.
   { href: "/pricing", label: "Pricing" },
   { href: "/about", label: "About" },
 ];

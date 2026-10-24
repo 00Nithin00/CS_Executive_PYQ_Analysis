@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ProductLogo } from "@/components/brand/product-logo";
 import { Container } from "@/components/ui/primitives";
-import { RESOURCE_SECTIONS } from "@/lib/config/site";
+import { LEGAL_LINKS, RESOURCE_SECTIONS } from "@/lib/config/site";
 import { SUBJECTS } from "@/content/subjects";
 
 export function SiteFooter() {
@@ -21,16 +21,27 @@ export function SiteFooter() {
           <FooterCol
             title="Product"
             links={[
-              { href: "/pyq", label: "PYQ Intelligence" },
+              { href: "/pyq", label: "PYQ explorer (demo)" },
               { href: "/pricing", label: "Pricing" },
               { href: "/about", label: "About & method" },
               { href: "/login", label: "Log in" },
             ]}
           />
         </div>
-        <div className="mt-10 flex flex-col gap-2 border-t border-line pt-6 text-xs text-ink-3 sm:flex-row sm:justify-between">
+        <nav aria-label="Policies" className="mt-10 border-t border-line pt-6">
+          <ul className="flex flex-wrap gap-x-6 gap-y-2">
+            {LEGAL_LINKS.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} className="text-sm text-ink-3 transition-colors hover:text-ink">
+                  {l.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <div className="mt-6 flex flex-col gap-2 text-xs text-ink-3 sm:flex-row sm:justify-between">
           <p>Official documents are linked at their ICAI, ICMAI or ICSI source and are not re-hosted here.</p>
-          <p>Historical patterns describe past examinations. They do not predict future questions.</p>
+          <p>Question analysis on this site currently uses synthetic demonstration data. It describes no past examination and predicts nothing.</p>
         </div>
       </Container>
     </footer>

@@ -12,6 +12,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/resources",
     "/pricing",
     "/about",
+    "/privacy",
+    "/terms",
+    "/contact",
     ...SUBJECTS.map((s) => `/subjects/${s.slug}`),
     // PYQ pages are listed only once a subject's dataset is verified (they are noindex until then).
     ...SUBJECTS.filter((s) => s.intelligenceStatus === "AVAILABLE").map((s) => `/pyq/${s.slug}`),

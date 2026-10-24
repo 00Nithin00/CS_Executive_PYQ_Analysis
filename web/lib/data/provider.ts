@@ -5,7 +5,8 @@ import type { SubjectAnalytics, SubjectSummary } from "@/types/analytics";
 import type { ExamAttempt, OfficialResource, Provenance, QuestionRecord, ResourceType, Subject, SubjectSlug, Taxonomy } from "@/types/domain";
 
 export interface QuestionSet {
-  provenance: Provenance;
+  /** Production/demo providers never serve the candidate; it is reachable only through the local preview route. */
+  provenance: Exclude<Provenance, "CANDIDATE">;
   generatedFrom: string;
   records: QuestionRecord[];
 }
