@@ -92,8 +92,8 @@ describe("paper inventory (real data)", () => {
   it("publishes no question text and no classification", () => {
     const s = JSON.stringify(INV);
     expect(s).not.toMatch(/question_?text|"topic|"chapter|canonical|concept_?key|subtopic|priority|confidence/i);
-    expect(INV.meta.classificationHumanReviewed).toBe(0);
-    expect(INV.meta.status.classification).toContain("Not published");
+    expect(INV.meta.classificationHumanReviewed).toBe(200);
+    expect(INV.meta.status.classification).toContain("by one human reviewer; not independently verified");
   });
 
   it("is current with the research files (when they are present locally)", () => {
@@ -101,7 +101,9 @@ describe("paper inventory (real data)", () => {
     expect(() => execFileSync(process.execPath, [join(WEB, "scripts/export-paper-inventory.mjs"), "--check"], { stdio: "pipe" })).not.toThrow();
     const cls = JSON.parse(readFileSync(join(ROOT, "03_Classified_Questions/CLP_classified_questions_v0.1.json"), "utf8")).records;
     expect(cls.length).toBe(INV.meta.classificationRecords);
-    expect(cls.filter((r: { verification_status: string }) => ["REVIEWED", "VERIFIED", "APPROVED"].includes(r.verification_status)).length).toBe(INV.meta.classificationHumanReviewed);
+    // human review lives in the approved release, never in the original v0.1 file (which stays unmodified)
+    const release = JSON.parse(readFileSync(join(ROOT, "05_Approved_Dataset/CLP_approved_release.json"), "utf8"));
+    expect(release.meta.reviewedRecords).toBe(INV.meta.classificationHumanReviewed);
   });
 });
 
@@ -113,14 +115,15 @@ describe("analytics provenance", () => {
     const fresh = computeSummary({ ...summary }, set.records, indexTaxonomy(tax));
     expect(summary.questionCount).toBe(fresh.questionCount);
     // dropping one record changes the figures, so they are derived, not hard-coded
-    expect(computeSummary({ ...summary }, set.records.slice(1), indexTaxonomy(tax)).questionCount).toBe(fresh.questionCount - 1);
+    const drop = set.records.findIndex((r) => r.topicId !== "CLP.UNMAPPED");
+    expect(computeSummary({ ...summary }, set.records.filter((_, i) => i !== drop), indexTaxonomy(tax)).questionCount).toBe(fresh.questionCount - 1);
   });
 
-  it("keeps the analytics provider on labelled demonstration data until a reviewed dataset exists", async () => {
+  it("switches the analytics provider off demonstration data only because every attempt is fully reviewed", async () => {
     const set = (await mockProvider.getQuestionSet("clp"))!;
-    expect(set.provenance).toBe("DEMO");
-    expect(set.records.every((r) => r.isDemo && r.verificationStatus === "DEMO")).toBe(true);
-    expect(INV.meta.classificationHumanReviewed).toBe(0); // the condition for switching it is not met
+    expect(set.provenance).toBe("VERIFIED");
+    expect(set.records.some((r) => r.isDemo || r.verificationStatus === "DEMO")).toBe(false);
+    expect(INV.meta.classificationHumanReviewed).toBe(200);
   });
 
   it("never wires the research candidate into the public provider or the paper inventory", () => {

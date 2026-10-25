@@ -13,7 +13,7 @@ export const metadata: Metadata = pageMetadata({
 const PRINCIPLES = [
   ["Official sources first", "Every document links to its official ICSI, ICAI or ICMAI source. Third-party sites are never treated as authoritative."],
   ["A versioned taxonomy", "Questions are classified into chapters and topics taken from the ICSI syllabus. The Company Law & Practice taxonomy is frozen at version 0.3. The taxonomy is the map of the syllabus; it says nothing about whether any question has been checked."],
-  ["Traceable numbers", "Once a dataset is released, each figure will be traceable to specific questions, papers, pages and question numbers. Today's analysis pages use synthetic demonstration questions instead."],
+  ["Traceable numbers", "Each Company Law & Practice figure comes from specific question parts of the official papers, with their paper, page and question number."],
   ["Uncertainty is shown, not hidden", "The method requires ambiguous classifications to be reviewed by a person before release. Content removed from the syllabus is kept for history but excluded from current priorities."],
   ["History, not prediction", "Frequency, coverage and recency describe past papers. Priorities are explained in plain numbers, never as a probability of appearing."],
 ];
@@ -52,8 +52,8 @@ export default function AboutPage() {
         <Reveal as="section" className="mt-12 rounded-lg border border-dashed border-pro-500/50 bg-pro-50/60 p-5 text-sm text-pro-700">
           <strong className="font-semibold">Current status:</strong> official resources are live. For Company Law &amp; Practice, the six Syllabus 2022 question
           papers (December 2023 to June 2026) have been split into 200 marked question parts, and their structure and marks are published on the subject page.
-          The topic classifications have not yet been reviewed and approved by a person, so no topic frequency or priority from those papers is published;
-          the analysis views use clearly labelled synthetic demonstration questions until that review is complete. Other subjects follow.
+          Every one of them has a chapter and topic classification that was reviewed on 25 October 2026 by one human reviewer, not independently verified (human-reviewed dataset, release CLP-PAPER522-REVIEWED-1.0);
+          the analysis is built from those reviewed records. Repeat and concept analysis needs a further review and is not shown yet. Other subjects follow.
         </Reveal>
       </Container>
     </>

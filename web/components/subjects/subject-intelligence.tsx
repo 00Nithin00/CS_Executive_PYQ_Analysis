@@ -3,7 +3,8 @@ import { can, getViewer } from "@/lib/auth/viewer";
 import { analyticsCopy } from "@/lib/config/disclosure";
 import { getSubjectAnalytics, getSubjectSummary, listAttempts } from "@/lib/data/service";
 import { QUESTION_TYPE_LABEL, REPEAT_LABEL } from "@/lib/utils/labels";
-import type { Subject } from "@/types/domain";
+import type { SubjectSummary } from "@/types/analytics";
+import type { ExamAttempt, Subject } from "@/types/domain";
 import { AttemptDots } from "@/components/analytics/attempt-dots";
 import { AttemptTimeline } from "@/components/analytics/attempt-timeline";
 import { BarList } from "@/components/analytics/bar-list";
@@ -38,6 +39,7 @@ export async function SubjectIntelligence({ subject }: { subject: Subject }) {
   return (
     <div className="space-y-6">
       {summary.provenance === "DEMO" && <DemoNotice />}
+      {summary.coverage && <ReviewedCoverageNote coverage={summary.coverage} attempts={allAttempts} />}
 
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         <StatTile label={copy.stat.attempts} value={summary.attemptsAnalyzed} hint="Syllabus 2022 attempts" />
@@ -92,6 +94,9 @@ export async function SubjectIntelligence({ subject }: { subject: Subject }) {
             </ChartFrame>
 
             <ChartFrame title={copy.recurringTitle} subtitle={copy.recurringSubtitle} provenance={analytics.provenance}>
+              {analytics.coverage && !analytics.coverage.conceptAnalysis ? (
+                <p className="text-sm text-ink-3">Concept keys have not been reviewed yet, so recurring-concept analysis from the real papers is not shown.</p>
+              ) : (
               <ul className="divide-y divide-line">
                 {analytics.recurringConcepts
                   .filter((c) => c.currentPriorityEligible)
@@ -113,6 +118,7 @@ export async function SubjectIntelligence({ subject }: { subject: Subject }) {
                     </li>
                   ))}
               </ul>
+              )}
             </ChartFrame>
           </div>
 
@@ -125,15 +131,22 @@ export async function SubjectIntelligence({ subject }: { subject: Subject }) {
               <BarList unit=" m" size="sm" data={analytics.questionTypes.map((t) => ({ key: t.type, label: QUESTION_TYPE_LABEL[t.type], value: t.marks, detail: `${t.count} questions` }))} />
             </ChartFrame>
             <ChartFrame title={copy.repeatTitle} subtitle="How each question relates to earlier attempts (methodology §7)." provenance={analytics.provenance}>
-              <BarList
-                size="sm"
-                data={analytics.repeatBreakdown.map((r) => ({
-                  key: r.status,
-                  label: REPEAT_LABEL[r.status],
-                  value: r.count,
-                  muted: r.status === "CHAPTER_REPEAT" || r.status === "FIRST_SEEN",
-                }))}
-              />
+              {analytics.coverage && !analytics.coverage.conceptAnalysis ? (
+                <p className="text-sm text-ink-3" data-repeat-unavailable>
+                  Not available yet. Repeat relationships depend on concept keys, which were not part of the classification review. No repeat claim is made
+                  from the real papers until they are reviewed.
+                </p>
+              ) : (
+                <BarList
+                  size="sm"
+                  data={analytics.repeatBreakdown.map((r) => ({
+                    key: r.status,
+                    label: REPEAT_LABEL[r.status],
+                    value: r.count,
+                    muted: r.status === "CHAPTER_REPEAT" || r.status === "FIRST_SEEN",
+                  }))}
+                />
+              )}
             </ChartFrame>
           </div>
         </>
@@ -168,5 +181,20 @@ export function SubjectIntelligenceSkeleton() {
       </div>
       <div className="h-80 animate-pulse rounded-lg border border-line bg-surface" />
     </div>
+  );
+}
+
+/** Real analytics are drawn only from human-reviewed records; say exactly how many and which attempts. */
+function ReviewedCoverageNote({ coverage, attempts }: { coverage: NonNullable<SubjectSummary["coverage"]>; attempts: ExamAttempt[] }) {
+  const labels = coverage.releasedAttempts.map((a) => attempts.find((x) => x.id === a)?.label ?? a);
+  return (
+    <p role="note" className="rounded-md border border-line bg-surface p-3.5 text-sm text-ink-2" data-reviewed-coverage>
+      Based on {coverage.reviewedRecords - coverage.excludedRecords} human-reviewed question parts from {coverage.releasedAttempts.length} of {coverage.allAttempts} attempts (
+      {labels.join(", ")}). Release {coverage.release}
+      {coverage.releaseDate ? ` (${coverage.releaseDate})` : ""}, taxonomy v{coverage.taxonomyVersion}. {coverage.reviewedRecords} of {coverage.totalRecords} records reviewed
+      {coverage.excludedRecords ? `; ${coverage.excludedRecords} excluded after review` : ""}.{" "}
+      {coverage.independentVerification ? "Independently verified." : (coverage.reviewBasis ?? "Reviewed by one human reviewer; not independently verified.")} Questions on
+      the holding node (outside the taxonomy) are not counted in topic figures.
+    </p>
   );
 }

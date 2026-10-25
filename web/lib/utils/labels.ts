@@ -18,7 +18,7 @@ export const REPEAT_LABEL: Record<RepeatStatus, string> = {
   CONCEPTUAL_REPEAT: "Conceptual repeat",
   TOPIC_REPEAT: "Same topic, new concept",
   CHAPTER_REPEAT: "Same chapter, new topic",
-  UNRESOLVED: "Under review",
+  UNRESOLVED: "Not yet assessed",
 };
 
 export const REPEAT_HELP: Record<RepeatStatus, string> = {
@@ -27,7 +27,7 @@ export const REPEAT_HELP: Record<RepeatStatus, string> = {
   CONCEPTUAL_REPEAT: "Different wording, same underlying provision and rule.",
   TOPIC_REPEAT: "Same syllabus topic, but a different concept was tested.",
   CHAPTER_REPEAT: "Same chapter, different topic. Not a repeated question.",
-  UNRESOLVED: "Repeat relationship still being verified.",
+  UNRESOLVED: "Whether this question repeats an earlier one has not been assessed yet.",
 };
 
 export const PRIORITY_LABEL: Record<PriorityLabel, string> = {

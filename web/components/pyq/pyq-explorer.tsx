@@ -64,7 +64,11 @@ export function PyqExplorer({
     () => [...new Set(payload.questions.filter(isProQuestion).map((x) => x.questionType))] as QuestionType[],
     [payload.questions],
   );
-  const repeatOptions: RepeatStatus[] = ["EXACT_REPEAT", "CONCEPTUAL_REPEAT", "TOPIC_REPEAT", "CHAPTER_REPEAT", "FIRST_SEEN"];
+  // Only statuses that actually occur: real records whose repeats are not yet assessed offer no repeat filter values.
+  const repeatOptions = useMemo(
+    () => (["EXACT_REPEAT", "CONCEPTUAL_REPEAT", "TOPIC_REPEAT", "CHAPTER_REPEAT", "FIRST_SEEN"] as RepeatStatus[]).filter((r) => payload.questions.some((x) => isProQuestion(x) && x.repeatStatus === r)),
+    [payload.questions],
+  );
 
   const results = useMemo(
     () =>
@@ -284,7 +288,7 @@ function FilterPanel({
         )}
         <Select label="Topic" disabled={!advanced || filters.chapter === "all"} hint={advanced && filters.chapter === "all" ? "Choose a chapter first" : undefined} value={filters.topic} onChange={(v) => set({ topic: v })} options={topics.map((t) => ({ value: t.id, label: t.name }))} />
         <Select label="Question type" disabled={!advanced} value={filters.type} onChange={(v) => set({ type: v })} options={typeOptions.map((t) => ({ value: t, label: QUESTION_TYPE_LABEL[t] }))} />
-        <Select label="Repeat status" disabled={!advanced} value={filters.repeat} onChange={(v) => set({ repeat: v })} options={repeatOptions.map((r) => ({ value: r, label: REPEAT_LABEL[r] }))} />
+        <Select label="Repeat status" disabled={!advanced || repeatOptions.length === 0} value={filters.repeat} onChange={(v) => set({ repeat: v })} options={repeatOptions.map((r) => ({ value: r, label: REPEAT_LABEL[r] }))} />
       </div>
     </div>
   );

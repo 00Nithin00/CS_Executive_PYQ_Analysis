@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
   title: "Terms of use",
-  description: `How ${SITE.name} may be used, what its information is and is not, and the status of demonstration analytics.`,
+  description: `How ${SITE.name} may be used, what its information is and is not, and the basis of its question analysis.`,
   path: "/terms",
 });
 
@@ -42,17 +42,16 @@ export default function TermsPage() {
         },
         {
           id: "analytics",
-          title: "Demonstration analytics",
+          title: "Question analysis",
           body: (
             <>
               <p>
-                Where the site shows question analysis, coverage, marks, recurring concepts or example priorities, it currently uses{" "}
-                <strong>synthetic demonstration questions</strong>. These are not ICSI questions and are not findings about past examinations. No
-                historical dataset has been published yet.
+                Question analysis for Company Law &amp; Practice is built from the six Syllabus 2022 question papers. Each question part was placed in the
+                syllabus and that placement was {"reviewed on 25 October 2026 by one human reviewer, not independently verified"}. Other subjects have no question analysis yet.
               </p>
               <p>
-                Any future historical analysis describes past papers only. It does not predict what a future examination will ask, and no outcome in
-                any examination is promised.
+                The analysis describes past papers only. It does not predict what a future examination will ask, and no outcome in any examination is
+                promised. Repeat and concept analysis is not available yet.
               </p>
             </>
           ),

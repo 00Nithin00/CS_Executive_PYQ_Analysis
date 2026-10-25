@@ -20,6 +20,7 @@ const SRC = {
   validation: "02_Raw_Extraction/CLP_extraction_validation.json",
   classification: "03_Classified_Questions/CLP_classified_questions_v0.1.json",
   registry: "SOURCE_REGISTRY.md",
+  release: "05_Approved_Dataset/CLP_approved_release.json",
 };
 const text = Object.fromEntries(Object.entries(SRC).map(([k, p]) => [k, readFileSync(resolve(root, p), "utf8")]));
 const sha = (s) => createHash("sha256").update(s).digest("hex");
@@ -105,7 +106,9 @@ const papers = raw.papers.map((p) => {
   };
 });
 
-const reviewed = cls.filter((r) => ["REVIEWED", "VERIFIED", "APPROVED"].includes(r.verification_status)).length;
+// Human review is recorded only in the approved release (named reviewer and date per record).
+const release = JSON.parse(text.release).meta;
+const reviewed = release.reviewedRecords;
 const doc = {
   meta: {
     subject: "clp",
@@ -116,7 +119,10 @@ const doc = {
     status: {
       papers: "Official ICSI question papers; identity, syllabus, completeness and source authority recorded as verified in the paper manifest.",
       extraction: `All ${raw.questions.length} question parts extracted; every paper passes the automated structure and marks checks. Extraction status: ${[...new Set(raw.questions.map((q) => q.verification_status))].join(", ")} (not human-verified).`,
-      classification: `Not published. ${reviewed} of ${cls.length} classifications have completed human review.`,
+      classification:
+        reviewed === cls.length
+          ? `All ${cls.length} classifications reviewed (release ${release.release}). ${release.reviewBasis}`
+          : `${reviewed} of ${cls.length} classifications reviewed; topic analytics are published only for fully reviewed attempts.`,
     },
     classificationRecords: cls.length,
     classificationHumanReviewed: reviewed,

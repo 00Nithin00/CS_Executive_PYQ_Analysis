@@ -18,7 +18,7 @@ export default async function CsHub() {
     { href: "/subjects", icon: BookOpen, title: "Subjects", body: `All ${subjects.length} Executive papers with their syllabus lessons and official resources.` },
     { href: "/papers", icon: FileQuestion, title: "Previous papers", body: "Every Syllabus 2022 Executive paper by attempt, with ICSI guideline answers." },
     { href: "/resources", icon: Library, title: "Official resources", body: `${resources.length} official ICSI documents: study material, papers, answers, supplements and syllabus.` },
-    { href: "/pyq", icon: FlaskConical, title: "PYQ Intelligence", body: "Past questions placed in the syllabus. Currently shown with clearly labelled demo data while verification completes.", demo: true },
+    { href: "/pyq", icon: FlaskConical, title: "PYQ explorer", body: "Company Law & Practice: 200 question parts from the six Syllabus 2022 papers, placed in the syllabus. Other subjects are in preparation." },
   ];
   return (
     <>
@@ -36,7 +36,7 @@ export default async function CsHub() {
           </li>
           <li>
             <Badge tone="outline">
-              <FlaskConical aria-hidden className="size-3.5" /> Question analysis: in verification (demo data shown)
+              <FlaskConical aria-hidden className="size-3.5" /> Question analysis: Company Law &amp; Practice
             </Badge>
           </li>
         </ul>
@@ -53,7 +53,7 @@ export default async function CsHub() {
                   <s.icon aria-hidden className="size-5" />
                 </span>
                 <h2 className="mt-5 flex items-center gap-2 text-xl font-semibold">
-                  {s.title} {s.demo && <Badge tone="outline">Demo data</Badge>}
+                  {s.title}
                 </h2>
                 <p className="mt-2 flex-1 text-sm text-ink-3">{s.body}</p>
                 <ArrowRight aria-hidden className="mt-5 size-4 text-accent-700 transition-transform group-hover:translate-x-1" />

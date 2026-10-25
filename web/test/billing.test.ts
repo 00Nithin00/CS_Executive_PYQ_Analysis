@@ -21,6 +21,9 @@ let remote: Map<string, RazorpaySubscription>;
 let cancelled: { id: string; atCycleEnd: boolean }[];
 let fetchFails = false;
 const api: RazorpayApi = {
+  async fetchPlan(id) {
+    return { id, period: "monthly", interval: 1, item: { amount: 34900, currency: "INR" } };
+  },
   async createSubscription() {
     throw new Error("not used");
   },
@@ -101,7 +104,8 @@ describe("checkout availability guards", () => {
   it("off unless configured, listed and planned", () => {
     expect(checkoutBlock(readBillingConfig({}), "cs")).toBe("NOT_CONFIGURED");
     expect(checkoutBlock(env({}), "ca")).toBe("QUALIFICATION_DISABLED");
-    expect(checkoutBlock(env({ BILLING_CHECKOUT_QUALIFICATIONS: "cs,ca" }), "ca")).toBe("NO_PLAN");
+    // Only CS Executive Pro is sold: listing CA in the environment does not open checkout for it.
+    expect(checkoutBlock(env({ BILLING_CHECKOUT_QUALIFICATIONS: "cs,ca" }), "ca")).toBe("NOT_SOLD");
     expect(checkoutBlock(env({}), "cs")).toBeNull();
   });
   it("test keys are refused on the production deployment", () => {

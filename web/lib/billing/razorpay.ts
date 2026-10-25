@@ -16,7 +16,15 @@ export interface RazorpaySubscription {
   short_url?: string;
 }
 
+export interface RazorpayPlan {
+  id: string;
+  period: "daily" | "weekly" | "monthly" | "yearly";
+  interval: number;
+  item: { amount: number; currency: string; name?: string };
+}
+
 export interface RazorpayApi {
+  fetchPlan(id: string): Promise<RazorpayPlan>;
   createSubscription(input: { planId: string; totalCount: number; notes: Record<string, string> }): Promise<RazorpaySubscription>;
   fetchSubscription(id: string): Promise<RazorpaySubscription>;
   cancelSubscription(id: string, atCycleEnd: boolean): Promise<RazorpaySubscription>;
@@ -53,6 +61,7 @@ export function razorpayApi(keyId: string, keySecret: string, fetchImpl: typeof 
     return id;
   };
   return {
+    fetchPlan: (id) => call("GET", `/plans/${checkId(id)}`),
     createSubscription: ({ planId, totalCount, notes }) =>
       call("POST", "/subscriptions", { plan_id: checkId(planId), total_count: totalCount, quantity: 1, customer_notify: 1, notes }),
     fetchSubscription: (id) => call("GET", `/subscriptions/${checkId(id)}`),

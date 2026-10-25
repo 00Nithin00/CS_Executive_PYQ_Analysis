@@ -11,3 +11,17 @@ __pycache__/
 # ICSI copyrighted documents: kept locally for research only, never committed or re-hosted.
 # The manifest (source URLs + hashes) is tracked instead.
 01_Source_Papers/**/*.pdf
+
+# Raw extraction outputs contain the full text of ICSI examination papers: keep local, never commit.
+# (Scripts, validation results, overrides/provenance and reports remain trackable.)
+02_Raw_Extraction/*_atomic_questions_raw.json
+02_Raw_Extraction/*_atomic_questions_raw.csv
+02_Raw_Extraction/page_text/
+04_Verification/clp_extraction_evidence/ocr_crosscheck.json
+
+# External professional review package: contains copies of ICSI publications (review use only); never commit or re-host.
+04_Verification/EXTERNAL_REVIEW_PACKAGE_v0.1/
+
+# Private review evidence: contains the reviewer's identity. Never commit or publish.
+04_Verification/human_review_r1/reviewed/
+05_Approved_Dataset/private/

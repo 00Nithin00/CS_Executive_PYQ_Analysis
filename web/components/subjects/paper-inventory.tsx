@@ -1,9 +1,10 @@
 import { ExternalLink } from "lucide-react";
 import { Badge, StatTile } from "@/components/ui/primitives";
+import type { ReviewProgress } from "@/lib/data/paper-inventory";
 import type { PaperInventory } from "@/types/papers";
 
 /** Real question papers behind the subject: official links, structure and marks. No question text, no classifications. */
-export function PaperInventorySection({ inventory }: { inventory: PaperInventory }) {
+export function PaperInventorySection({ inventory, review }: { inventory: PaperInventory; review: ReviewProgress }) {
   const { papers, meta } = inventory;
   const parts = papers.reduce((s, p) => s + p.totals.atomicParts, 0);
   const allChecks = papers.every((p) => p.checks.extraction.passed === p.checks.extraction.total && p.checks.source === "VERIFIED");
@@ -24,10 +25,14 @@ export function PaperInventorySection({ inventory }: { inventory: PaperInventory
         <StatTile label="Exam attempts" value={papers.length} hint={`${papers[0]?.attemptLabel} – ${papers.at(-1)?.attemptLabel}`} />
         <StatTile label="Question parts extracted" value={parts} hint="Individually marked units" />
         <StatTile label="Guideline answers linked" value={`${papers.filter((p) => p.guidelineAnswerUrl).length} of ${papers.length}`} />
-        <StatTile label="Topic classifications reviewed" value={`${meta.classificationHumanReviewed} of ${meta.classificationRecords}`} hint="Not published until reviewed" />
+        <StatTile
+          label="Topic classifications human-reviewed"
+          value={`${review.reviewed} of ${review.total}`}
+          hint={review.releasedAttempts ? `${review.releasedAttempts} attempts fully reviewed` : "Published per attempt once fully reviewed"}
+        />
       </div>
 
-      <div className="mt-6 overflow-x-auto rounded-lg border border-line bg-surface">
+      <div className="relative mt-6 overflow-x-auto rounded-lg border border-line bg-surface">
         <table className="tabular w-full min-w-[640px] text-left text-sm">
           <caption className="sr-only">Question papers by exam attempt, with structure, marks and official links</caption>
           <thead className="bg-surface-2/60 text-ink-3">
@@ -86,8 +91,8 @@ export function PaperInventorySection({ inventory }: { inventory: PaperInventory
         </dd>
         <dt className="font-medium text-ink-2">Topics</dt>
         <dd>
-          Classification into chapters and topics is complete in draft, but {meta.classificationHumanReviewed} of {meta.classificationRecords} records have
-          completed human review, so no topic frequency, marks weight or priority from these papers is published yet.
+          Every question part has a draft chapter and topic classification. {review.reviewed} of {review.total} have been human-reviewed (one reviewer; not independently verified). Topic
+          analytics from the real papers are published attempt by attempt, once every question part of an attempt has been reviewed.
         </dd>
       </dl>
     </section>

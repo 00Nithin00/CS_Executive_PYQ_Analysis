@@ -46,7 +46,7 @@ export async function IntelligencePreview() {
                     <p className="text-xs font-semibold uppercase tracking-[0.14em] text-ink-3">{isDemo ? "Sample analysis" : "Analysis"} · Company Law & Practice</p>
                     <p className="mt-1 font-display text-xl font-semibold">Marks by chapter</p>
                     <p className="mt-1 text-sm text-ink-3">
-                      {isDemo ? "Synthetic demonstration questions" : "Verified questions"} · {preview.attemptsInWindow.length} attempts
+                      {isDemo ? "Synthetic demonstration questions" : "Human-reviewed questions"} · {preview.attemptsInWindow.length} attempts
                     </p>
                   </div>
                   {isDemo && <DemoBadge />}
@@ -67,7 +67,7 @@ export async function IntelligencePreview() {
             ) : (
               <div className="py-6 text-center">
                 <p className="font-display text-xl font-semibold">Chapter, topic and marks analysis</p>
-                <p className="mx-auto mt-2 max-w-sm text-sm text-ink-3">Available on each subject page as its dataset is verified.</p>
+                <p className="mx-auto mt-2 max-w-sm text-sm text-ink-3">For Company Law &amp; Practice, built from the six reviewed papers: part of CS Executive Pro.</p>
               </div>
             )}
           </div>

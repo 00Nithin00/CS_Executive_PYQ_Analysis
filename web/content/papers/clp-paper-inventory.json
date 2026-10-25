@@ -7,23 +7,25 @@
    "raw": "02_Raw_Extraction/CLP_atomic_questions_raw.json",
    "validation": "02_Raw_Extraction/CLP_extraction_validation.json",
    "classification": "03_Classified_Questions/CLP_classified_questions_v0.1.json",
-   "registry": "SOURCE_REGISTRY.md"
+   "registry": "SOURCE_REGISTRY.md",
+   "release": "05_Approved_Dataset/CLP_approved_release.json"
   },
   "sourceSha256": {
    "manifest": "47117c65e272745621f563bcd26a061edfe7655772ab9c1c58e6b3fc742788b3",
    "raw": "7be5957e497faefaadeccfe406bf44ec98743e271bf67189f77b108d40b8f0f2",
    "validation": "d9edb432db639f9ba08c9c47f1ca46fd64e15103340f088ce42778073504d50c",
    "classification": "52ae301f6e22be96f6d873d426065a8d2107205b3a9e43bfad37f732717f12b8",
-   "registry": "df0f18772082d1642e1c5a677cc3156fb3da85c1fc7c28d004375259c709323f"
+   "registry": "df0f18772082d1642e1c5a677cc3156fb3da85c1fc7c28d004375259c709323f",
+   "release": "a7254c45cd975eaf901071cfdb58d53572fe427299d7d6af46c4780af294eee5"
   },
   "extractionStage": "EXTRACTED (raw; not classified, not verified, not approved)",
   "status": {
    "papers": "Official ICSI question papers; identity, syllabus, completeness and source authority recorded as verified in the paper manifest.",
    "extraction": "All 200 question parts extracted; every paper passes the automated structure and marks checks. Extraction status: EXTRACTED (not human-verified).",
-   "classification": "Not published. 0 of 200 classifications have completed human review."
+   "classification": "All 200 classifications reviewed (release CLP-PAPER522-REVIEWED-1.0). Human-reviewed dataset. Reviewed on 25 October 2026 by one human reviewer; not independently verified."
   },
   "classificationRecords": 200,
-  "classificationHumanReviewed": 0,
+  "classificationHumanReviewed": 200,
   "note": "No question text and no syllabus classification is exported. Question text stays in the official ICSI papers."
  },
  "papers": [

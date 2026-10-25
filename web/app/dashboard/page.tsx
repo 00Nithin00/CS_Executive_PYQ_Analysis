@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { DashHeading, DashSkeleton } from "@/components/dashboard/dash-ui";
 import { ButtonLink } from "@/components/ui/button";
-import { Card, DemoNotice, ProBadge, StatTile } from "@/components/ui/primitives";
+import { Card, ProBadge, StatTile } from "@/components/ui/primitives";
 import { NEXT_ATTEMPT } from "@/content/attempts";
 import { can, requireUser } from "@/lib/auth/viewer";
 import { getTaxonomy } from "@/lib/data/service";
@@ -71,9 +71,10 @@ async function Overview() {
         ))}
       </div>
 
-      <DemoNotice className="mt-8">
-        <strong className="font-semibold">Early access.</strong> PYQ analysis currently uses demonstration data — synthetic questions, not ICSI examination history — while the verified Company Law & Practice dataset is completed.
-      </DemoNotice>
+      <p role="note" className="mt-8 rounded-md border border-line bg-surface p-3.5 text-sm text-ink-2">
+        <strong className="font-semibold">About the data.</strong> Company Law &amp; Practice analysis uses the 200 question parts of the six Syllabus 2022
+        papers, each classified and {"reviewed on 25 October 2026 by one human reviewer, not independently verified"}. Repeat and concept analysis is not available yet. Other subjects are in preparation.
+      </p>
     </>
   );
 }

@@ -17,7 +17,8 @@ function period(p: (typeof PLAN_PRESENTATION)[number]) {
   return `${p.price.per ? `per ${p.price.per} ` : ""}per ${p.price.period}`;
 }
 
-export function PlanCards() {
+/** `demoData`: the CS question data behind the analysis features is still the synthetic demonstration set. */
+export function PlanCards({ demoData }: { demoData: boolean }) {
   return (
     <Stagger className="grid gap-5 md:grid-cols-2">
       {PLAN_PRESENTATION.map((p) => {
@@ -42,7 +43,7 @@ export function PlanCards() {
                     <span className="text-ink-2">
                       {FEATURES[c].label}
                       {FEATURES[c].availability === "COMING_SOON" && <Badge tone="outline" className="ml-2 align-middle">Coming soon</Badge>}
-                      {FEATURES[c].availability === "DEMO_DATA_ONLY" && <Badge tone="outline" className="ml-2 align-middle">Demo data only</Badge>}
+                      {demoData && FEATURES[c].availability === "DEMO_DATA_ONLY" && <Badge tone="outline" className="ml-2 align-middle">Demo data only</Badge>}
                     </span>
                   </li>
                 ))}
@@ -58,7 +59,7 @@ export function PlanCards() {
   );
 }
 
-export function FeatureMatrix() {
+export function FeatureMatrix({ demoData }: { demoData: boolean }) {
   return (
     <div className="overflow-hidden rounded-lg border border-line bg-surface">
       <table className="w-full text-left text-sm">
@@ -67,7 +68,7 @@ export function FeatureMatrix() {
           <tr>
             <th scope="col" className="px-4 py-3 font-medium text-ink-3 sm:px-5">Feature</th>
             <th scope="col" className="w-20 px-2 py-3 text-center font-medium text-ink-3 sm:w-28">Free</th>
-            <th scope="col" className="w-20 px-2 py-3 text-center font-medium text-ink-3 sm:w-28">Pro</th>
+            <th scope="col" className="w-20 px-2 py-3 text-center font-medium text-ink-3 sm:w-28">CS Executive Pro</th>
           </tr>
         </thead>
         <tbody className="divide-y divide-line">
@@ -77,7 +78,7 @@ export function FeatureMatrix() {
                 <span className="block font-medium text-ink">
                   {FEATURES[c].label}
                   {FEATURES[c].availability === "COMING_SOON" && <span className="ml-2 text-xs font-normal text-ink-3">(coming soon)</span>}
-                  {FEATURES[c].availability === "DEMO_DATA_ONLY" && <span className="ml-2 text-xs font-normal text-ink-3">(demo data only)</span>}
+                  {demoData && FEATURES[c].availability === "DEMO_DATA_ONLY" && <span className="ml-2 text-xs font-normal text-ink-3">(demo data only)</span>}
                 </span>
                 <span className="mt-0.5 hidden text-xs text-ink-3 sm:block">{FEATURES[c].description}</span>
               </th>

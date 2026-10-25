@@ -6,7 +6,7 @@ import { PageHeader } from "@/components/layout/page-header";
 import { ResourceList } from "@/components/resources/resource-list";
 import { PaperInventorySection } from "@/components/subjects/paper-inventory";
 import { SubjectIntelligence, SubjectIntelligenceSkeleton } from "@/components/subjects/subject-intelligence";
-import { getPaperInventory } from "@/lib/data/paper-inventory";
+import { getPaperInventory, getReviewProgress } from "@/lib/data/paper-inventory";
 import { Badge, Container, DemoBadge } from "@/components/ui/primitives";
 import { Reveal } from "@/components/motion/reveal";
 import { getSubject, listResources, listSubjects } from "@/lib/data/service";
@@ -32,6 +32,7 @@ export default async function SubjectPage({ params }: PageProps<"/subjects/[slug
   const papers = resources.filter((r) => r.resourceType === "QUESTION_PAPER" && !r.paperCode?.endsWith("EH"));
   const other = resources.filter((r) => r.resourceType !== "QUESTION_PAPER" && r.resourceType !== "GUIDELINE_ANSWER");
   const inventory = getPaperInventory(subject.slug);
+  const review = getReviewProgress(subject.slug);
 
   return (
     <>
@@ -53,9 +54,9 @@ export default async function SubjectPage({ params }: PageProps<"/subjects/[slug
       </PageHeader>
 
       <Container className="py-12">
-        {inventory && (
+        {inventory && review && (
           <div className="mb-16">
-            <PaperInventorySection inventory={inventory} />
+            <PaperInventorySection inventory={inventory} review={review} />
           </div>
         )}
         <section aria-labelledby="intel">

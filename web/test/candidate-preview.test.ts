@@ -250,15 +250,14 @@ describe("failure is visible, never demo data", () => {
 });
 
 describe("production/demo route keeps its data source", () => {
-  it("serves demonstration data from mock/questions/clp.json, never the candidate", async () => {
+  it("serves the human-reviewed release, never the candidate", async () => {
     const set = (await mockProvider.getQuestionSet("clp"))!;
-    expect(set.provenance).toBe("DEMO");
-    expect(set.generatedFrom).toBe("mock/questions/clp.json");
-    expect(set.records.some((r) => r.currentPriorityHold)).toBe(false);
+    expect(set.provenance).toBe("VERIFIED");
+    expect(set.generatedFrom).toBe("content/releases/clp-approved-release.json");
+    expect(set.records.some((r) => r.currentPriorityHold)).toBe(false); // the candidate overlay never reaches the public provider
     const a = (await mockProvider.getAnalytics("clp"))!;
-    expect(a.provenance).toBe("DEMO");
-    expect(a.generatedFrom).toBe("mock/questions/clp.json");
-    expect(a.currentTopics).toEqual(a.topics.filter((t) => t.currentPriorityEligible)); // no holds: identical to the old filter
+    expect(a.generatedFrom).toBe("content/releases/clp-approved-release.json");
+    expect(a.currentTopics).toEqual(a.topics.filter((t) => t.currentPriorityEligible)); // no holds: identical to the per-topic filter
     const src = ["lib/data/mock-provider.ts", "lib/data/service.ts", "lib/data/provider.ts"].map((f) => readFileSync(resolve(ROOT, "web", f), "utf8")).join("\n");
     expect(src).not.toMatch(/from\s+["']@\/(lib\/preview|lib\/config\/candidate-preview|components\/preview)/);
     expect(src).not.toMatch(/ai_desk_review_candidate|REVIEW_STATUS_OVERLAY/);

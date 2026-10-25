@@ -10,10 +10,14 @@ export function PyqPageBody({ subjects, active }: { subjects: Subject[]; active:
   return (
     <>
       <PageHeader
-        eyebrow="PYQ explorer · demonstration"
-        title="How past questions will be organised in the syllabus."
-        lead="This explorer currently holds synthetic demonstration questions mapped to the official syllabus. They are not ICSI questions. Real questions are added subject by subject once each dataset is verified."
-        crumbs={[{ href: "/", label: "Home" }, { href: "/pyq", label: "PYQ explorer (demo)" }]}
+        eyebrow={active.intelligenceStatus === "DEMO" ? "PYQ explorer · demonstration" : "PYQ explorer"}
+        title="Past questions, in their place in the syllabus."
+        lead={
+          active.intelligenceStatus === "DEMO"
+            ? "This explorer currently holds synthetic demonstration questions mapped to the official syllabus. They are not ICSI questions."
+            : "Company Law & Practice: every question part of the six Syllabus 2022 papers, with its chapter and topic (human-reviewed; not independently verified). Question text stays in the official ICSI papers, linked from each card. Other subjects are in preparation."
+        }
+        crumbs={[{ href: "/", label: "Home" }, { href: "/pyq", label: "PYQ explorer" }]}
       />
       <Container className="py-8 sm:py-10">
         <nav aria-label="Subject" className="-mx-4 mb-8 overflow-x-auto px-4 sm:mx-0 sm:px-0">

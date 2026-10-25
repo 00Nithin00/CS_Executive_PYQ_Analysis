@@ -34,7 +34,11 @@ export function QuestionCard({ q, actions, className }: { q: ExplorerQuestion; a
         </span>
       </header>
 
-      <p className="mt-3 leading-relaxed text-ink-2">{q.questionText}</p>
+      {q.questionText ? (
+        <p className="mt-3 leading-relaxed text-ink-2">{q.questionText}</p>
+      ) : (
+        <p className="mt-3 text-sm text-ink-3">The question text is in the official ICSI paper (linked below); it is not reproduced here.</p>
+      )}
 
       <p className="mt-3 text-sm text-ink-3">
         <span className="text-ink-2">{q.chapter.name}</span>

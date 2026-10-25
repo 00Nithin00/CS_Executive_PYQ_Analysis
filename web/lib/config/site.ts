@@ -51,7 +51,7 @@ export const PRIMARY_NAV: readonly { href: string; label: string; match?: readon
   { href: "/cs", label: "CS Executive", match: ["/subjects", "/papers", "/resources"] },
   { href: "/ca", label: "CA" },
   { href: "/cma", label: "CMA" },
-  // PYQ is not in the primary navigation while it shows demonstration data only; it stays linked, labelled, from the footer and /cs.
+  { href: "/pyq", label: "PYQ explorer" },
   { href: "/pricing", label: "Pricing" },
   { href: "/about", label: "About" },
 ];

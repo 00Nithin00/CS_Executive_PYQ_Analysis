@@ -21,7 +21,7 @@ export function SiteFooter() {
           <FooterCol
             title="Product"
             links={[
-              { href: "/pyq", label: "PYQ explorer (demo)" },
+              { href: "/pyq", label: "PYQ explorer" },
               { href: "/pricing", label: "Pricing" },
               { href: "/about", label: "About & method" },
               { href: "/login", label: "Log in" },
@@ -41,7 +41,7 @@ export function SiteFooter() {
         </nav>
         <div className="mt-6 flex flex-col gap-2 text-xs text-ink-3 sm:flex-row sm:justify-between">
           <p>Official documents are linked at their ICAI, ICMAI or ICSI source and are not re-hosted here.</p>
-          <p>Question analysis on this site currently uses synthetic demonstration data. It describes no past examination and predicts nothing.</p>
+          <p>Question analysis describes past examinations from human-reviewed records. It predicts nothing.</p>
         </div>
       </Container>
     </footer>

@@ -41,8 +41,8 @@ export function Hero() {
           <div className="animate-rise" style={{ "--delay": "240ms" } as React.CSSProperties}>
             <p className="mt-8 flex items-start gap-2 text-sm text-ink-3">
               <ShieldCheck aria-hidden className="mt-0.5 size-4 shrink-0 text-accent-600" />
-              Question analysis shown on this site uses synthetic demonstration data. No historical dataset has been verified or published
-              yet.
+              Company Law &amp; Practice analysis is built from the six official Syllabus 2022 papers, classified question by question and reviewed by
+              one human reviewer (not independently verified). Other subjects are in preparation.
             </p>
           </div>
         </div>

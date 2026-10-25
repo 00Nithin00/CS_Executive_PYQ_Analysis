@@ -1,8 +1,28 @@
 import type { AttemptId, Provenance, QuestionType, RepeatStatus, SubjectSlug, SyllabusStatus } from "./domain";
 
 /** Every analytics payload says where its numbers came from and how big the window is. */
+/** Human-reviewed coverage behind real analytics (absent for demonstration data). */
+export interface ReleaseCoverage {
+  release: string;
+  taxonomyVersion: string;
+  methodologyVersion: string;
+  reviewedRecords: number;
+  excludedRecords: number;
+  totalRecords: number;
+  /** Attempts in which every record has a human review decision; the analysis window is limited to these. */
+  releasedAttempts: AttemptId[];
+  allAttempts: number;
+  /** Concept keys reviewed (repeat / recurring-concept analysis may be shown). */
+  conceptAnalysis: boolean;
+  releaseDate?: string | null;
+  /** Plain statement of who reviewed the records (e.g. one named reviewer, no independent verification). */
+  reviewBasis?: string;
+  independentVerification?: boolean;
+}
+
 export interface AnalyticsEnvelope {
   provenance: Provenance;
+  coverage?: ReleaseCoverage | null;
   /** verificationStatus values counted by analytics (e.g. ["APPROVED"] or ["DEMO"]). */
   acceptedVerificationStatuses: string[];
   subject: SubjectSlug;

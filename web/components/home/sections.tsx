@@ -2,7 +2,7 @@ import { ArrowRight, BadgeCheck, Database, FileSearch, Layers3, LineChart, Libra
 import type { Subject } from "@/types/domain";
 import { ButtonLink } from "@/components/ui/button";
 import { Container, SectionHeading } from "@/components/ui/primitives";
-import { PRO_PRICE_LABEL } from "@/lib/config/pro-price";
+import { PRO_PRICE_LABEL, PRO_PRODUCT } from "@/lib/config/pro-price";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/reveal";
 import { SubjectCard } from "@/components/subjects/subject-card";
 
@@ -31,7 +31,7 @@ export function SubjectsSection({ subjects }: { subjects: Subject[] }) {
 const PILLARS = [
   { icon: Library, title: "Official", body: "Study material, previous papers, guideline answers, supplements and syllabus notices — linked to the ICSI source, checked and dated." },
   { icon: Layers3, title: "Structured", body: "Questions organised by syllabus, chapter, topic and concept, using a published taxonomy built from the official syllabus." },
-  { icon: Lightbulb, title: "Intelligent", body: "Planned: historical patterns turned into study insight you can verify — how often, how many marks, how recently. Shown today with demonstration data only." },
+  { icon: Lightbulb, title: "Intelligent", body: "Historical patterns turned into study insight you can check: how often, how many marks, how recently. Live for Company Law & Practice; other subjects in preparation." },
 ];
 
 export function Differentiators() {
@@ -64,7 +64,7 @@ const STEPS = [
   { icon: Database, title: "ICSI sources", body: "Official papers, guideline answers and syllabus, recorded with their source and checksum." },
   { icon: FileSearch, title: "Question extraction", body: "Each paper split into atomic questions with marks, page and question number." },
   { icon: Tags, title: "Classification", body: "Every question placed in the frozen syllabus taxonomy, with the evidence for its placement." },
-  { icon: UserCheck, title: "Human verification", body: "Ambiguous, multi-topic and repeat claims must be checked by a person before release. This review has not been completed yet." },
+  { icon: UserCheck, title: "Human review", body: "Every published classification is reviewed by a human reviewer before release. Independent second verification is a later step." },
   { icon: LineChart, title: "Analytics", body: "Coverage, marks weight, recency and recurrence, computed only from approved records once they exist." },
   { icon: BadgeCheck, title: "Student insights", body: "Transparent priorities you can click into — always with the numbers behind them." },
 ];
@@ -74,7 +74,7 @@ export function HowItWorks() {
     <section className="border-y border-line bg-surface py-20 sm:py-28">
       <Container>
         <Reveal>
-          <SectionHeading eyebrow="How it works" title="From an official PDF to an insight you can trust." lead="A documented research method will sit underneath every published number. Until records are approved, the analysis pages show synthetic demonstration data, labelled as such." />
+          <SectionHeading eyebrow="How it works" title="From an official PDF to an insight you can trust." lead="A documented research method sits underneath every published number. Each figure traces back to a specific question in a specific official paper." />
         </Reveal>
         <Stagger className="relative mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" gap={0.08}>
           {STEPS.map(({ icon: Icon, title, body }, i) => (
@@ -133,7 +133,7 @@ export function FinalCta() {
             <div aria-hidden className="paper-rule pointer-events-none absolute inset-0 opacity-30" />
             <div className="relative">
               <h2 className="mx-auto max-w-2xl text-display-md font-semibold">Start with the official material. Add the evidence when you’re ready.</h2>
-              <p className="mx-auto mt-4 max-w-xl text-ink-3">Free accounts include every official resource and the question browser. Pro ({PRO_PRICE_LABEL}) is not yet available to buy.</p>
+              <p className="mx-auto mt-4 max-w-xl text-ink-3">Free accounts include every official resource and the question browser. {PRO_PRODUCT.name} ({PRO_PRICE_LABEL}) is not yet available to buy.</p>
               <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
                 <ButtonLink href="/signup" size="lg">
                   Create a free account

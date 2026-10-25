@@ -88,30 +88,34 @@ describe("demonstration data is never presented as findings", () => {
     expect(html(createElement(PriorityBadge, { label: "HIGH" }))).toContain("High priority");
   });
 
-  it("the demo priority list carries its disclosure", async () => {
-    const a = (await mockProvider.getAnalytics("clp"))!;
-    expect(a.provenance).toBe("DEMO");
-    const out = html(createElement(PriorityList, { entries: a.priority.slice(0, 3), provenance: a.provenance }));
+  it("a demo priority list always carries its disclosure", async () => {
+    // the public provider now serves reviewed data; the demo labelling still applies to any DEMO-provenance list
+    const entries = (await mockProvider.getAnalytics("clp"))!.priority.slice(0, 3);
+    const out = html(createElement(PriorityList, { entries, provenance: "DEMO" }));
     expect(out).toContain("synthetic demonstration questions");
     expect(out).not.toMatch(/>(High|Medium|Low) priority</);
   });
 
   it("pricing marks analysis features as demo-only and offers no fake waitlist", () => {
-    for (const c of ["PYQ_ANALYTICS", "TOPIC_FREQUENCY", "MARKS_ANALYSIS", "REPEAT_ANALYSIS", "PRIORITY_TOPICS"] as const) expect(FEATURES[c].availability).toBe("DEMO_DATA_ONLY");
+    for (const c of ["PYQ_ANALYTICS", "TOPIC_FREQUENCY", "MARKS_ANALYSIS", "PRIORITY_TOPICS"] as const) expect(FEATURES[c].availability).toBe("DEMO_DATA_ONLY");
+    expect(FEATURES.REPEAT_ANALYSIS.availability).toBe("COMING_SOON"); // needs reviewed concept keys
     for (const p of PLAN_PRESENTATION) expect(p.cta.label.toLowerCase()).not.toContain("waitlist");
     expect(PLAN_PRESENTATION.find((p) => p.id === "PRO")!.price?.amount).toBe(349);
     expect(PLAN_PRESENTATION.every((p) => !p.purchasable)).toBe(true);
   });
 
-  it("keeps PYQ demo out of the primary navigation", () => {
-    expect(PRIMARY_NAV.map((n) => n.href)).not.toContain("/pyq");
+  it("lists the PYQ explorer in the primary navigation only while it serves reviewed data", async () => {
+    const real = (await mockProvider.getQuestionSet("clp"))!.provenance === "VERIFIED";
+    expect(PRIMARY_NAV.map((n) => n.href).includes("/pyq")).toBe(real);
   });
 
   it("public copy states the real verification status and the current taxonomy", () => {
     const about = src("app/(site)/about/page.tsx");
     expect(about).toContain("frozen at version 0.3");
     expect(about).not.toMatch(/version 0\.2/);
-    expect(about).toContain("have not yet been reviewed and approved by a person");
+    expect(about).toContain("by one human reviewer, not independently verified");
+    expect(about).not.toMatch(/named reviewer/);
+    expect(about).not.toMatch(/synthetic demonstration/);
     const home = src("components/home/sections.tsx") + src("components/home/hero.tsx");
     expect(home).not.toContain("Nothing is shown that can't be traced");
     expect(home).not.toMatch(/are checked by a person before release\./);

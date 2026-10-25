@@ -4,6 +4,7 @@ import { isQualification, QUALIFICATIONS, type Qualification } from "@/lib/entit
 
 // The Pro price lives in lib/config/pro-price.ts (one source for billing and the pricing page).
 export { PRO_PRICE } from "@/lib/config/pro-price";
+import { PRO_PRODUCT } from "@/lib/config/pro-price";
 
 export type BillingMode = "test" | "live";
 
@@ -51,6 +52,7 @@ export function readBillingConfig(env: Record<string, string | undefined> = proc
 export type CheckoutBlock =
   | "NOT_CONFIGURED"
   | "QUALIFICATION_DISABLED"
+  | "NOT_SOLD"
   | "NO_PLAN"
   | "TEST_KEYS_IN_PRODUCTION"
   | "LIVE_NOT_APPROVED";
@@ -60,10 +62,12 @@ export type CheckoutBlock =
  * - Test keys never take money but would grant Pro, so they are refused on the production deployment.
  * - Live keys are refused until the owner sets BILLING_LIVE_APPROVED=true (after provider approval and a controlled live test).
  * - A qualification must be explicitly listed in BILLING_CHECKOUT_QUALIFICATIONS (default: none).
+ * - Only CS Executive Pro is sold; listing "ca" or "cma" never opens checkout for them.
  */
 export function checkoutBlock(cfg: BillingConfig | null, q: Qualification): CheckoutBlock | null {
   if (!cfg) return "NOT_CONFIGURED";
   if (!cfg.checkoutQualifications.has(q)) return "QUALIFICATION_DISABLED";
+  if (q !== PRO_PRODUCT.qualification) return "NOT_SOLD";
   if (!cfg.planIds[q]) return "NO_PLAN";
   if (cfg.mode === "test" && cfg.isProductionDeployment) return "TEST_KEYS_IN_PRODUCTION";
   if (cfg.mode === "live" && !cfg.liveApproved) return "LIVE_NOT_APPROVED";

@@ -3,11 +3,13 @@ import { ATTEMPTS } from "@/content/attempts";
 import resourcesJson from "@/content/official-resources.json";
 import { SUBJECTS } from "@/content/subjects";
 import clpTaxonomyJson from "@/content/taxonomy/clp.json";
+import clpReleaseJson from "@/content/releases/clp-approved-release.json";
 import clpQuestionsJson from "@/mock/questions/clp.json";
 import { computeAnalytics, computeSummary, indexTaxonomy } from "@/lib/analytics/compute";
-import type { AnalyticsEnvelope } from "@/types/analytics";
+import type { AnalyticsEnvelope, ReleaseCoverage } from "@/types/analytics";
 import type { OfficialResource, QuestionRecord, Subject, SubjectSlug, Taxonomy } from "@/types/domain";
 import type { DataProvider, QuestionSet } from "./provider";
+import { selectQuestionSet, type ApprovedRelease } from "./release";
 
 const clpTaxonomy: Taxonomy = {
   subject: "clp",
@@ -17,19 +19,24 @@ const clpTaxonomy: Taxonomy = {
 
 const TAXONOMIES: Partial<Record<SubjectSlug, Taxonomy>> = { clp: clpTaxonomy };
 
-const QUESTION_SETS: Partial<Record<SubjectSlug, QuestionSet>> = {
-  clp: {
-    provenance: clpQuestionsJson.meta.provenance as QuestionSet["provenance"],
-    generatedFrom: "mock/questions/clp.json",
-    records: clpQuestionsJson.questions as QuestionRecord[],
-  },
-};
+// CLP: the human-approved release once enough attempts are fully reviewed; until then the labelled demonstration set.
+const clp = selectQuestionSet(
+  clpReleaseJson as unknown as ApprovedRelease,
+  { provenance: clpQuestionsJson.meta.provenance as QuestionSet["provenance"], generatedFrom: "mock/questions/clp.json", records: clpQuestionsJson.questions as QuestionRecord[] },
+  ATTEMPTS,
+  "content/releases/clp-approved-release.json",
+);
+
+const QUESTION_SETS: Partial<Record<SubjectSlug, QuestionSet>> = { clp: clp.set };
+const COVERAGE: Partial<Record<SubjectSlug, ReleaseCoverage>> = clp.coverage ? { clp: clp.coverage } : {};
 
 /** CLP lessons come from the frozen taxonomy so the subject page and the taxonomy never disagree. */
 function withLessons(s: Subject): Subject {
   const tax = TAXONOMIES[s.slug];
-  if (!tax || s.lessons.length) return s;
-  return { ...s, lessons: tax.chapters.map((c) => ({ number: c.number, name: c.name, status: c.status })) };
+  // A subject backed by an approved release is no longer a demo.
+  const status = COVERAGE[s.slug] ? "AVAILABLE" : s.intelligenceStatus;
+  if (!tax || s.lessons.length) return { ...s, intelligenceStatus: status };
+  return { ...s, intelligenceStatus: status, lessons: tax.chapters.map((c) => ({ number: c.number, name: c.name, status: c.status })) };
 }
 
 function envelope(slug: SubjectSlug, set: QuestionSet, tax: Taxonomy): AnalyticsEnvelope {
@@ -38,9 +45,11 @@ function envelope(slug: SubjectSlug, set: QuestionSet, tax: Taxonomy): Analytics
     // Demo data counts only DEMO records; a real provider must pass ["APPROVED"] (methodology §10.1).
     acceptedVerificationStatuses: set.provenance === "DEMO" ? ["DEMO"] : ["APPROVED"],
     subject: slug,
-    attemptsInWindow: ATTEMPTS.map((a) => a.id),
+    // Real analytics are limited to fully reviewed attempts.
+    attemptsInWindow: COVERAGE[slug]?.releasedAttempts ?? ATTEMPTS.map((a) => a.id),
     taxonomyVersion: tax.taxonomyVersion,
     generatedFrom: set.generatedFrom,
+    coverage: COVERAGE[slug] ?? null,
   };
 }
 

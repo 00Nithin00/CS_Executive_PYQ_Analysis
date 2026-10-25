@@ -6,6 +6,7 @@ import { revalidatePath } from "next/cache";
 import { getViewer } from "@/lib/auth/viewer";
 import { isQualification, type Qualification } from "@/lib/entitlements/resolve";
 import { store } from "@/lib/store";
+import { planMatchesProPrice, PRO_PRICE_LABEL, PRO_PRODUCT } from "@/lib/config/pro-price";
 import { checkoutBlock, PRO_PRICE, readBillingConfig } from "./config";
 import { razorpayApi, verifyCheckoutSignature } from "./razorpay";
 import { syncRazorpaySubscription } from "./sync";
@@ -39,6 +40,12 @@ export async function startCheckoutAction(qualification: string): Promise<Checko
 
   const planId = cfg.planIds[qualification]!;
   try {
+    // The plan configured in the environment must bill exactly the published price, or nothing is sold.
+    const plan = await razorpayApi(cfg.keyId, cfg.keySecret).fetchPlan(planId);
+    if (!planMatchesProPrice(plan)) {
+      console.error("[billing] configured plan does not match the published Pro price; checkout refused", { planId });
+      return { ok: false, error: "UNAVAILABLE" };
+    }
     const sub = await razorpayApi(cfg.keyId, cfg.keySecret).createSubscription({
       planId,
       totalCount: TOTAL_COUNT,
@@ -62,7 +69,7 @@ export async function startCheckoutAction(qualification: string): Promise<Checko
       keyId: cfg.keyId,
       subscriptionId: sub.id,
       prefill: { name: s.user.name, email: s.user.email },
-      description: `${qualification.toUpperCase()} Pro · ₹${PRO_PRICE.amountPaise / 100}/month`,
+      description: `${PRO_PRODUCT.name} · ${PRO_PRICE_LABEL}`,
       amountPaise: PRO_PRICE.amountPaise,
     };
   } catch (e) {

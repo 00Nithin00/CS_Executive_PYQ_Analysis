@@ -19,7 +19,7 @@ export const CAPABILITIES = [
 
 export type Capability = (typeof CAPABILITIES)[number];
 
-/** DEMO_DATA_ONLY: the feature works, but only on synthetic demonstration questions until a verified dataset is released. */
+/** DEMO_DATA_ONLY: the feature works, but operates on question data; while that data is the synthetic demonstration set it is labelled as such. */
 export type FeatureAvailability = "AVAILABLE" | "DEMO_DATA_ONLY" | "COMING_SOON";
 
 export interface FeatureInfo {
@@ -36,12 +36,12 @@ export const FEATURES: Record<Capability, FeatureInfo> = {
   PYQ_ANALYTICS: { capability: "PYQ_ANALYTICS", label: "PYQ analytics", description: "Topic-level analysis for each subject once its dataset is verified.", availability: "DEMO_DATA_ONLY" },
   TOPIC_FREQUENCY: { capability: "TOPIC_FREQUENCY", label: "Topic frequency", description: "How often each topic has appeared across attempts.", availability: "DEMO_DATA_ONLY" },
   MARKS_ANALYSIS: { capability: "MARKS_ANALYSIS", label: "Marks-weight analysis", description: "Where the marks have historically gone, by chapter and topic.", availability: "DEMO_DATA_ONLY" },
-  REPEAT_ANALYSIS: { capability: "REPEAT_ANALYSIS", label: "Repeat & concept analysis", description: "Which concepts recur, and when they last appeared.", availability: "DEMO_DATA_ONLY" },
-  ADVANCED_FILTERS: { capability: "ADVANCED_FILTERS", label: "Advanced filters", description: "Filter by topic, marks, question type and repeat status.", availability: "AVAILABLE" },
+  REPEAT_ANALYSIS: { capability: "REPEAT_ANALYSIS", label: "Repeat & concept analysis", description: "Which concepts recur, and when they last appeared.", availability: "COMING_SOON" },
+  ADVANCED_FILTERS: { capability: "ADVANCED_FILTERS", label: "Advanced filters", description: "Filter by topic, marks, question type and repeat status.", availability: "DEMO_DATA_ONLY" },
   PRIORITY_TOPICS: { capability: "PRIORITY_TOPICS", label: "Evidence-based priorities", description: "Transparent HIGH / MEDIUM / LOW study priorities with the evidence behind each.", availability: "DEMO_DATA_ONLY" },
   STUDY_PLANNER: { capability: "STUDY_PLANNER", label: "Study planner", description: "A plan built around your exam date and historical priorities.", availability: "AVAILABLE" },
   PROGRESS_TRACKING: { capability: "PROGRESS_TRACKING", label: "Progress tracking", description: "Mark chapters as covered and see what is left.", availability: "AVAILABLE" },
-  BOOKMARKS: { capability: "BOOKMARKS", label: "Bookmarks", description: "Save questions to revisit.", availability: "AVAILABLE" },
+  BOOKMARKS: { capability: "BOOKMARKS", label: "Bookmarks", description: "Save questions to revisit.", availability: "DEMO_DATA_ONLY" },
   MOCK_TESTS: { capability: "MOCK_TESTS", label: "Mock tests", description: "Timed practice papers built from the question bank.", availability: "COMING_SOON" },
   AI_ASSISTANT: { capability: "AI_ASSISTANT", label: "AI study assistant", description: "Ask questions about topics and past questions.", availability: "COMING_SOON" },
   ADVANCED_ANALYTICS: { capability: "ADVANCED_ANALYTICS", label: "Advanced analytics", description: "Cross-attempt comparisons and deeper breakdowns.", availability: "COMING_SOON" },
