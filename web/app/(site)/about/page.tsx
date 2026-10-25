@@ -50,9 +50,10 @@ export default function AboutPage() {
           ))}
         </ol>
         <Reveal as="section" className="mt-12 rounded-lg border border-dashed border-pro-500/50 bg-pro-50/60 p-5 text-sm text-pro-700">
-          <strong className="font-semibold">Current status:</strong> official resources are live. The Company Law & Practice questions have been extracted
-          and classified, but no record has yet been reviewed and approved by a person, so no historical dataset is published. Analysis on the site uses
-          clearly labelled synthetic demonstration questions until that review is complete. Other subjects follow.
+          <strong className="font-semibold">Current status:</strong> official resources are live. For Company Law &amp; Practice, the six Syllabus 2022 question
+          papers (December 2023 to June 2026) have been split into 200 marked question parts, and their structure and marks are published on the subject page.
+          The topic classifications have not yet been reviewed and approved by a person, so no topic frequency or priority from those papers is published;
+          the analysis views use clearly labelled synthetic demonstration questions until that review is complete. Other subjects follow.
         </Reveal>
       </Container>
     </>

@@ -2,8 +2,8 @@
 import "server-only";
 import { isQualification, QUALIFICATIONS, type Qualification } from "@/lib/entitlements/resolve";
 
-/** Pro price (owner decision 2026-10-23): ₹320 per month, per qualification. */
-export const PRO_PRICE = { amountPaise: 32000, currency: "INR", interval: "monthly" } as const;
+// The Pro price lives in lib/config/pro-price.ts (one source for billing and the pricing page).
+export { PRO_PRICE } from "@/lib/config/pro-price";
 
 export type BillingMode = "test" | "live";
 

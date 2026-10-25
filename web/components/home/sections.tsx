@@ -2,6 +2,7 @@ import { ArrowRight, BadgeCheck, Database, FileSearch, Layers3, LineChart, Libra
 import type { Subject } from "@/types/domain";
 import { ButtonLink } from "@/components/ui/button";
 import { Container, SectionHeading } from "@/components/ui/primitives";
+import { PRO_PRICE_LABEL } from "@/lib/config/pro-price";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/reveal";
 import { SubjectCard } from "@/components/subjects/subject-card";
 
@@ -132,7 +133,7 @@ export function FinalCta() {
             <div aria-hidden className="paper-rule pointer-events-none absolute inset-0 opacity-30" />
             <div className="relative">
               <h2 className="mx-auto max-w-2xl text-display-md font-semibold">Start with the official material. Add the evidence when you’re ready.</h2>
-              <p className="mx-auto mt-4 max-w-xl text-ink-3">Free accounts include every official resource and the question browser. Paid plans are not open.</p>
+              <p className="mx-auto mt-4 max-w-xl text-ink-3">Free accounts include every official resource and the question browser. Pro ({PRO_PRICE_LABEL}) is not yet available to buy.</p>
               <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
                 <ButtonLink href="/signup" size="lg">
                   Create a free account

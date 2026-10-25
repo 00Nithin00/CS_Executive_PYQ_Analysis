@@ -8,9 +8,13 @@ import { PLAN_CAPABILITIES } from "@/lib/entitlements/plans";
 import { cn } from "@/lib/utils/cn";
 
 function price(p: (typeof PLAN_PRESENTATION)[number]) {
-  if (!p.price) return "To be announced";
-  if (p.price.amount === 0) return "₹0";
+  if (!p.price) return null;
   return `₹${p.price.amount.toLocaleString("en-IN")}`;
+}
+
+function period(p: (typeof PLAN_PRESENTATION)[number]) {
+  if (!p.price || p.price.amount === 0) return null;
+  return `${p.price.per ? `per ${p.price.per} ` : ""}per ${p.price.period}`;
 }
 
 export function PlanCards() {
@@ -26,7 +30,10 @@ export function PlanCards() {
                 {pro && <ProBadge />}
               </div>
               <p className="mt-2 text-ink-3">{p.summary}</p>
-              <p className="mt-6 font-display text-4xl font-semibold tracking-tight">{price(p)}</p>
+              <p className="mt-6 flex flex-wrap items-baseline gap-x-2">
+                <span className="font-display text-4xl font-semibold tracking-tight">{price(p)}</span>
+                {period(p) && <span className="text-sm text-ink-3">{period(p)}</span>}
+              </p>
               <p className="mt-1 text-sm text-ink-3">{p.priceNote}</p>
               <ul className="mt-6 flex-1 space-y-3 border-t border-line pt-6">
                 {p.highlights.map((c) => (

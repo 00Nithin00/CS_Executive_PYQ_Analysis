@@ -99,7 +99,8 @@ describe("demonstration data is never presented as findings", () => {
   it("pricing marks analysis features as demo-only and offers no fake waitlist", () => {
     for (const c of ["PYQ_ANALYTICS", "TOPIC_FREQUENCY", "MARKS_ANALYSIS", "REPEAT_ANALYSIS", "PRIORITY_TOPICS"] as const) expect(FEATURES[c].availability).toBe("DEMO_DATA_ONLY");
     for (const p of PLAN_PRESENTATION) expect(p.cta.label.toLowerCase()).not.toContain("waitlist");
-    expect(PLAN_PRESENTATION.find((p) => p.id === "PRO")!.price).toBeNull();
+    expect(PLAN_PRESENTATION.find((p) => p.id === "PRO")!.price?.amount).toBe(349);
+    expect(PLAN_PRESENTATION.every((p) => !p.purchasable)).toBe(true);
   });
 
   it("keeps PYQ demo out of the primary navigation", () => {
@@ -110,7 +111,7 @@ describe("demonstration data is never presented as findings", () => {
     const about = src("app/(site)/about/page.tsx");
     expect(about).toContain("frozen at version 0.3");
     expect(about).not.toMatch(/version 0\.2/);
-    expect(about).toContain("no record has yet been reviewed and approved by a person");
+    expect(about).toContain("have not yet been reviewed and approved by a person");
     const home = src("components/home/sections.tsx") + src("components/home/hero.tsx");
     expect(home).not.toContain("Nothing is shown that can't be traced");
     expect(home).not.toMatch(/are checked by a person before release\./);

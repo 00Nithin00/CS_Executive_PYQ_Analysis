@@ -1,0 +1,505 @@
+{
+ "meta": {
+  "subject": "clp",
+  "paper": "Executive Programme, Syllabus 2022, Group 1, Paper 2 — Company Law & Practice (522)",
+  "generatedFrom": {
+   "manifest": "01_Source_Papers/CLP_PAPER_MANIFEST.csv",
+   "raw": "02_Raw_Extraction/CLP_atomic_questions_raw.json",
+   "validation": "02_Raw_Extraction/CLP_extraction_validation.json",
+   "classification": "03_Classified_Questions/CLP_classified_questions_v0.1.json",
+   "registry": "SOURCE_REGISTRY.md"
+  },
+  "sourceSha256": {
+   "manifest": "47117c65e272745621f563bcd26a061edfe7655772ab9c1c58e6b3fc742788b3",
+   "raw": "7be5957e497faefaadeccfe406bf44ec98743e271bf67189f77b108d40b8f0f2",
+   "validation": "d9edb432db639f9ba08c9c47f1ca46fd64e15103340f088ce42778073504d50c",
+   "classification": "52ae301f6e22be96f6d873d426065a8d2107205b3a9e43bfad37f732717f12b8",
+   "registry": "df0f18772082d1642e1c5a677cc3156fb3da85c1fc7c28d004375259c709323f"
+  },
+  "extractionStage": "EXTRACTED (raw; not classified, not verified, not approved)",
+  "status": {
+   "papers": "Official ICSI question papers; identity, syllabus, completeness and source authority recorded as verified in the paper manifest.",
+   "extraction": "All 200 question parts extracted; every paper passes the automated structure and marks checks. Extraction status: EXTRACTED (not human-verified).",
+   "classification": "Not published. 0 of 200 classifications have completed human review."
+  },
+  "classificationRecords": 200,
+  "classificationHumanReviewed": 0,
+  "note": "No question text and no syllabus classification is exported. Question text stays in the official ICSI papers."
+ },
+ "papers": [
+  {
+   "paperId": "EP-2022-522-2023D",
+   "attempt": "2023-12",
+   "attemptLabel": "December 2023",
+   "paperCode": "522",
+   "officialPaperUrl": "https://icsis3-console.kreate-cloud.com:9002/icsi-prod/media/question_papers/522-december-2023.pdf",
+   "officialArchive": "https://www.icsi.edu/examination/previous-sessions-qps",
+   "guidelineAnswerUrl": "https://icsis3-console.kreate-cloud.com:9002/icsi-prod/media/cms_uploads/ga-g2-dec2023-ep2022-g1.pdf",
+   "sourceSha256": "3e558754c1a1073b36eef74f7d38921d0f63c915ba03a82010ef66deb5c2617e",
+   "pages": 16,
+   "printed": {
+    "maximumMarks": 100,
+    "totalQuestions": 6,
+    "timeAllowed": "3 hours"
+   },
+   "questions": [
+    {
+     "number": "1",
+     "parts": 3,
+     "marks": 15,
+     "alternativeGroup": null
+    },
+    {
+     "number": "2",
+     "parts": 5,
+     "marks": 15,
+     "alternativeGroup": null
+    },
+    {
+     "number": "3",
+     "parts": 3,
+     "marks": 15,
+     "alternativeGroup": null
+    },
+    {
+     "number": "4",
+     "parts": 3,
+     "marks": 15,
+     "alternativeGroup": "Q4"
+    },
+    {
+     "number": "4A",
+     "parts": 3,
+     "marks": 15,
+     "alternativeGroup": "Q4"
+    },
+    {
+     "number": "5",
+     "parts": 4,
+     "marks": 20,
+     "alternativeGroup": null
+    },
+    {
+     "number": "6",
+     "parts": 4,
+     "marks": 20,
+     "alternativeGroup": "Q6"
+    },
+    {
+     "number": "6A",
+     "parts": 4,
+     "marks": 20,
+     "alternativeGroup": "Q6"
+    }
+   ],
+   "totals": {
+    "atomicParts": 29,
+    "alternativeParts": 7,
+    "attemptableMarks": 100
+   },
+   "checks": {
+    "source": "VERIFIED",
+    "sourceVerifiedOn": "2026-10-08",
+    "extraction": {
+     "passed": 17,
+     "total": 17
+    }
+   }
+  },
+  {
+   "paperId": "EP-2022-522-2024J",
+   "attempt": "2024-06",
+   "attemptLabel": "June 2024",
+   "paperCode": "522",
+   "officialPaperUrl": "https://icsis3-console.kreate-cloud.com:9002/icsi-prod/media/question_papers/522-june-2024.pdf",
+   "officialArchive": "https://www.icsi.edu/examination/previous-sessions-qps",
+   "guidelineAnswerUrl": "https://icsis3-console.kreate-cloud.com:9002/icsi-prod/media/cms_uploads/ga-g2-jun2024-ep2022-g1.pdf",
+   "sourceSha256": "eab3b0eb3ce2d90ac3effe35c53d9450bde0b2c794395cf7ff27d2936b65ed37",
+   "pages": 15,
+   "printed": {
+    "maximumMarks": 100,
+    "totalQuestions": 6,
+    "timeAllowed": "3 hours"
+   },
+   "questions": [
+    {
+     "number": "1",
+     "parts": 5,
+     "marks": 15,
+     "alternativeGroup": null
+    },
+    {
+     "number": "2",
+     "parts": 5,
+     "marks": 15,
+     "alternativeGroup": null
+    },
+    {
+     "number": "3",
+     "parts": 6,
+     "marks": 15,
+     "alternativeGroup": null
+    },
+    {
+     "number": "4",
+     "parts": 7,
+     "marks": 15,
+     "alternativeGroup": "Q4"
+    },
+    {
+     "number": "4A",
+     "parts": 3,
+     "marks": 15,
+     "alternativeGroup": "Q4"
+    },
+    {
+     "number": "5",
+     "parts": 5,
+     "marks": 20,
+     "alternativeGroup": null
+    },
+    {
+     "number": "6",
+     "parts": 5,
+     "marks": 20,
+     "alternativeGroup": "Q6"
+    },
+    {
+     "number": "6A",
+     "parts": 4,
+     "marks": 20,
+     "alternativeGroup": "Q6"
+    }
+   ],
+   "totals": {
+    "atomicParts": 40,
+    "alternativeParts": 7,
+    "attemptableMarks": 100
+   },
+   "checks": {
+    "source": "VERIFIED",
+    "sourceVerifiedOn": "2026-10-08",
+    "extraction": {
+     "passed": 17,
+     "total": 17
+    }
+   }
+  },
+  {
+   "paperId": "EP-2022-522-2024D",
+   "attempt": "2024-12",
+   "attemptLabel": "December 2024",
+   "paperCode": "522",
+   "officialPaperUrl": "https://icsis3-console.kreate-cloud.com:9002/icsi-prod/media/question_papers/522-december-2024.pdf",
+   "officialArchive": "https://www.icsi.edu/examination/previous-sessions-qps",
+   "guidelineAnswerUrl": "https://icsis3-console.kreate-cloud.com:9002/icsi-prod/media/cms_uploads/ga-g2-dec2024-ep2022-g1.pdf",
+   "sourceSha256": "f6ce3389a834d4ea5a22193f6c1201db800ccadb34359d124836928ea995af0c",
+   "pages": 15,
+   "printed": {
+    "maximumMarks": 100,
+    "totalQuestions": 6,
+    "timeAllowed": "3 hours"
+   },
+   "questions": [
+    {
+     "number": "1",
+     "parts": 5,
+     "marks": 15,
+     "alternativeGroup": null
+    },
+    {
+     "number": "2",
+     "parts": 5,
+     "marks": 15,
+     "alternativeGroup": null
+    },
+    {
+     "number": "3",
+     "parts": 3,
+     "marks": 15,
+     "alternativeGroup": null
+    },
+    {
+     "number": "4",
+     "parts": 3,
+     "marks": 15,
+     "alternativeGroup": "Q4"
+    },
+    {
+     "number": "4A",
+     "parts": 4,
+     "marks": 15,
+     "alternativeGroup": "Q4"
+    },
+    {
+     "number": "5",
+     "parts": 4,
+     "marks": 20,
+     "alternativeGroup": null
+    },
+    {
+     "number": "6",
+     "parts": 4,
+     "marks": 20,
+     "alternativeGroup": "Q6"
+    },
+    {
+     "number": "6A",
+     "parts": 4,
+     "marks": 20,
+     "alternativeGroup": "Q6"
+    }
+   ],
+   "totals": {
+    "atomicParts": 32,
+    "alternativeParts": 8,
+    "attemptableMarks": 100
+   },
+   "checks": {
+    "source": "VERIFIED",
+    "sourceVerifiedOn": "2026-10-08",
+    "extraction": {
+     "passed": 17,
+     "total": 17
+    }
+   }
+  },
+  {
+   "paperId": "EP-2022-522-2025J",
+   "attempt": "2025-06",
+   "attemptLabel": "June 2025",
+   "paperCode": "522",
+   "officialPaperUrl": "https://icsis3-console.kreate-cloud.com:9002/icsi-prod/media/question_papers/522-june-2025.pdf",
+   "officialArchive": "https://www.icsi.edu/examination/previous-sessions-qps",
+   "guidelineAnswerUrl": "https://icsis3-console.kreate-cloud.com:9002/icsi-prod/media/cms_uploads/ga-g2-jun2025-ep2022-g1.pdf",
+   "sourceSha256": "c8495c69a31c0c6dc312c20c2d56f70e493e838f1858cd85efedbb58b6689ad1",
+   "pages": 16,
+   "printed": {
+    "maximumMarks": 100,
+    "totalQuestions": 6,
+    "timeAllowed": "3 hours"
+   },
+   "questions": [
+    {
+     "number": "1",
+     "parts": 5,
+     "marks": 15,
+     "alternativeGroup": null
+    },
+    {
+     "number": "2",
+     "parts": 5,
+     "marks": 15,
+     "alternativeGroup": null
+    },
+    {
+     "number": "3",
+     "parts": 3,
+     "marks": 15,
+     "alternativeGroup": null
+    },
+    {
+     "number": "4",
+     "parts": 3,
+     "marks": 15,
+     "alternativeGroup": "Q4"
+    },
+    {
+     "number": "4A",
+     "parts": 3,
+     "marks": 15,
+     "alternativeGroup": "Q4"
+    },
+    {
+     "number": "5",
+     "parts": 5,
+     "marks": 20,
+     "alternativeGroup": null
+    },
+    {
+     "number": "6",
+     "parts": 4,
+     "marks": 20,
+     "alternativeGroup": "Q6"
+    },
+    {
+     "number": "6A",
+     "parts": 4,
+     "marks": 20,
+     "alternativeGroup": "Q6"
+    }
+   ],
+   "totals": {
+    "atomicParts": 32,
+    "alternativeParts": 7,
+    "attemptableMarks": 100
+   },
+   "checks": {
+    "source": "VERIFIED",
+    "sourceVerifiedOn": "2026-10-08",
+    "extraction": {
+     "passed": 17,
+     "total": 17
+    }
+   }
+  },
+  {
+   "paperId": "EP-2022-522-2025D",
+   "attempt": "2025-12",
+   "attemptLabel": "December 2025",
+   "paperCode": "522",
+   "officialPaperUrl": "https://icsis3-console.kreate-cloud.com:9002/icsi-prod/media/question_papers/522-december-2025.pdf",
+   "officialArchive": "https://www.icsi.edu/examination/previous-sessions-qps",
+   "guidelineAnswerUrl": "https://icsis3-console.kreate-cloud.com:9002/icsi-prod/media/cms_uploads/ga-g2-dec2025-ep2022-g1.pdf",
+   "sourceSha256": "11ff1b50c0aa9964b0d3a238ec8d3e16786f8a0134e170881075cb9e0ad11128",
+   "pages": 16,
+   "printed": {
+    "maximumMarks": 100,
+    "totalQuestions": 6,
+    "timeAllowed": "3 hours"
+   },
+   "questions": [
+    {
+     "number": "1",
+     "parts": 5,
+     "marks": 15,
+     "alternativeGroup": null
+    },
+    {
+     "number": "2",
+     "parts": 5,
+     "marks": 15,
+     "alternativeGroup": null
+    },
+    {
+     "number": "3",
+     "parts": 3,
+     "marks": 15,
+     "alternativeGroup": null
+    },
+    {
+     "number": "4",
+     "parts": 3,
+     "marks": 15,
+     "alternativeGroup": "Q4"
+    },
+    {
+     "number": "4A",
+     "parts": 3,
+     "marks": 15,
+     "alternativeGroup": "Q4"
+    },
+    {
+     "number": "5",
+     "parts": 4,
+     "marks": 20,
+     "alternativeGroup": null
+    },
+    {
+     "number": "6",
+     "parts": 4,
+     "marks": 20,
+     "alternativeGroup": "Q6"
+    },
+    {
+     "number": "6A",
+     "parts": 5,
+     "marks": 20,
+     "alternativeGroup": "Q6"
+    }
+   ],
+   "totals": {
+    "atomicParts": 32,
+    "alternativeParts": 8,
+    "attemptableMarks": 100
+   },
+   "checks": {
+    "source": "VERIFIED",
+    "sourceVerifiedOn": "2026-10-08",
+    "extraction": {
+     "passed": 17,
+     "total": 17
+    }
+   }
+  },
+  {
+   "paperId": "EP-2022-522-2026J",
+   "attempt": "2026-06",
+   "attemptLabel": "June 2026",
+   "paperCode": "522",
+   "officialPaperUrl": "https://icsis3-console.kreate-cloud.com:9002/icsi-prod/media/question_papers/522-june-2026.pdf",
+   "officialArchive": "https://www.icsi.edu/examination/previous-sessions-qps",
+   "guidelineAnswerUrl": "https://icsis3-console.kreate-cloud.com:9002/icsi-prod/media/cms_uploads/ep-group-1-june-2026-b4d5f0f9.pdf",
+   "sourceSha256": "7d5434e686ec5c41703d0febae0e727feee83ed481e827319a2366f258b60df4",
+   "pages": 20,
+   "printed": {
+    "maximumMarks": 100,
+    "totalQuestions": 6,
+    "timeAllowed": "3 hours"
+   },
+   "questions": [
+    {
+     "number": "1",
+     "parts": 5,
+     "marks": 15,
+     "alternativeGroup": null
+    },
+    {
+     "number": "2",
+     "parts": 6,
+     "marks": 15,
+     "alternativeGroup": null
+    },
+    {
+     "number": "3",
+     "parts": 4,
+     "marks": 15,
+     "alternativeGroup": null
+    },
+    {
+     "number": "4",
+     "parts": 3,
+     "marks": 15,
+     "alternativeGroup": "Q4"
+    },
+    {
+     "number": "4A",
+     "parts": 4,
+     "marks": 15,
+     "alternativeGroup": "Q4"
+    },
+    {
+     "number": "5",
+     "parts": 5,
+     "marks": 20,
+     "alternativeGroup": null
+    },
+    {
+     "number": "6",
+     "parts": 4,
+     "marks": 20,
+     "alternativeGroup": "Q6"
+    },
+    {
+     "number": "6A",
+     "parts": 4,
+     "marks": 20,
+     "alternativeGroup": "Q6"
+    }
+   ],
+   "totals": {
+    "atomicParts": 35,
+    "alternativeParts": 8,
+    "attemptableMarks": 100
+   },
+   "checks": {
+    "source": "VERIFIED",
+    "sourceVerifiedOn": "2026-10-08",
+    "extraction": {
+     "passed": 17,
+     "total": 17
+    }
+   }
+  }
+ ]
+}

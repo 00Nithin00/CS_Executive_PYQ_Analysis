@@ -4,7 +4,9 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { PageHeader } from "@/components/layout/page-header";
 import { ResourceList } from "@/components/resources/resource-list";
+import { PaperInventorySection } from "@/components/subjects/paper-inventory";
 import { SubjectIntelligence, SubjectIntelligenceSkeleton } from "@/components/subjects/subject-intelligence";
+import { getPaperInventory } from "@/lib/data/paper-inventory";
 import { Badge, Container, DemoBadge } from "@/components/ui/primitives";
 import { Reveal } from "@/components/motion/reveal";
 import { getSubject, listResources, listSubjects } from "@/lib/data/service";
@@ -29,6 +31,7 @@ export default async function SubjectPage({ params }: PageProps<"/subjects/[slug
   const resources = await listResources(null, { subject: subject.slug });
   const papers = resources.filter((r) => r.resourceType === "QUESTION_PAPER" && !r.paperCode?.endsWith("EH"));
   const other = resources.filter((r) => r.resourceType !== "QUESTION_PAPER" && r.resourceType !== "GUIDELINE_ANSWER");
+  const inventory = getPaperInventory(subject.slug);
 
   return (
     <>
@@ -45,11 +48,16 @@ export default async function SubjectPage({ params }: PageProps<"/subjects/[slug
             </Badge>
           ))}
           {subject.taxonomyVersion && <Badge tone="accent">Syllabus taxonomy v{subject.taxonomyVersion}</Badge>}
-          {subject.intelligenceStatus !== "AVAILABLE" && <Badge tone="outline">Question dataset not yet verified</Badge>}
+          {subject.intelligenceStatus !== "AVAILABLE" && <Badge tone="outline">Topic classifications not yet reviewed</Badge>}
         </div>
       </PageHeader>
 
       <Container className="py-12">
+        {inventory && (
+          <div className="mb-16">
+            <PaperInventorySection inventory={inventory} />
+          </div>
+        )}
         <section aria-labelledby="intel">
           <div className="mb-6 flex flex-wrap items-center gap-3">
             <h2 id="intel" className="text-display-md font-semibold">
