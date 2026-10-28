@@ -22,6 +22,7 @@
     "content:import": "node scripts/import-qualification.mjs"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "drizzle-orm": "^0.45.3",
     "jose": "^6.2.12",
     "lucide-react": "^1.52.0",

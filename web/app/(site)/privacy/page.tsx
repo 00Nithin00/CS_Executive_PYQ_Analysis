@@ -17,7 +17,7 @@ export default function PrivacyPage() {
     <LegalPage
       title="Privacy"
       path="/privacy"
-      updated="2026-10-24"
+      updated="2026-10-28"
       lead={`What ${SITE.name} stores about you, why, and what you can do about it. Browsing official resources needs no account.`}
       sections={[
         {
@@ -25,9 +25,12 @@ export default function PrivacyPage() {
           title: "Without an account",
           body: (
             <p>
-              You can browse subjects, official resources and the paper finder without signing up. The site does not load analytics or advertising
-              scripts and does not set cookies for visitors who are not signed in. Like any website, the hosting provider (Vercel) receives the
-              technical details of each request, such as your IP address, in order to serve it.
+              You can browse subjects, official resources and the paper finder without signing up. The site loads no advertising scripts and
+              does not set cookies for visitors who are not signed in. Like any website, the hosting provider (Vercel) receives the technical
+              details of each request, such as your IP address, in order to serve it. To count page views, the site uses Vercel Web Analytics,
+              which sets no cookies and records the page visited, the referring page, browser, operating system, device type and approximate
+              country. It tells repeat visits apart only through a hash of the request that Vercel discards after 24 hours, and it does not
+              follow you across other websites.
             </p>
           ),
         },
